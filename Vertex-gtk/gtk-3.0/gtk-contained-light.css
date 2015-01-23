@@ -2406,6 +2406,8 @@ GtkVolumeButton.button {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3), 0 2px 5px 0 rgba(0, 0, 0, 0.35); }
   .window-frame.tiled {
     border-radius: 0; }
+  .window-frame.ssd {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3); }
   .window-frame.csd.popup {
     border-radius: 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.12); }
