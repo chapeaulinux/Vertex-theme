@@ -1684,7 +1684,6 @@ column-header.button.dnd { // for treeview-like derive widgets
 // Popovers
 //
 .popover {
-  margin: 10px;
   padding: 2px;
   border: 1px solid $borders-color;
   border-radius: 3px;
@@ -1697,9 +1696,9 @@ column-header.button.dnd { // for treeview-like derive widgets
 
   .list { background-color: $base_color; }
 
-  & > .list,
-  & > .view,
-  & > .toolbar,
+  > .list,
+  > .view,
+  > .toolbar,
   &.osd > .toolbar {
     border: none;
     background: none;

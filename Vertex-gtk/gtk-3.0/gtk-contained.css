@@ -2031,7 +2031,6 @@ column-header .button, column-header .button:hover, column-header .button:active
   color: alpha(currentColor,0.7); }
 
 .popover {
-  margin: 10px;
   padding: 2px;
   border: 1px solid #b9b9b9;
   border-radius: 3px;
@@ -2041,7 +2040,9 @@ column-header .button, column-header .button:hover, column-header .button:active
   icon-shadow: none; }
   .popover .list {
     background-color: #ffffff; }
-  .popover > .list, .popover > .view, .popover > .toolbar, .popover.osd > .toolbar {
+  .popover > .list,
+  .popover > .view,
+  .popover > .toolbar, .popover.osd > .toolbar {
     border: none;
     background: none;
     box-shadow: none; }
