@@ -1353,6 +1353,10 @@ GtkTreeView.view {
     border-radius: 0; }
   GtkTreeView.view:selected {
     border-left-color: rgba(255, 255, 255, 0.3); }
+  GtkTreeView.view:insensitive {
+    color: #ababad; }
+    GtkTreeView.view:insensitive:selected {
+      color: #9fbffd; }
   GtkTreeView.view.expander {
     -gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
     color: #3c3c3e; }
