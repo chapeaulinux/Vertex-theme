@@ -2269,9 +2269,7 @@ GtkProgressBar {
 
 // moving bit
 .progressbar {
-  border: 1px solid transparent;
-  border-bottom-width: 2px;
-  border-radius: 1px;
+  border: none;
   background-image: linear-gradient(to bottom,
                                     $progressbar_background_a,
                                     $progressbar_background_b);
@@ -2319,7 +2317,7 @@ GtkProgressBar {
 
 // progressbar trough
 GtkProgressBar.trough {
-  padding: 2px;
+  padding: 1px 1px 2px 1px;
   box-shadow: inset 0 1px 1px transparentize(black, 0.9);
   background-image: linear-gradient(to bottom,
                                     if($variant=='light', darken($trough_bg_color_a, 5%), darken($trough_bg_color_a, 2%)),
@@ -2356,6 +2354,7 @@ GtkLevelBar.vertical {
 .level-bar {
   &.trough {
     @extend GtkProgressBar.trough;
+    padding: 2px;
   }
   &.fill-block {
     border: 1px solid $progressbar_border;

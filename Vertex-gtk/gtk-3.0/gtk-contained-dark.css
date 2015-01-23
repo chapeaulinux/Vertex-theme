@@ -2049,9 +2049,7 @@ GtkProgressBar {
     -GtkProgressBar-yspacing: 0; }
 
 .progressbar {
-  border: 1px solid transparent;
-  border-bottom-width: 2px;
-  border-radius: 1px;
+  border: none;
   background-image: linear-gradient(to bottom, #4080fb, #0e5ffa);
   box-shadow: inset 0 1px #79a6fc; }
   .progressbar.left {
@@ -2084,7 +2082,7 @@ GtkProgressBar {
     box-shadow: none; }
 
 GtkProgressBar.trough, .level-bar.trough {
-  padding: 2px;
+  padding: 1px 1px 2px 1px;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
   background-image: linear-gradient(to bottom, #1f2020, #2b2b2d);
   border-image: -gtk-scaled(url("borders/trough-border-dark.png"), url("borders/trough-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
@@ -2113,6 +2111,8 @@ GtkLevelBar.vertical {
   -GtkLevelBar-min-block-width: 5;
   -GtkLevelBar-min-block-height: 34; }
 
+.level-bar.trough {
+  padding: 2px; }
 .level-bar.fill-block {
   border: 1px solid black;
   background-image: linear-gradient(to bottom, #72a1fc, #0e5ffa 75%, #0553ea);
