@@ -2,7 +2,6 @@
   padding: 0;
   -GtkToolButton-icon-spacing: 4;
   -GtkTextView-error-underline-color: #cc0000;
-  -GtkPaned-handle-size: 5;
   -GtkCheckButton-indicator-size: 16;
   -GtkCheckMenuItem-indicator-size: 16;
   -GtkScrolledWindow-scrollbar-spacing: 0;
@@ -2279,38 +2278,25 @@ GtkFileChooserDialog .dialog-action-box {
     background-size: 6px 6px, 0 0; }
 
 GtkPaned {
+  -GtkPaned-handle-size: 1;
+  -gtk-icon-source: none;
   margin: 0 8px 8px 0; }
   GtkPaned:dir(rtl) {
     margin-right: 0;
     margin-left: 8px; }
+  GtkPaned .pane-separator {
+    background-color: #b9b9b9; }
 
-.pane-separator {
-  background-color: #F5F5F7;
-  background-image: url("assets/pane-separator-grip.svg");
-  background-repeat: no-repeat;
-  background-position: center; }
-  .notebook .pane-separator, .notebook .pane-separator:hover {
-    background-color: #fafafa; }
-  .toolbar .pane-separator {
-    background-color: transparent; }
-  .pane-separator:hover {
-    background-image: url("assets/pane-separator-grip-prelight.svg"); }
-  .pane-separator.vertical {
-    background-image: url("assets/pane-separator-grip-vertical.svg"); }
-    .pane-separator.vertical:hover {
-      background-image: url("assets/pane-separator-grip-vertical-prelight.svg"); }
-
-GtkFileChooserDialog *, NautilusWindow *, NemoWindow *, GeditWindow *, FrWindow * {
-  -GtkPaned-handle-size: 1px; }
-GtkFileChooserDialog .pane-separator, NautilusWindow .pane-separator, NemoWindow .pane-separator, GeditWindow .pane-separator, FrWindow .pane-separator,
-GtkFileChooserDialog .pane-separator:hover,
-NautilusWindow .pane-separator:hover,
-NemoWindow .pane-separator:hover,
-GeditWindow .pane-separator:hover,
-FrWindow .pane-separator:hover {
-  border-width: 0 1px 1px 1px;
-  border-style: solid;
-  border-color: #b9b9b9; }
+GtkPaned.wide {
+  -GtkPaned-handle-size: 5;
+  margin: 0; }
+  GtkPaned.wide .pane-separator {
+    background-color: transparent;
+    border-style: none solid;
+    border-color: #b9b9b9;
+    border-width: 1px; }
+  GtkPaned.wide.vertical .pane-separator {
+    border-style: solid none; }
 
 GtkInfoBar {
   border: none; }

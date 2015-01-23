@@ -57,10 +57,6 @@ TerminalWindow {
 //
 // Nautilus
 //
-NautilusWindow {
-  @extend %thin_separator;
-}
-
 .nautilus-canvas-item {
   border-radius: 2px;
 }
@@ -89,10 +85,6 @@ NautilusQueryEditor .search-bar.toolbar {
 //
 // Nemo
 //
-NemoWindow {
-  @extend %thin_separator;
-}
-
 NemoWindow .sidebar .frame {
 	border-width: 0;
 }
@@ -109,8 +101,6 @@ NemoWindow GtkSeparator.separator.horizontal {
 // Gedit
 //
 GeditWindow {
-  @extend %thin_separator;
-
   @if $darker=='true' {
     .gedit-headerbar-paned { background-color: darken(nth($_bg_color, 2), 5%); }
 
@@ -345,10 +335,6 @@ MainWindow.background GtkBox.vertical MainToolbar {
 //
 // File-roller
 //
-FrWindow {
-  @extend %thin_separator;
-}
-
 FrWindow.background GtkBox.vertical GtkTreeView.view {
   background-color: $sidebar_bg;
 }

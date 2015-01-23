@@ -2,7 +2,6 @@
   padding: 0;
   -GtkToolButton-icon-spacing: 4;
   -GtkTextView-error-underline-color: $error_color;
-  -GtkPaned-handle-size: 5;
 
   -GtkCheckButton-indicator-size: 16;
   -GtkCheckMenuItem-indicator-size: 16;
@@ -2559,10 +2558,6 @@ GtkCalendar {
 }
 
 GtkFileChooserDialog {
-  @extend %thin_separator
-}
-
-GtkFileChooserDialog {
   .search-bar {
     background-color: lighten($bg_color, 2%);
     box-shadow: none;
@@ -2608,42 +2603,34 @@ GtkFileChooserDialog {
   }
 }
 
-GtkPaned {
-  // This is actually the invisible area of the paned separator, not a margin...
-  margin: 0 8px 8px 0; //drag area of the separator
+//
+// Paned
+//
+GtkPaned { // this is for the standard paned separator
+
+  -GtkPaned-handle-size: 1; // sets separator width
+
+  -gtk-icon-source: none; // removes handle decoration
+  margin: 0 8px 8px 0; // drag area of the separator, not a real margin
   &:dir(rtl) {
     margin-right: 0;
     margin-left: 8px;
   }
-}
-
-.pane-separator {
-  background-color: $bg_color;
-  background-image: url("assets/pane-separator-grip.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-
-  .notebook &, .notebook &:hover { background-color: darken($base_color, 2%); }
-  .toolbar & { background-color: transparent; }
-
-  &:hover { background-image: url("assets/pane-separator-grip-prelight.svg"); }
-  
-  &.vertical { background-image: url("assets/pane-separator-grip-vertical.svg");
-
-    &:hover { background-image: url("assets/pane-separator-grip-vertical-prelight.svg"); }
+  .pane-separator {
+    background-color: $borders_color;
   }
 }
 
-// Makes Pane Separators 1px wide
-%thin_separator {
-  * { -GtkPaned-handle-size: 1px; }
-
-  .pane-separator,
-  .pane-separator:hover {
-    border-width: 0 1px 1px 1px;
-    border-style: solid;
+GtkPaned.wide { // this is for the paned with wide separator
+  -GtkPaned-handle-size: 5; // wider separator here
+  margin: 0; // no need of the invisible drag area so, reset margin
+  .pane-separator {
+    background-color: transparent;
+    border-style: none solid;
     border-color: $borders_color;
+    border-width: 1px;
   }
+  &.vertical .pane-separator { border-style: solid none;}
 }
 
 //
