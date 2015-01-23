@@ -1347,11 +1347,12 @@ GtkTreeView.view {
   -GtkTreeView-tree-line-width: 1;
   -GtkTreeView-tree-line-pattern: '';
   -GtkTreeView-expander-size: 16;
-  border-color: rgba(0, 0, 0, 0.13); }
-  GtkTreeView.view:insensitive {
-    color: #ababad; }
-    GtkTreeView.view:insensitive:selected {
-      color: #9fbffd; }
+  border-left-color: rgba(60, 60, 62, 0.15);
+  border-top-color: rgba(0, 0, 0, 0.1); }
+  GtkTreeView.view:selected, GtkTreeView.view:selected:focus, GtkTreeView.view:selected:hover {
+    border-radius: 0; }
+  GtkTreeView.view:selected {
+    border-left-color: rgba(255, 255, 255, 0.3); }
   GtkTreeView.view.expander {
     -gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
     color: #3c3c3e; }
