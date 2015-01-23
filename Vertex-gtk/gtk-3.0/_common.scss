@@ -249,11 +249,11 @@ GtkFlowBox .grid-child {
   }
 
   // Linked Entries
-  .linked & {
+  .linked > & {
     padding: 5px 8px 5px;
     @extend %entry_linked;
   }
-  .linked.vertical & {
+  .linked.vertical > & {
     @extend %entry_linked_vertical;
   }
 
@@ -564,11 +564,11 @@ $_dot_color: if($variant=='light', $selected_bg_color,
 
   .primary-toolbar & { icon-shadow: none; } // tango icons don't need shadows
 
-  .linked &,
-  .linked &:hover { @extend %linked; }
+  .linked > &,
+  .linked > &:hover { @extend %linked; }
 
-  .linked.vertical &,
-  .linked.vertical &:hover { @extend %linked_vertical; }
+  .linked.vertical > &,
+  .linked.vertical > &:hover { @extend %linked_vertical; }
 }
 
 // all the following is for the +|- buttons on inline toolbars, that way
@@ -776,9 +776,6 @@ $_dot_color: if($variant=='light', $selected_bg_color,
 .linked.vertical > .spinbutton .button:last-child:hover, .linked.vertical > .spinbutton .button:hover,
 .linked.vertical > .spinbutton .button:last-child:active, .linked.vertical > .spinbutton .button:active,
 .linked.vertical > .spinbutton .button:last-child:insensitive, .linked.vertical > .spinbutton .button:insensitive {
-  border-image: none;
-  border-width: 0;
-  border-radius: 0;
   background-image: none;
   background-color: transparent;
   box-shadow: inset 1px 0 transparentize(black, 0.9);
@@ -1175,7 +1172,7 @@ GtkComboBox.combobox-entry .button:only-child,
       border-image: none;
     }
   }
-  .linked .entry { @extend %dark_entry_linked; }
+  .linked > .entry { @extend %dark_entry_linked; }
 
 // Buttons
   .button {
@@ -1236,8 +1233,8 @@ GtkComboBox.combobox-entry .button:only-child,
       }
     }
   }
-  .linked .button,
-  .linked .button:hover { @extend %dark_linked; }
+  .linked > .button,
+  .linked > .button:hover { @extend %dark_linked; }
 
 // Comboboxes
   GtkComboBox {
@@ -1470,7 +1467,7 @@ GtkComboBox.combobox-entry .button:only-child,
 .path-bar .button GtkLabel:only-child { padding-right: 0; padding-left: 0; }
 
 //
-// Tree Views *
+// Tree Views
 //
 GtkTreeView.view {
   -GtkTreeView-grid-line-width: 1;
