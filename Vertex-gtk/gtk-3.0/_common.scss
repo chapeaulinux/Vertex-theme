@@ -207,7 +207,7 @@ GtkFlowBox .grid-child {
 //
 .entry {
   padding: 4px 8px 5px;
-  transition: all 200ms ease-out;
+  transition: all 200ms $ease-out-quad;
   @include entry(normal);
 
   // icons inside the entry
@@ -344,7 +344,7 @@ $_dot_color: if($variant=='light', $selected_bg_color,
 
 .button {
 
-  $_button_transition: all 200ms ease-out;
+  $_button_transition: all 200ms $ease-out-quad;
 
   padding: 4px 8px 5px;
   transition: $_button_transition;
@@ -1739,7 +1739,7 @@ column-header.button.dnd { // for treeview-like derive widgets
   -GtkNotebook-has-tab-gap: false;
   -GtkWidget-focus-padding: 0;
   -GtkWidget-focus-line-width: 0;
-  transition: all 200ms ease-out;
+  transition: all 200ms $ease-out-quad;
   &.frame {
     border: 1px solid $borders_color;
     border-radius: 2px;
@@ -2472,6 +2472,12 @@ GtkScrolledWindow GtkViewport.frame { border-style: none; }
       &:active, &:checked {}
     }
   }
+}
+
+// transition
+.list-row, list-row.button {
+  transition: all 300ms $ease-out-quad;
+  &:hover { transition: none; }
 }
 
 //
