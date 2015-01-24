@@ -2939,3 +2939,39 @@ GtkVolumeButton.button { padding: 8px; }
 .monospace {
   font: Monospace;
 }
+
+//
+// Overshoot
+//
+.overshoot {
+  @each $_dir in (top, bottom, left, right) {
+    &.#{$_dir} {
+      background: linear-gradient(to #{$_dir}, transparentize($selected_bg_color, 1), transparentize($selected_bg_color, 0.8));
+      background-repeat: no-repeat;
+    }
+  }
+  &.top, &.bottom { background-size: 100% 20%; }
+  &.left, &.right { background-size: 20% 100%; }
+
+  &.top { background-position: center top; }
+  &.bottom { background-position: center bottom; }
+  &.left { background-position: left center; }
+  &.right { background-position: right center; }
+}
+
+//
+// Undershoot
+//
+.undershoot {
+  @each $_dir, $_gradient_dir in (top, bottom),
+                                 (bottom, top),
+                                 (left, right),
+                                 (right, left) {
+
+    &.#{$_dir} {
+      background-color: transparent;
+      background-image: linear-gradient(to #{$_gradient_dir}, rgba(0, 0, 0, 0.07), transparent 4px, transparent);
+    }
+  }
+  &.sidebar { background-color: transparent; }
+}

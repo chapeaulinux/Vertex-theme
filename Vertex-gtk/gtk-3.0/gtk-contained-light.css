@@ -2593,6 +2593,46 @@ GtkVolumeButton.button {
 .monospace {
   font: Monospace; }
 
+.overshoot.top {
+  background: linear-gradient(to top, rgba(64, 128, 251, 0), rgba(64, 128, 251, 0.2));
+  background-repeat: no-repeat; }
+.overshoot.bottom {
+  background: linear-gradient(to bottom, rgba(64, 128, 251, 0), rgba(64, 128, 251, 0.2));
+  background-repeat: no-repeat; }
+.overshoot.left {
+  background: linear-gradient(to left, rgba(64, 128, 251, 0), rgba(64, 128, 251, 0.2));
+  background-repeat: no-repeat; }
+.overshoot.right {
+  background: linear-gradient(to right, rgba(64, 128, 251, 0), rgba(64, 128, 251, 0.2));
+  background-repeat: no-repeat; }
+.overshoot.top, .overshoot.bottom {
+  background-size: 100% 20%; }
+.overshoot.left, .overshoot.right {
+  background-size: 20% 100%; }
+.overshoot.top {
+  background-position: center top; }
+.overshoot.bottom {
+  background-position: center bottom; }
+.overshoot.left {
+  background-position: left center; }
+.overshoot.right {
+  background-position: right center; }
+
+.undershoot.top {
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.07), transparent 4px, transparent); }
+.undershoot.bottom {
+  background-color: transparent;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.07), transparent 4px, transparent); }
+.undershoot.left {
+  background-color: transparent;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.07), transparent 4px, transparent); }
+.undershoot.right {
+  background-color: transparent;
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.07), transparent 4px, transparent); }
+.undershoot.sidebar {
+  background-color: transparent; }
+
 .overlay-bar {
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: 2px;
