@@ -1313,6 +1313,9 @@ GtkComboBox {
         -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
         color: rgba(255, 255, 255, 0.5);
         icon-shadow: none; }
+  .titlebar GtkColorButton.button,
+  .header-bar GtkColorButton.button {
+    padding: 3px; }
   .titlebar > .separator, .sidebar .titlebar > .view.separator, .titlebar .titlebar > .separator, .titlebar .sidebar .titlebar > .view.separator,
   .header-bar > .separator,
   .sidebar .header-bar > .view.separator,
@@ -1668,19 +1671,9 @@ GtkComboBox {
 .primary-toolbar GtkSwitch.trough:active:insensitive, .titlebar GtkSwitch.trough:active:insensitive,
 .header-bar GtkSwitch.trough:active:insensitive {
   background-image: -gtk-scaled(url("assets/switch-active-insensitive-dark.png"), url("assets/switch-active-insensitive-dark@2.png")); }
-.primary-toolbar GtkColorSwatch, .titlebar GtkColorSwatch,
-.header-bar GtkColorSwatch {
+.primary-toolbar GtkColorButton.button GtkColorSwatch.overlay, .titlebar GtkColorButton.button GtkColorSwatch.overlay,
+.header-bar GtkColorButton.button GtkColorSwatch.overlay {
   border-color: #171819; }
-  .primary-toolbar GtkColorSwatch:hover, .titlebar GtkColorSwatch:hover,
-  .header-bar GtkColorSwatch:hover {
-    border-color: #171819; }
-.primary-toolbar GtkColorButton.button, .titlebar GtkColorButton.button,
-.header-bar GtkColorButton.button {
-  padding: 4px; }
-  .primary-toolbar GtkColorButton.button GtkColorSwatch, .titlebar GtkColorButton.button GtkColorSwatch,
-  .header-bar GtkColorButton.button GtkColorSwatch {
-    border-radius: 1.5px;
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.15); }
 
 .primary-toolbar .linked > .entry, .titlebar .linked > .entry,
 .header-bar .linked > .entry, .primary-toolbar GtkComboBox.combobox-entry .entry, .titlebar GtkComboBox.combobox-entry .entry,
@@ -2878,13 +2871,13 @@ GtkInfoBar {
   color: inherit; }
 
 GtkColorSwatch {
-  box-shadow: inset 0 1px rgba(0, 0, 0, 0.1); }
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.1), 0 1px white; }
   :selected GtkColorSwatch {
     box-shadow: none; }
     :selected GtkColorSwatch.overlay, :selected GtkColorSwatch.overlay:hover {
-      border-color: #ffffff; }
+      border-color: rgba(0, 0, 0, 0.6); }
   GtkColorSwatch:selected {
-    box-shadow: inset 0 1px rgba(0, 0, 0, 0.1); }
+    box-shadow: inset 0 1px rgba(0, 0, 0, 0.1), 0 1px white; }
   GtkColorSwatch.top {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
@@ -2901,12 +2894,12 @@ GtkColorSwatch {
     border-radius: 3px; }
   GtkColorSwatch:hover, GtkColorSwatch:hover:selected {
     background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0) 50%);
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), inset 0 -1px rgba(0, 0, 0, 0.1); }
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.25), 0 1px white; }
   GtkColorEditor GtkColorSwatch {
     border-radius: 3px; }
     GtkColorEditor GtkColorSwatch:hover {
       background-image: none;
-      box-shadow: inset 0 1px rgba(0, 0, 0, 0.1); }
+      box-shadow: inset 0 1px rgba(0, 0, 0, 0.1), 0 1px white; }
   GtkColorSwatch.color-dark {
     color: white;
     outline-color: rgba(0, 0, 0, 0.3); }
@@ -2918,8 +2911,7 @@ GtkColorSwatch {
     GtkColorSwatch.overlay:hover, GtkColorSwatch.overlay:selected:hover {
       border-color: rgba(0, 0, 0, 0.5); }
   GtkColorSwatch#add-color-button {
-    border-style: solid;
-    border-width: 1px;
+    box-shadow: none;
     color: #3c3c3e;
     outline-color: rgba(60, 60, 62, 0.3);
     background-image: linear-gradient(to bottom, #f4f4f4, #e2e2e4);

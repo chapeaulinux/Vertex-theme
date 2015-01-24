@@ -1313,6 +1313,9 @@ GtkComboBox {
         -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
         color: rgba(255, 255, 255, 0.5);
         icon-shadow: none; }
+  .titlebar GtkColorButton.button,
+  .header-bar GtkColorButton.button {
+    padding: 3px; }
   .tiled .titlebar, .maximized .titlebar, .tiled
   .header-bar, .maximized
   .header-bar {
@@ -2330,13 +2333,13 @@ GtkInfoBar {
   color: inherit; }
 
 GtkColorSwatch {
-  box-shadow: inset 0 1px rgba(0, 0, 0, 0.1); }
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.1), 0 1px rgba(255, 255, 255, 0.15); }
   :selected GtkColorSwatch {
     box-shadow: none; }
     :selected GtkColorSwatch.overlay, :selected GtkColorSwatch.overlay:hover {
-      border-color: #ffffff; }
+      border-color: rgba(0, 0, 0, 0.6); }
   GtkColorSwatch:selected {
-    box-shadow: inset 0 1px rgba(0, 0, 0, 0.1); }
+    box-shadow: inset 0 1px rgba(0, 0, 0, 0.1), 0 1px rgba(255, 255, 255, 0.15); }
   GtkColorSwatch.top {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
@@ -2353,12 +2356,12 @@ GtkColorSwatch {
     border-radius: 3px; }
   GtkColorSwatch:hover, GtkColorSwatch:hover:selected {
     background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0) 50%);
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), inset 0 -1px rgba(0, 0, 0, 0.4); }
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.25), 0 1px rgba(255, 255, 255, 0.15); }
   GtkColorEditor GtkColorSwatch {
     border-radius: 3px; }
     GtkColorEditor GtkColorSwatch:hover {
       background-image: none;
-      box-shadow: inset 0 1px rgba(0, 0, 0, 0.1); }
+      box-shadow: inset 0 1px rgba(0, 0, 0, 0.1), 0 1px rgba(255, 255, 255, 0.15); }
   GtkColorSwatch.color-dark {
     color: white;
     outline-color: rgba(0, 0, 0, 0.3); }
@@ -2370,8 +2373,7 @@ GtkColorSwatch {
     GtkColorSwatch.overlay:hover, GtkColorSwatch.overlay:selected:hover {
       border-color: black; }
   GtkColorSwatch#add-color-button {
-    border-style: solid;
-    border-width: 1px;
+    box-shadow: none;
     color: #F3F3F5;
     outline-color: rgba(243, 243, 245, 0.3);
     background-image: linear-gradient(to bottom, #4f5053, #343436);
