@@ -7413,6 +7413,27 @@
        id="linearGradient7939"
        xlink:href="#linearGradient8539"
        inkscape:collect="always" />
+    <linearGradient
+       gradientUnits="userSpaceOnUse"
+       y2="17"
+       x2="7"
+       y1="17"
+       x1="9"
+       id="linearGradient3788-5"
+       xlink:href="#linearGradient3782-6"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient3782-6"
+       inkscape:collect="always">
+      <stop
+         id="stop3784-95"
+         offset="0"
+         style="stop-color:#858587;stop-opacity:1" />
+      <stop
+         id="stop3786-6"
+         offset="1"
+         style="stop-color:#777779;stop-opacity:1" />
+    </linearGradient>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -7422,15 +7443,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="5.6568542"
-     inkscape:cx="410.3054"
-     inkscape:cy="494.11285"
+     inkscape:cx="66.623343"
+     inkscape:cy="170.92294"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
      showguides="false"
      inkscape:guide-bbox="true"
-     inkscape:window-width="1366"
-     inkscape:window-height="740"
+     inkscape:window-width="1920"
+     inkscape:window-height="1052"
      inkscape:window-x="0"
      inkscape:window-y="23"
      inkscape:window-maximized="1"
@@ -7511,7 +7532,7 @@
     <g
        id="scrollbar-slider-hover"
        inkscape:label="#g7281"
-       transform="translate(36,-3)">
+       transform="translate(46,-3)">
       <rect
          y="620.36218"
          x="-22"
@@ -8509,7 +8530,8 @@
     </g>
     <g
        id="scrollbar-slider"
-       inkscape:label="#g7273">
+       inkscape:label="#g7273"
+       transform="translate(10,0)">
       <rect
          transform="translate(0,542.36218)"
          y="75"
@@ -8517,7 +8539,7 @@
          height="32"
          width="15"
          id="rect7271"
-         style="fill:none;fill-opacity:1;stroke:none" />
+         style="fill:none;stroke:none" />
       <g
          inkscape:label="Ebene 1"
          id="29"
@@ -10885,71 +10907,6 @@
          d="M 11,1 C 5.4771525,1 1,5.477153 1,11 1,11.167378 1.0231211,11.334638 1.03125,11.5 1.291343,6.209049 5.6445307,2 11,2 16.355469,2 20.708657,6.209049 20.96875,11.5 20.976879,11.334638 21,11.167378 21,11 21,5.477153 16.522847,1 11,1 z"
          style="fill:#ffffff;fill-opacity:1;stroke:none" />
     </g>
-    <g
-       style="display:inline"
-       id="scale-slider-down-backdrop"
-       inkscape:label="#g3764"
-       transform="translate(-332,575.36224)">
-      <g
-         transform="matrix(1,0,0,-1,60,116)"
-         id="g5640-8-3"
-         style="display:inline">
-        <path
-           sodipodi:type="inkscape:offset"
-           inkscape:radius="0"
-           inkscape:original="M 359.40625 8.5 L 352.5 17.4375 L 352.5 25.28125 C 352.5 26.518466 353.46379 27.5 354.65625 27.5 L 365.34375 27.5 C 366.53622 27.5 367.5 26.518465 367.5 25.28125 L 367.5 17.4375 L 360.4375 8.53125 L 359.40625 8.5 z "
-           xlink:href="#path5960"
-           style="color:#000000;fill:#f7f7f7;fill-opacity:1;fill-rule:nonzero;stroke:#a7a7a7;stroke-width:0.99999994;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-           id="path5526-1-3"
-           inkscape:href="#path5960"
-           d="m 359.40625,8.5 -6.90625,8.9375 0,7.84375 c 0,1.237216 0.96379,2.21875 2.15625,2.21875 l 10.6875,0 c 1.19247,0 2.15625,-0.981535 2.15625,-2.21875 l 0,-7.84375 L 360.4375,8.53125 359.40625,8.5 z"
-           transform="translate(0,40)" />
-        <path
-           sodipodi:type="inkscape:offset"
-           inkscape:radius="0"
-           inkscape:original="M 359.875 9.5 L 353.5 17.75 L 353.5 25.28125 C 353.5 26.001585 354.00994 26.5 354.65625 26.5 L 365.34375 26.5 C 365.99007 26.5 366.5 26.001589 366.5 25.28125 L 366.5 17.78125 L 359.9375 9.53125 L 359.875 9.5 z "
-           xlink:href="#path4518"
-           style="opacity:0.8;color:#000000;fill:none;stroke:url(#radialGradient5745);stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-           id="path5536-5-2"
-           inkscape:href="#path4518"
-           d="m 359.875,9.5 -6.375,8.25 0,7.53125 c 0,0.720335 0.50994,1.21875 1.15625,1.21875 l 10.6875,0 c 0.64632,0 1.15625,-0.498411 1.15625,-1.21875 l 0,-7.5 -6.5625,-8.25 L 359.875,9.5 z"
-           transform="translate(0,40)" />
-      </g>
-      <rect
-         ry="0"
-         rx="0"
-         y="48"
-         x="412"
-         height="20"
-         width="16"
-         id="rect5832-0-2-8-5-8"
-         style="color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
-    </g>
-    <g
-       style="display:inline"
-       id="scale-slider-up-backdrop"
-       inkscape:label="#g4692"
-       transform="translate(-310,615.36223)">
-      <path
-         transform="translate(60,5.9604645e-8)"
-         d="m 359.40625,8.5 -6.90625,8.9375 0,7.84375 c 0,1.237216 0.96379,2.21875 2.15625,2.21875 l 10.6875,0 c 1.19247,0 2.15625,-0.981535 2.15625,-2.21875 l 0,-7.84375 L 360.4375,8.53125 359.40625,8.5 z"
-         inkscape:href="#path5960"
-         id="path4563-8"
-         style="color:#000000;fill:#f7f7f7;fill-opacity:1;fill-rule:nonzero;stroke:#a7a7a7;stroke-width:0.99999994;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-         xlink:href="#path5960"
-         inkscape:original="M 359.40625 8.5 L 352.5 17.4375 L 352.5 25.28125 C 352.5 26.518466 353.46379 27.5 354.65625 27.5 L 365.34375 27.5 C 366.53622 27.5 367.5 26.518465 367.5 25.28125 L 367.5 17.4375 L 360.4375 8.53125 L 359.40625 8.5 z "
-         inkscape:radius="0"
-         sodipodi:type="inkscape:offset" />
-      <rect
-         ry="0"
-         rx="0"
-         y="8"
-         x="412"
-         height="20"
-         width="16"
-         id="rect5832-0-2-8-0"
-         style="color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
-    </g>
     <rect
        style="fill:#353638;fill-opacity:1;stroke:#a7a7a7;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:0;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect17515"
@@ -11896,7 +11853,7 @@
     <g
        id="scrollbar-slider-dark"
        inkscape:label="#g7474"
-       transform="translate(-20,-5e-5)">
+       transform="translate(-10,-5e-5)">
       <rect
          transform="translate(0,542.36218)"
          y="337"
@@ -11941,7 +11898,8 @@
     </g>
     <g
        id="scrollbar-slider-hover-dark"
-       inkscape:label="#g7457">
+       inkscape:label="#g7457"
+       transform="translate(10,0)">
       <rect
          transform="translate(0,542.36218)"
          y="337"
@@ -11949,7 +11907,7 @@
          height="32"
          width="15"
          id="rect7455"
-         style="fill:none;fill-opacity:1;stroke:none" />
+         style="fill:none;stroke:none" />
       <g
          inkscape:label="Ebene 1"
          id="35"
@@ -11964,7 +11922,7 @@
            rx="2"
            ry="2.0000174" />
         <rect
-           style="fill:url(#linearGradient3788-8);fill-opacity:1.0;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           style="fill:url(#linearGradient3788-8);fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
            id="rect3780-52"
            width="2"
            height="18"
@@ -12062,56 +12020,6 @@
            ry="0"
            transform="translate(0,1020.3622)" />
       </g>
-    </g>
-    <g
-       style="display:inline"
-       id="scale-slider-up-backdrop-dark"
-       inkscape:label="#g5067"
-       transform="translate(-332,747.36223)">
-      <path
-         transform="translate(60,130)"
-         d="m 359.40625,8.5 -6.90625,8.9375 0,7.84375 c 0,1.237216 0.96379,2.21875 2.15625,2.21875 l 10.6875,0 c 1.19247,0 2.15625,-0.981535 2.15625,-2.21875 l 0,-7.84375 L 360.4375,8.53125 359.40625,8.5 z"
-         inkscape:href="#path5960"
-         id="path4728-1-5"
-         style="color:#000000;fill:#313335;fill-opacity:1;fill-rule:nonzero;stroke:#171717;stroke-width:0.99999994000000003;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-         xlink:href="#path5960"
-         inkscape:original="M 359.40625 8.5 L 352.5 17.4375 L 352.5 25.28125 C 352.5 26.518466 353.46379 27.5 354.65625 27.5 L 365.34375 27.5 C 366.53622 27.5 367.5 26.518465 367.5 25.28125 L 367.5 17.4375 L 360.4375 8.53125 L 359.40625 8.5 z "
-         inkscape:radius="0"
-         sodipodi:type="inkscape:offset" />
-      <rect
-         ry="0"
-         rx="0"
-         y="138"
-         x="412"
-         height="20"
-         width="16"
-         id="rect5832-0-2-4-5-1"
-         style="color:#bebebe;fill:none;stroke:none;stroke-width:1.78124988;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:new" />
-    </g>
-    <g
-       style="display:inline"
-       id="scale-slider-down-backdrop-dark"
-       inkscape:label="#g5871"
-       transform="translate(-310,707.36223)">
-      <path
-         sodipodi:type="inkscape:offset"
-         inkscape:radius="0"
-         inkscape:original="M 359.40625 8.5 L 352.5 17.4375 L 352.5 25.28125 C 352.5 26.518466 353.46379 27.5 354.65625 27.5 L 365.34375 27.5 C 366.53622 27.5 367.5 26.518465 367.5 25.28125 L 367.5 17.4375 L 360.4375 8.53125 L 359.40625 8.5 z "
-         xlink:href="#path5960"
-         style="color:#000000;fill:#313335;fill-opacity:1;fill-rule:nonzero;stroke:#171717;stroke-width:0.99999994000000003;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-         id="path4728-8-1-4"
-         inkscape:href="#path5960"
-         d="m 359.40625,8.5 -6.90625,8.9375 0,7.84375 c 0,1.237216 0.96379,2.21875 2.15625,2.21875 l 10.6875,0 c 1.19247,0 2.15625,-0.981535 2.15625,-2.21875 l 0,-7.84375 L 360.4375,8.53125 359.40625,8.5 z"
-         transform="matrix(1,0,0,-1,60,206)" />
-      <rect
-         ry="0"
-         rx="0"
-         y="178"
-         x="412"
-         height="20"
-         width="16"
-         id="rect5832-0-2-4-5-6-0"
-         style="color:#bebebe;fill:none;stroke:none;stroke-width:1.78124988;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:new" />
     </g>
     <g
        transform="translate(9,951.36223)"
@@ -15960,7 +15868,7 @@
     <g
        id="scrollbar-slider-active"
        inkscape:label="#g7292"
-       transform="translate(45,-8)">
+       transform="translate(55,-8)">
       <rect
          y="625.36218"
          x="-21"
@@ -16003,7 +15911,7 @@
       </g>
     </g>
     <g
-       transform="matrix(0,1,-1,0,683.36223,613.36218)"
+       transform="matrix(0,1,-1,0,693.36223,617.36218)"
        id="scrollbar-slider-horizontal"
        inkscape:label="#g7273">
       <rect
@@ -16042,7 +15950,7 @@
     <g
        id="scrollbar-slider-horizontal-hover"
        inkscape:label="#g7281"
-       transform="matrix(0,1,-1,0,686.36218,647.36218)">
+       transform="matrix(0,1,-1,0,696.36218,651.36218)">
       <rect
          y="620.36218"
          x="-22"
@@ -16087,7 +15995,7 @@
     <g
        id="scrollbar-slider-horizontal-active"
        inkscape:label="#g7292"
-       transform="matrix(0,1,-1,0,691.36218,654.36218)">
+       transform="matrix(0,1,-1,0,701.36218,658.36218)">
       <rect
          y="625.36218"
          x="-21"
@@ -16130,7 +16038,7 @@
       </g>
     </g>
     <g
-       transform="translate(20,-5e-5)"
+       transform="translate(30,-5e-5)"
        id="scrollbar-slider-active-dark"
        inkscape:label="#g7439">
       <g
@@ -19787,7 +19695,7 @@
     <g
        id="scrollbar-slider-horizontal-dark"
        inkscape:label="#g7474"
-       transform="matrix(0,1,-1,0,945.36223,855.36218)">
+       transform="matrix(0,1,-1,0,955.36223,859.36218)">
       <rect
          transform="translate(0,542.36218)"
          y="337"
@@ -19831,7 +19739,7 @@
       </g>
     </g>
     <g
-       transform="matrix(0,1,-1,0,945.36223,873.36218)"
+       transform="matrix(0,1,-1,0,955.36223,877.36218)"
        id="scrollbar-slider-horizontal-hover-dark"
        inkscape:label="#g7457">
       <rect
@@ -19856,7 +19764,7 @@
            rx="2"
            ry="2.0000174" />
         <rect
-           style="fill:url(#linearGradient3788-8-9);fill-opacity:1.0;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           style="fill:url(#linearGradient3788-8-9);fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
            id="rect3780-52-1"
            width="2"
            height="18"
@@ -19868,7 +19776,7 @@
       </g>
     </g>
     <g
-       transform="matrix(0,1,-1,0,945.36223,891.36218)"
+       transform="matrix(0,1,-1,0,955.36223,895.36218)"
        id="scrollbar-slider-horizontal-active-dark"
        inkscape:label="#g7439">
       <g
@@ -22211,6 +22119,110 @@
          y="660.36218"
          rx="0"
          ry="0" />
+    </g>
+    <g
+       id="scrollbar-slider-overlay"
+       inkscape:label="#g7273"
+       transform="translate(0,-5e-5)">
+      <rect
+         y="619.36224"
+         x="8"
+         height="27.999987"
+         width="8"
+         id="rect7271-9"
+         style="fill:none;stroke:none" />
+      <g
+         inkscape:label="Ebene 1"
+         id="29-6"
+         transform="translate(4,-402.99997)">
+        <rect
+           style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;opacity:0.3"
+           id="rect2991-68"
+           width="4"
+           height="20.000017"
+           x="6"
+           y="1026.3622"
+           rx="2"
+           ry="2.0000174" />
+      </g>
+    </g>
+    <g
+       id="scrollbar-slider-overlay-horizontal"
+       inkscape:label="#g7273"
+       transform="matrix(0,1,-1,0,693.36221,609.36218)">
+      <rect
+         y="619.36218"
+         x="8"
+         height="27.999998"
+         width="8"
+         id="rect7271-9-6"
+         style="fill:none;stroke:none" />
+      <g
+         inkscape:label="Ebene 1"
+         id="29-6-3"
+         transform="translate(4,-402.99997)">
+        <rect
+           style="opacity:0.3;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           id="rect2991-68-6"
+           width="4"
+           height="20.000017"
+           x="6"
+           y="1026.3622"
+           rx="2"
+           ry="2.0000174" />
+      </g>
+    </g>
+    <g
+       id="scrollbar-slider-overlay-dark"
+       inkscape:label="#g7273"
+       transform="translate(0,261.99997)">
+      <rect
+         y="619.36218"
+         x="8"
+         height="27.999998"
+         width="8"
+         id="rect7271-9-9"
+         style="fill:none;stroke:none" />
+      <g
+         inkscape:label="Ebene 1"
+         id="29-6-2"
+         transform="translate(4,-402.99997)">
+        <rect
+           style="opacity:0.29999999999999999;fill:#969696;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           id="rect2991-68-2"
+           width="4"
+           height="20.000017"
+           x="6"
+           y="1026.3622"
+           rx="2"
+           ry="2.0000174" />
+      </g>
+    </g>
+    <g
+       id="scrollbar-slider-overlay-horizontal-dark"
+       inkscape:label="#g7273"
+       transform="matrix(0,1,-1,0,693.36221,871.36218)">
+      <rect
+         y="619.36218"
+         x="8"
+         height="27.999998"
+         width="8"
+         id="rect7271-9-6-1"
+         style="fill:none;stroke:none" />
+      <g
+         inkscape:label="Ebene 1"
+         id="29-6-3-4"
+         transform="translate(4,-402.99997)">
+        <rect
+           style="opacity:0.29999999999999999;fill:#969696;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           id="rect2991-68-6-5"
+           width="4"
+           height="20.000017"
+           x="6"
+           y="1026.3622"
+           rx="2"
+           ry="2.0000174" />
+      </g>
     </g>
   </g>
 </svg>

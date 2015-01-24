@@ -1969,6 +1969,16 @@ column-header.button.dnd { // for treeview-like derive widgets
 
   .button { border: none; }
 
+  // Overlay Scrollbars
+  &.overlay-indicator:not(.dragging):not(.hovering) {
+    -GtkRange-slider-width: 8px;
+
+    .slider { @include _border(scrollbar-slider-overlay#{$asset_suffix}, $prefix:assets, $radius: 0, $width: 5px 4px 5px 4px, $image-width: 6 4 6 4 / 6px 4px 6px 4px); }
+    &.horizontal .slider { @include _border(scrollbar-slider-overlay-horizontal#{$asset_suffix}, $prefix:assets, $radius: 0, $width: 4px 6px 4px 6px, $image-width: 4 6 4 6 / 4px 6px 4px 6px); }
+
+    .trough { border: none; }
+  }
+  // Normal Scrollbars / Overlay Scrollbars on Mouseover
   &.trough {
     @include _border(scrollbar-trough#{$asset_suffix}, $prefix:assets, $radius: 0, $width: 8px 7px 8px 8px, $image-width: 8 7 8 8 / 8px 7px 8px 8px);
 
