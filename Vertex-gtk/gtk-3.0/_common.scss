@@ -2980,7 +2980,7 @@ GtkVolumeButton.button { padding: 8px; }
 
     &.#{$_dir} {
       background-color: transparent;
-      background-image: linear-gradient(to #{$_gradient_dir}, rgba(0, 0, 0, 0.07), transparent 4px, transparent);
+      background-image: linear-gradient(to #{$_gradient_dir}, rgba(0, 0, 0, 0.12), transparent 4px, transparent);
     }
   }
   &.sidebar { background-color: transparent; }
