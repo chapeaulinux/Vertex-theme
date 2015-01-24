@@ -1738,7 +1738,8 @@ column-header .button, column-header .button:hover, column-header .button:active
       border-style: solid;
       border-color: transparent; }
     .scrollbar.overlay-indicator:not(.dragging):not(.hovering) .trough {
-      border: none; }
+      border: none;
+      background: none; }
   .scrollbar.trough {
     border-image: -gtk-scaled(url("assets/scrollbar-trough.png"), url("assets/scrollbar-trough@2.png")) 8 7 8 8/8px 7px 8px 8px stretch;
     border-radius: 0;
@@ -2290,16 +2291,6 @@ GtkFileChooserDialog .dialog-action-box {
   color: rgba(60, 60, 62, 0.8);
   icon-shadow: 0 1px white;
   text-shadow: 0 1px white; }
-  .sidebar .scrollbars-junction,
-  .sidebar .scrollbars-junction.frame,
-  .sidebar .scrollbar.trough, .sidebar .view .scrollbars-junction,
-  .sidebar .view .scrollbars-junction.frame,
-  .sidebar .view .scrollbar.trough {
-    box-shadow: none;
-    border-image: none;
-    border-color: transparent;
-    background-color: #fafafb;
-    background-image: none; }
 
 .sidebar-item {
   padding: 10px 4px; }

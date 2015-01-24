@@ -1976,7 +1976,10 @@ column-header.button.dnd { // for treeview-like derive widgets
     .slider { @include _border(scrollbar-slider-overlay#{$asset_suffix}, $prefix:assets, $radius: 0, $width: 5px 4px 5px 4px, $image-width: 6 4 6 4 / 6px 4px 6px 4px); }
     &.horizontal .slider { @include _border(scrollbar-slider-overlay-horizontal#{$asset_suffix}, $prefix:assets, $radius: 0, $width: 4px 6px 4px 6px, $image-width: 4 6 4 6 / 4px 6px 4px 6px); }
 
-    .trough { border: none; }
+    .trough {
+      border: none;
+      background: none;
+    }
   }
   // Normal Scrollbars / Overlay Scrollbars on Mouseover
   &.trough {
@@ -2589,15 +2592,6 @@ GtkFileChooserDialog {
   icon-shadow: 0 #{$shadow_pos}px $light_text_icon_shadow;
   text-shadow: 0 #{$shadow_pos}px $light_text_icon_shadow;
 
-  .scrollbars-junction,
-  .scrollbars-junction.frame,
-  .scrollbar.trough {
-    box-shadow: none;
-    border-image: none;
-  	border-color: transparent;
-  	background-color: $sidebar_bg;
-  	background-image: none;
-  }
   &:selected { @extend %selected_gradient; }
   &.separator { @extend .separator; }
 }
