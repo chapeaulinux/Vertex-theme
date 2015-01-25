@@ -183,6 +183,8 @@ GtkFlowBox .grid-child {
   icon-shadow: 0 -1px $osd_text_shadow;
 }
 
+.stack-switcher.osd { background-color: transparent; } // no background-color needed here
+                                                       // see gnome-weather
 //
 // Spinner Animation
 //
@@ -211,6 +213,7 @@ GtkFlowBox .grid-child {
   padding: 4px 8px 5px;
   transition: all 200ms $ease-out-quad;
   @include entry(normal);
+  background-color: $base_color; // fixes bug in abiword
 
   // icons inside the entry
   &.image {
@@ -375,7 +378,6 @@ $_dot_color: if($variant=='light', $selected_bg_color,
     @include button(active);
     transition-duration: 50ms;
   }
-
   &.flat:insensitive {
     @include button(undecorated);
   }
@@ -467,12 +469,12 @@ $_dot_color: if($variant=='light', $selected_bg_color,
         text-shadow: none;
         icon-shadow: none;
 
-        > GtkLabel { color: inherit; }
+        > GtkLabel, GtkLabel { color: inherit; }
 
         &:active, &:checked {
           background-image: linear-gradient(to bottom, transparentize(nth($b_color, 1), 0.1));
 
-          > GtkLabel { color: inherit; }
+          > GtkLabel, GtkLabel { color: inherit; }
         }
       }
     }
@@ -564,8 +566,6 @@ $_dot_color: if($variant=='light', $selected_bg_color,
 
   //inline-toolbar buttons
   .inline-toolbar & { @extend %linked; }
-
-  .primary-toolbar & { icon-shadow: none; } // tango icons don't need shadows
 
   .linked > &,
   .linked > &:hover { @extend %linked; }
@@ -1037,6 +1037,13 @@ GtkComboBox.combobox-entry .button:only-child,
 
     &:backdrop { opacity: 0.3; }
   }
+  // Fix pushed buttons which inherit their color from .title
+  .title.button:active, .title.button:checked,
+  .button:active GtkLabel.title, .button:checked GtkLabel.title {
+    color: $button_active_fg;
+    text-shadow: 0 -1px $button_active_text_shadow;
+    icon-shadow: 0 -1px $button_active_text_shadow;
+  }
   .header-bar-separator,
   & > GtkBox > .separator.vertical,
   .left:dir(rtl) .header-bar-separator,
@@ -1138,6 +1145,8 @@ GtkComboBox.combobox-entry .button:only-child,
     padding: 3px;
   }
 
+  .search-bar { background-color: $primary_toolbar_bg_a; } // Fixes gnome-documents search-bar
+
   @if $darker=='true' {
 
     > .separator, .titlebar > .separator { color: rgba(0, 0, 0, 0.3); } // Separator in Gnome Tweak Tool
@@ -1229,12 +1238,12 @@ GtkComboBox.combobox-entry .button:only-child,
           text-shadow: none;
           icon-shadow: none;
 
-          > GtkLabel { color: inherit; }
+          > GtkLabel, GtkLabel { color: inherit; }
 
           &:active, &:checked {
             background-image: linear-gradient(to bottom, transparentize(nth($b_color, 1), 0.1));
 
-            > GtkLabel { color: inherit; }
+            > GtkLabel, GtkLabel { color: inherit; }
           }
         }
       }
@@ -1444,6 +1453,9 @@ GtkComboBox.combobox-entry .button:only-child,
     &:active, &:checked { @include linked(button, active, single, $dark:'true'); }
   }
 }
+
+.primary-toolbar .button,                             // tango icons don't need shadows
+.primary-toolbar .button.flat { icon-shadow: none; }  // defined here so it doesn't get overriden
 
 //
 // Pathbars
@@ -2473,16 +2485,30 @@ GtkScrolledWindow GtkViewport.frame { border-style: none; }
   .button {
 
     &:focus { @include _border(button-normal-border#{$asset_suffix}); }
-    &.flat {
+    &.flat, &.flat:focus {
+      @include button(undecorated);
+
       color: $selected_fg_color;
+      outline-color: transparentize($selected_fg_color, 0.7);
+      text-shadow: 0 -1px $dark_text_icon_shadow;
+      icon-shadow: none;
+      &:hover {
+        @include button(hover);      
+      }
+      &:active, &:checked {
+        @include button(active, $border:'false');      
+      }
+      &:insensitive {
+        color: transparentize($selected_fg_color, 0.5);
+        text-shadow: none;
+      }
     }
-    &:hover {}
-    &:active, &:checked {
+    &:active, &:checked,
+    &:insensitive:active, &:insensitive:checked,
+    &.flat:active, &.flat:checked,
+    &.flat:focus:active, &.flat:focus:checked {
       @if $variant == 'light' { @include _border(button-active-border-selected); }
       @if $variant == 'dark' { @include _border(button-active-border-dark); }
-    }
-    &:insensitive {
-      &:active, &:checked {}
     }
   }
 }
