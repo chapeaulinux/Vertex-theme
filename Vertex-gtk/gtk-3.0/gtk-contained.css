@@ -1512,13 +1512,6 @@ GtkComboBox {
   .primary-toolbar .spinbutton .button:active, .header-bar .spinbutton .button:active {
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
     icon-shadow: 0 -1px rgba(0, 0, 0, 0.4); }
-.primary-toolbar .pane-separator, .header-bar .pane-separator {
-  background-color: transparent;
-  background-image: url("assets/pane-separator-grip-dark.svg");
-  background-repeat: no-repeat;
-  background-position: center; }
-  .primary-toolbar .pane-separator:hover, .header-bar .pane-separator:hover {
-    background-image: url("assets/pane-separator-grip-prelight-dark.svg"); }
 .primary-toolbar .scale.trough, .header-bar .scale.trough {
   margin: 6px 0 5px 0;
   background-image: linear-gradient(to bottom, #242525, #37383A);
@@ -3684,9 +3677,6 @@ MarlinViewWindow *:selected:focus {
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
   icon-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
   border-radius: 0; }
-
-NoiseLibraryWindow GtkPane.pane-separator {
-  background-image: linear-gradient(to bottom, #b9b9b9); }
 
 NoiseGridView .cell:selected {
   text-shadow: none; }

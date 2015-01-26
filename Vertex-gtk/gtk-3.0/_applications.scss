@@ -596,10 +596,6 @@ MarlinViewWindow *:selected:focus {
 //
 // Noise
 //
-NoiseLibraryWindow GtkPane.pane-separator {	
-  background-image: linear-gradient(to bottom, $borders_color);
-}
-
 NoiseGridView .cell:selected { text-shadow: none; }
 
 //

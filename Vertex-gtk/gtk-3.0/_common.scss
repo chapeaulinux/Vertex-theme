@@ -1336,16 +1336,6 @@ GtkComboBox.combobox-entry .button:only-child,
     }
   }
 
-// Pane Separator
-  .pane-separator {
-    background-color: transparent;
-    background-image: url("assets/pane-separator-grip-dark.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-
-    &:hover { background-image: url("assets/pane-separator-grip-prelight-dark.svg"); }
-    }
-
 // Scale
   .scale.trough {
     margin: 6px 0 5px 0;
