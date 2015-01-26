@@ -181,19 +181,8 @@ GeditWindow {
 
 GeditStatusbar {
   border-top: 1px solid $borders_color;
-  background-color: transparent;
-  box-shadow: inset 0 1px $highlight_shadow;
 
-  @if $variant==light {
-    background-image: linear-gradient(to bottom,
-                                      $bg_color,
-                                      darken($bg_color, 4%));
-  }
-  @else {
-    background-image: linear-gradient(to bottom,
-                                      lighten($bg_color, 1%),
-                                      darken($bg_color, 2%));
-  }
+  @extend %action-bar-background;
 }
 
 GeditStatusMenuButton.button.flat,
@@ -429,17 +418,62 @@ BirdieWidgetsTweetList * {
 }
 
 //
-// Marlin
+// Marlin / Pantheon Files
 //
-MarlinViewChromeLocationBar .image {
-  color: red;
+MarlinViewWindow GtkIconView.view:selected,
+MarlinViewWindow GtkIconView.view:selected:focus,
+MarlinViewWindow GtkIconView.view:selected:hover,
+MarlinViewWindow GtkIconView.view:selected:focus:hover {
+  background-color: transparent;
+}
+
+MarlinViewWindow FMListView,
+MarlinViewWindow FMColumnView {
+  outline-color: transparent;
+}
+
+MarlinViewWindow FMListView .cell:selected,
+MarlinViewWindow FMListView .cell:selected:focus,
+MarlinViewWindow FMListView .cell:selected:hover,
+MarlinViewWindow FMListView .cell:selected:focus:hover,
+MarlinViewWindow FMColumnView .cell:selected,
+MarlinViewWindow FMColumnView .cell:selected:focus,
+MarlinViewWindow FMColumnView .cell:selected:hover,
+MarlinViewWindow FMColumnView .cell:selected:focus:hover {
+  background-image: none;
+  border: none;
+}
+
+MarlinViewWindow *:selected,
+MarlinViewWindow *:selected:focus {
+	color: $selected_fg_color;
+	background-color: $selected_bg_color;
+  outline-color: transparent;
+}
+
+.marlin-pathbar.pathbar {
+  @include entry(normal, $darker);
+
+  &.image { color: red; }
+
+  &:focus { @include entry(focus, $darker) }
+  &:insensitive { @include entry(insensitive, $darker) }
+  &:active, &:checked {
+    background-image: none;
+    background-color: transparentize(black, 0.85);
+  }
 }
 
 //
 // Gala
 //
 .gala-notification {
-  @extend .toolbar.osd;
+    border: 1px solid transparentize(black, 0.25);
+    border-radius: 3px;
+	  box-shadow: inset 0 1px transparentize(white, 0.9),
+		            inset 0 -1px transparentize(black, 0.9);
+    background-image: linear-gradient(to bottom, opacify($osd_toolbar_bg_a, 0.15), opacify($osd_toolbar_bg_b, 0.15));
+    background-color: transparent;
 
   .title, .label {
     color: $osd_fg_color;
@@ -454,8 +488,8 @@ MarlinViewChromeLocationBar .image {
   background-color: transparent;
   color: white;
   font-weight: bold;
-  text-shadow: 0 1px 2px transparentize(black, 0.6);
-  icon-shadow: 0 1px 2px transparentize(black, 0.6);
+  text-shadow: 0 1px 2px transparentize(black, 0.4);
+  icon-shadow: 0 1px 2px transparentize(black, 0.4);
 }
 
 .panel-shadow {
@@ -484,14 +518,16 @@ MarlinViewChromeLocationBar .image {
 
 .panel .menu .window-frame.menu.csd,
 .panel .menu .window-frame.popup.csd {
-    box-shadow: 0 0 0 1px transparentize(black, 0.8),
-                0 10px 20px transparentize(black, 0.81),
-                0 6px 6px transparentize(black, 0.77);
+  box-shadow: 0 0 0 1px transparentize(black, 0.8),
+              0 10px 20px transparentize(black, 0.81),
+              0 6px 6px transparentize(black, 0.77);
 }
 
 .composited-indicator {
   background-color: transparent;
   color: white;
+  text-shadow: 0 1px 2px transparentize(black, 0.4);
+  icon-shadow: 0 1px 2px transparentize(black, 0.4);
 }
 
 .composited-indicator > GtkWidget > GtkWidget:first-child {
@@ -509,6 +545,11 @@ MarlinViewChromeLocationBar .image {
   box-shadow: none;
 }
 
+.composited-indicator > .popup > .menu {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
 //
 // Slingshot
 //
@@ -518,13 +559,23 @@ MarlinViewChromeLocationBar .image {
   box-shadow: none;
   border-image: none;
   background-image: none;
+  icon-shadow: none;
 }
 
 .app:hover {
   background-color: transparentize(black, 0.92);
+  icon-shadow: none;
 }
+
 .app:focus {
   background-color: transparentize(black, 0.8);
+  icon-shadow: none;
+}
+
+.app:active {
+  color: $fg_color;
+  text-shadow: 0 1px $light_text_icon_shadow;
+  icon-shadow: none;
 }
  
 .search-item {
@@ -545,15 +596,18 @@ MarlinViewChromeLocationBar .image {
 //
 // Noise
 //
-NoiseLibraryWindow GtkPaned.vertical,
-NoiseLibraryWindow GtkPaned.horizontal,
-NoiseLibraryWindow GtkPaned.vertical:hover,
-NoiseLibraryWindow GtkPaned.horizontal:hover {	
-  -GtkPaned-handle-size: 1;
-  background-color: $borders_color;
-  background-image: none;
+NoiseLibraryWindow GtkPane.pane-separator {	
+  background-image: linear-gradient(to bottom, $borders_color);
 }
 
-NoiseInfoPanel.content-view {
-  background-color: $base_color;
+NoiseGridView .cell:selected { text-shadow: none; }
+
+//
+// Switchboard
+//
+SwitchboardCategoryView .view:selected,
+SwitchboardCategoryView .view:selected:focus {
+  color: $fg_color;
+  text-shadow: none;
+  icon-shadow: none;
 }
