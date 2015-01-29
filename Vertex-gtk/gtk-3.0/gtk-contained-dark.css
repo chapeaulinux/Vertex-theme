@@ -1015,7 +1015,6 @@ GtkComboBox {
   padding: 4px;
   color: #F3F3F5;
   background-image: linear-gradient(to bottom, #454649, #3b3c3f);
-  border: 1px solid #171819;
   border-width: 0 0 1px 0;
   border-image: linear-gradient(to bottom, #454649, #171819) 1 0 1 0; }
   .primary-toolbar:insensitive {
@@ -1959,7 +1958,7 @@ GtkCheckButton.text-button, GtkRadioButton.text-button {
       border-style: solid;
       border-color: transparent; }
       .scale.trough.highlight:insensitive {
-        background-image: linear-gradient(to bottom, #2e2e30, #3c3e40); }
+        background-image: linear-gradient(to bottom, #3a3b3d, #46484a); }
     .scale.trough:insensitive {
       box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
       background-image: linear-gradient(to bottom, #353638, #3c3e40); }
@@ -1979,7 +1978,7 @@ GtkCheckButton.text-button, GtkRadioButton.text-button {
         border-style: solid;
         border-color: transparent; }
         .scale.trough.vertical.highlight:insensitive {
-          background-image: linear-gradient(to right, #2e2e30, #3c3e40); }
+          background-image: linear-gradient(to right, #3a3b3d, #46484a); }
       .scale.trough.vertical:insensitive {
         box-shadow: inset 1px 0 2px rgba(0, 0, 0, 0.1);
         background-image: linear-gradient(to right, #353638, #3c3e40); }
@@ -2792,8 +2791,8 @@ GraniteWidgetsPopOver {
   margin: 0; }
 
 .popover_bg {
-  background-color: #333335;
-  border: 1px solid rgba(0, 0, 0, 0.3); }
+  background-image: linear-gradient(to bottom, #333335);
+  border: 1px solid rgba(0, 0, 0, 0.7); }
 
 GraniteWidgetsPopOver .sidebar.view,
 GraniteWidgetsPopOver * {
@@ -3027,6 +3026,13 @@ EphyWindow .floating-bar {
 .cell.baobab-level-cell:selected:hover {
   background-image: none; }
 
+BaobabRingschart.subfolder-tip {
+  border-radius: 2px;
+  border-style: none;
+  padding: 3px 3px 3px 3px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffffff; }
+
 LibraryWindow GtkPaned.horizontal {
   -GtkPaned-handle-size: 1;
   background-color: #353638;
@@ -3143,8 +3149,6 @@ MarlinViewWindow *:selected:focus {
   border-width: 1px 1px 2px 1px;
   border-style: solid;
   border-color: transparent; }
-  .marlin-pathbar.pathbar.image {
-    color: red; }
   .marlin-pathbar.pathbar:focus {
     background-color: transparent;
     background-image: linear-gradient(to bottom, #2B2B2C);

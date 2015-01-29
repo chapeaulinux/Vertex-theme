@@ -1015,7 +1015,6 @@ GtkComboBox {
   padding: 4px;
   color: #3c3c3e;
   background-image: linear-gradient(to bottom, #F5F5F7, #eaeaee);
-  border: 1px solid #b9b9b9;
   border-width: 0 0 1px 0;
   border-image: linear-gradient(to bottom, #F5F5F7, #b9b9b9) 1 0 1 0; }
   .primary-toolbar:insensitive {
@@ -2804,7 +2803,7 @@ GraniteWidgetsPopOver {
   margin: 0; }
 
 .popover_bg {
-  background-color: #fafafa;
+  background-image: linear-gradient(to bottom, #fafafa);
   border: 1px solid rgba(0, 0, 0, 0.3); }
 
 GraniteWidgetsPopOver .sidebar.view,
@@ -3039,6 +3038,13 @@ EphyWindow .floating-bar {
 .cell.baobab-level-cell:selected:hover {
   background-image: none; }
 
+BaobabRingschart.subfolder-tip {
+  border-radius: 2px;
+  border-style: none;
+  padding: 3px 3px 3px 3px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffffff; }
+
 LibraryWindow GtkPaned.horizontal {
   -GtkPaned-handle-size: 1;
   background-color: #F5F5F7;
@@ -3155,8 +3161,6 @@ MarlinViewWindow *:selected:focus {
   border-width: 1px 1px 2px 1px;
   border-style: solid;
   border-color: transparent; }
-  .marlin-pathbar.pathbar.image {
-    color: red; }
   .marlin-pathbar.pathbar:focus {
     background-color: transparent;
     background-image: linear-gradient(to bottom, #ffffff);
