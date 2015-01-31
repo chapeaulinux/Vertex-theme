@@ -2881,10 +2881,12 @@ GtkVolumeButton.button {
   background-image: -gtk-scaled(url("assets/titlebutton.png"), url("assets/titlebutton@2.png")); }
   .header-bar .button.titlebutton:hover, .titlebar .button.titlebutton:hover,
   .header-bar.selection-mode .button.titlebutton:hover, .titlebar.selection-mode .button.titlebutton:hover {
-    background-image: -gtk-scaled(url("assets/titlebutton-close-prelight.png"), url("assets/titlebutton-close-prelight@2.png")); }
+    background-image: -gtk-scaled(url("assets/titlebutton-hover.png"), url("assets/titlebutton-hover@2.png"));
+    color: white; }
   .header-bar .button.titlebutton:active, .titlebar .button.titlebutton:active,
   .header-bar.selection-mode .button.titlebutton:active, .titlebar.selection-mode .button.titlebutton:active {
-    background-image: -gtk-scaled(url("assets/titlebutton-pressed.png"), url("assets/titlebutton-pressed@2.png")); }
+    background-image: -gtk-scaled(url("assets/titlebutton-pressed.png"), url("assets/titlebutton-pressed@2.png"));
+    color: rgba(255, 255, 255, 0.7); }
   .header-bar .button.titlebutton:backdrop, .titlebar .button.titlebutton:backdrop,
   .header-bar.selection-mode .button.titlebutton:backdrop, .titlebar.selection-mode .button.titlebutton:backdrop {
     background-image: -gtk-scaled(url("assets/titlebutton-unfocused.png"), url("assets/titlebutton-unfocused@2.png")); }
