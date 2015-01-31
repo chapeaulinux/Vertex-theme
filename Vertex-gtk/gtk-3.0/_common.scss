@@ -2879,7 +2879,7 @@ GtkVolumeButton.button { padding: 8px; }
     padding: 4px 3px 4px 3px;
     @include button(undecorated);
 
-    color: transparent;
+    color: transparentize(white, 1);  //makes the transition nicer
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -2892,6 +2892,9 @@ GtkVolumeButton.button { padding: 8px; }
   .button.titlebutton {
     background-image: -gtk-scaled(url('assets/titlebutton.png'),url('assets/titlebutton@2.png'));
 
+    &:backdrop {
+      background-image: -gtk-scaled(url('assets/titlebutton-unfocused.png'),url('assets/titlebutton-unfocused@2.png'));
+    }
     &:hover {
       background-image: -gtk-scaled(url('assets/titlebutton-hover.png'),url('assets/titlebutton-hover@2.png'));
       color: white;
@@ -2899,9 +2902,6 @@ GtkVolumeButton.button { padding: 8px; }
     &:active {
       background-image: -gtk-scaled(url('assets/titlebutton-pressed.png'),url('assets/titlebutton-pressed@2.png'));
       color: transparentize(white, 0.3);
-    }
-    &:backdrop {
-      background-image: -gtk-scaled(url('assets/titlebutton-unfocused.png'),url('assets/titlebutton-unfocused@2.png'));
     }
   }
 }
