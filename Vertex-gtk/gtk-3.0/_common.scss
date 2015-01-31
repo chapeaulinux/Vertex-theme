@@ -1019,9 +1019,9 @@ GtkComboBox.combobox-entry .button:only-child,
   border-radius: 0;
   border-color: if($darker=='false', $borders_color, nth($_borders_color, 3));
   background-color: transparent;
-  background-image: linear-gradient(to bottom,
-                                    $primary_toolbar_bg_a,
-                                    $primary_toolbar_bg_b);
+  background-image: linear-gradient(to bottom,               // a headerbar, which is not
+                                    $primary_toolbar_bg_a,   // a titlebar should look like
+                                    $primary_toolbar_bg_b);  // a primary toolbar
 
   .title {
     color: $wm_title;
@@ -1029,7 +1029,10 @@ GtkComboBox.combobox-entry .button:only-child,
     padding: 0px 12px;
     text-shadow: 0 #{$shadow_pos * $darker_shadow_pos}px $wm_title_shadow;
   
-    &:backdrop { opacity: 0.5; }
+    &:backdrop {
+      color: transparentize($wm_title, 0.5);
+      text-shadow: 0 #{$shadow_pos * $darker_shadow_pos}px transparentize($wm_title_shadow, 0.4);
+    }
   }
   .subtitle {
     color: $wm_title;
@@ -1159,8 +1162,12 @@ GtkComboBox.combobox-entry .button:only-child,
     border-radius: 0; // squared corners when the window is max'd or tiled
   }
   &.default-decoration {
-    padding: 4px;
-    .button { padding: 4px; } // FIXME is this okay?
+    padding-top: 0;	// less padding for ssd
+    padding-bottom: 0;  //
+    background-image: linear-gradient(to bottom,
+	                              $metacity_bg_a,
+	                              $metacity_bg_b);
+    border-bottom: none;
   }
 }
 // titlebar needs to be styled differently
@@ -2863,7 +2870,7 @@ GtkVolumeButton.button { padding: 8px; }
   }
 }
 
-// Window buttons
+// Titlebuttons
 
 .header-bar, .titlebar,
 .header-bar.selection-mode, .titlebar.selection-mode {
@@ -2877,49 +2884,23 @@ GtkVolumeButton.button { padding: 8px; }
     background-repeat: no-repeat;
   }
 
-  // Generic titlebuttons
+  &.default-decoration .button.titlebutton { // less padding for ssd
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
 
-  .left .button.titlebutton,
-  .right .button.titlebutton {
+  .button.titlebutton {
     background-image: -gtk-scaled(url('assets/titlebutton.png'),url('assets/titlebutton@2.png'));
 
+    &:hover {
+      background-image: -gtk-scaled(url('assets/titlebutton-close-prelight.png'),url('assets/titlebutton-close-prelight@2.png'));
+    }
+    &:active {
+      background-image: -gtk-scaled(url('assets/titlebutton-pressed.png'),url('assets/titlebutton-pressed@2.png'));
+    }
     &:backdrop {
       background-image: -gtk-scaled(url('assets/titlebutton-unfocused.png'),url('assets/titlebutton-unfocused@2.png'));
     }
-  }
-
-  // Minimize
-
-  .right .button.titlebutton:nth-last-child(3):hover,
-  .right:dir(rtl) .button.titlebutton:nth-child(3):hover,
-  .left .button.titlebutton:nth-child(3):hover,
-  .left:dir(rtl) .button.titlebutton:nth-last-child(3):hover {
-  background-image: -gtk-scaled(url('assets/titlebutton-min-prelight.png'),url('assets/titlebutton-min-prelight@2.png'));
-}
-
-  // Maximize
-
-  .right .button.titlebutton:nth-last-child(2):hover,
-  .right:dir(rtl) .button.titlebutton:nth-child(2):hover,
-  .left .button.titlebutton:nth-child(2):hover,
-  .left:dir(rtl) .button.titlebutton:nth-last-child(2):hover {
-    background-image: -gtk-scaled(url('assets/titlebutton-max-prelight.png'),url('assets/titlebutton-max-prelight@2.png'));
-}
-
-  // Close
-
-  .right .button.titlebutton:last-child:hover,
-  .right:dir(rtl) .button.titlebutton:first-child:hover,
-  .left .button.titlebutton:first-child:hover,
-  .left:dir(rtl) .button.titlebutton:last-child:hover {
-    background-image: -gtk-scaled(url('assets/titlebutton-close-prelight.png'),url('assets/titlebutton-close-prelight@2.png'));
-  }
-
-  // Pushed
-
-  .right .button.titlebutton:active:hover,
-  .left .button.titlebutton:active:hover {
-    background-image: -gtk-scaled(url('assets/titlebutton-pressed.png'),url('assets/titlebutton-pressed@2.png'));
   }
 }
 
