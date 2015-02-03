@@ -1162,8 +1162,8 @@ GtkComboBox.combobox-entry .button:only-child,
     border-radius: 0; // squared corners when the window is max'd or tiled
   }
   &.default-decoration {
-    padding-top: 0;	// less padding for ssd
-    padding-bottom: 0;  //
+    padding-top: 3px;	    // less padding for ssd
+    padding-bottom: 3px;  //
     background-image: linear-gradient(to bottom,
 	                              $metacity_bg_a,
 	                              $metacity_bg_b);
@@ -2884,9 +2884,9 @@ GtkVolumeButton.button { padding: 8px; }
     background-repeat: no-repeat;
   }
 
-  &.default-decoration .button.titlebutton { // less padding for ssd
-    padding-top: 3px;
-    padding-bottom: 3px;
+  &.default-decoration .button.titlebutton { // no vertical padding for ssd buttons
+    padding-top: 0px;                        // already handled by the titlebar-padding
+    padding-bottom: 0px;
   }
 
   .button.titlebutton {
