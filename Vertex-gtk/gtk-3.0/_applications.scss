@@ -600,6 +600,13 @@ MarlinViewWindow *:selected:focus {
 }
 
 //
+// Pantheon Terminal
+//
+PantheonTerminalPantheonTerminalWindow.background {
+   background-color: transparent;
+}
+
+//
 // Noise
 //
 NoiseGridView .cell:selected { text-shadow: none; }
