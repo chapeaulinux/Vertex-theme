@@ -2434,6 +2434,19 @@ GtkColorButton.button {
 GtkVolumeButton.button {
   padding: 8px; }
 
+.button.circular-button, .nautilus-circular-button {
+  border-image: none;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  box-shadow: 0 1px rgba(0, 0, 0, 0.1), inset 0 1px rgba(255, 255, 255, 0.15); }
+  .button.circular-button:focus, .nautilus-circular-button:focus {
+    border-image: none;
+    border: 1px solid rgba(64, 128, 251, 0.7);
+    box-shadow: 0 1px rgba(0, 0, 0, 0.1), inset 0 1px rgba(255, 255, 255, 0.15); }
+  .button.circular-button:active, .nautilus-circular-button:active, .button.circular-button:checked, .nautilus-circular-button:checked {
+    border-image: none;
+    border: 1px solid rgba(0, 0, 0, 0.65);
+    box-shadow: 0 1px rgba(255, 255, 255, 0.15), inset 0 1px 2px rgba(0, 0, 0, 0.2); }
+
 .window-frame {
   border-radius: 3px 3px 0 0;
   border-width: 0px;
@@ -2836,6 +2849,23 @@ NautilusQueryEditor .search-bar.toolbar {
   padding-left: 5px;
   padding-right: 5px;
   box-shadow: none; }
+
+.disk-space-display {
+  border-style: solid;
+  border-width: 1px; }
+  .disk-space-display.unknown {
+    background-color: rgba(243, 243, 245, 0.5);
+    border-color: rgba(215, 215, 222, 0.5); }
+  .disk-space-display.used {
+    background-color: rgba(64, 128, 251, 0.8);
+    border-color: rgba(14, 95, 250, 0.8); }
+  .disk-space-display.free {
+    background-color: #2e2e30;
+    border-color: #151516; }
+
+.nautilus-circular-button, .nautilus-circular-button:focus {
+  border-radius: 20px;
+  outline-radius: 20px; }
 
 NemoWindow .sidebar .frame {
   border-width: 0; }
