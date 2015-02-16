@@ -366,7 +366,10 @@ $_dot_color: if($variant=='light', $selected_bg_color,
     &:hover {
       transition: $_button_transition;
       transition-duration: 350ms;
-      &:active { transition: $_button_transition; }
+      &:active {
+        transition: $_button_transition;
+        transition-duration: 50ms;
+      }
     }
   }
   &:focus { @include button(focus); }
@@ -945,6 +948,7 @@ GtkComboBox.combobox-entry .button:only-child,
                                     $primary_toolbar_bg_a,
                                     $primary_toolbar_bg_b);
   border-width: 0 0 1px 0;
+  border-style: solid;
   border-image: linear-gradient(to bottom, $primary_toolbar_bg_a,
                                            if($darker=='false', $borders_color, nth($_borders_color, 3))) 1 0 1 0; //temporary hack for rhythmbox 3.1
 
@@ -1672,7 +1676,7 @@ column-header.button.dnd { // for treeview-like derive widgets
 
 .menu {
   margin: 4px;
-  padding: 0px;
+  padding: 3px 0;
   background-color: if($variant=='light', $base_color, darken($base_color, 2%));
   border: 1px solid $borders_color;
   .csd & { border: none; }
@@ -1737,7 +1741,6 @@ column-header.button.dnd { // for treeview-like derive widgets
   }
   .button.flat,
   .button.flat:hover {
-    text-shadow: none;
     transition: none;
   }
 }
@@ -1942,7 +1945,6 @@ column-header.button.dnd { // for treeview-like derive widgets
       border: 1px solid transparent;
       @extend %undecorated_button;
       icon-shadow: none;
-      transition: none;
       color: mix($fg_color, $bg_color, 35%);
       icon-shadow: 0 #{$shadow_pos}px $light_text_icon_shadow;
       &:hover {
@@ -1962,6 +1964,7 @@ column-header.button.dnd { // for treeview-like derive widgets
         padding: 2px;
       }
     }
+    .button, .button.flat { transition-duration: 100ms; }
   }
   & .prelight-page .button, & tab.prelight-page .button, 
   & .active-page .button, & tab.active-page .button {
@@ -2110,7 +2113,7 @@ $_list: ('','');
     .menuitem.#{$w}#{$s}:hover,
     .list-row:selected .#{$w}#{$s} {
       -gtk-icon-source: -gtk-scaled(url("assets/#{$a}#{$as}-selected#{$asset_suffix}.png"),
-                                    url("assets/selected-#{$a}#{$as}#-selected{$asset_suffix}@2.png"));
+                                    url("assets/#{$a}#{$as}-selected#{$asset_suffix}@2.png"));
     }
   }
 }
