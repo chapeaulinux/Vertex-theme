@@ -2898,17 +2898,8 @@ GtkVolumeButton.button { padding: 8px; }
 
 // Titlebuttons
 
-.header-bar, .titlebar,
-.header-bar.selection-mode, .titlebar.selection-mode {
-
-  .button.titlebutton {
-    padding: 4px 3px 4px 3px;
-    @include button(undecorated);
-
-    color: transparentize(white, 1);  //makes the transition nicer
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+.header-bar,
+.titlebar {
 
   &.default-decoration .button.titlebutton { // no vertical padding for ssd buttons
     padding-top: 0px;                        // already handled by the titlebar-padding
@@ -2916,51 +2907,67 @@ GtkVolumeButton.button { padding: 8px; }
   }
 
   .button.titlebutton {
-    background-image: -gtk-scaled(url('assets/titlebutton.png'),url('assets/titlebutton@2.png'));
+    padding: 4px 3px 4px 3px;
+    color: $wm_title;
 
-    &:backdrop {
-      background-image: -gtk-scaled(url('assets/titlebutton-unfocused.png'),url('assets/titlebutton-unfocused@2.png'));
-    }
+    @include button(undecorated);
+
+    text-shadow: 0 #{$shadow_pos * $darker_shadow_pos}px $wm_title_shadow;
+    icon-shadow: none;
+
     &:hover {
-      background-image: -gtk-scaled(url('assets/titlebutton-hover.png'),url('assets/titlebutton-hover@2.png'));
-      color: white;
+      @include button(hover, $darker);
+      icon-shadow: none;
     }
-    &:active {
-      background-image: -gtk-scaled(url('assets/titlebutton-pressed.png'),url('assets/titlebutton-pressed@2.png'));
-      color: transparentize(white, 0.3);
+    &:active, &:checked {
+      @include button(active, $darker);
+      icon-shadow: none;
     }
+    &:backdrop { color: $wm_unfocused_title; }
+
+    &.close, &.maximize, &.minimize {
+
+      color: transparent;
+      border-image: none;
+      box-shadow: none;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      background-image: -gtk-scaled(url('assets/titlebutton#{$darker_asset_suffix}.png'),url('assets/titlebutton#{$darker_asset_suffix}@2.png'));
+
+      &:backdrop { background-image: -gtk-scaled(url('assets/titlebutton-unfocused#{$darker_asset_suffix}.png'),url('assets/titlebutton-unfocused#{$darker_asset_suffix}@2.png')); }
+    }
+
+    &.close:hover { background-image: -gtk-scaled(url('assets/titlebutton-close-hover#{$darker_asset_suffix}.png'),url('assets/titlebutton-close-hover#{$darker_asset_suffix}@2.png')); }
+    &.close:active { background-image: -gtk-scaled(url('assets/titlebutton-close-active#{$darker_asset_suffix}.png'),url('assets/titlebutton-close-active#{$darker_asset_suffix}@2.png')); }
+
+    &.maximize:hover { background-image: -gtk-scaled(url('assets/titlebutton-maximize-hover#{$darker_asset_suffix}.png'),url('assets/titlebutton-maximize-hover#{$darker_asset_suffix}@2.png')); }
+    &.maximize:active { background-image: -gtk-scaled(url('assets/titlebutton-maximize-active#{$darker_asset_suffix}.png'),url('assets/titlebutton-maximize-active#{$darker_asset_suffix}@2.png')); }
+
+    &.minimize:hover { background-image: -gtk-scaled(url('assets/titlebutton-minimize-hover#{$darker_asset_suffix}.png'),url('assets/titlebutton-minimize-hover#{$darker_asset_suffix}@2.png')); }
+    &.minimize:active { background-image: -gtk-scaled(url('assets/titlebutton-minimize-active#{$darker_asset_suffix}.png'),url('assets/titlebutton-minimize-active#{$darker_asset_suffix}@2.png')); }
   }
 }
 
-// Fallback menubutton
-.header-bar .left GtkMenuButton.button.titlebutton:first-child,
-.header-bar .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child,
-.header-bar.selection-mode .left GtkMenuButton.button.titlebutton:first-child,
-.header-bar.selection-mode .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child,
-.titlebar .left GtkMenuButton.button.titlebutton:first-child,
-.titlebar .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child,
-.titlebar.selection-mode .left GtkMenuButton.button.titlebutton:first-child,
-.titlebar.selection-mode .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child {
+// use dark variant buttons for selectionmode
+.header-bar.selection-mode .button.titlebutton,
+.titlebar.selection-mode .button.titlebutton {
 
-  padding: 4px 5px 4px 5px;
-  color: $wm_title;
+  &.close, &.maximize, &.minimize {
+    background-image: -gtk-scaled(url('assets/titlebutton-dark.png'),url('assets/titlebutton-dark@2.png'));
 
-  @include button(undecorated);
-
-  text-shadow: 0 #{$shadow_pos * $darker_shadow_pos}px $wm_title_shadow;
-  icon-shadow: none;
-
-  &:hover {
-    @include button(hover, $darker);
-    icon-shadow: none;
+    &:backdrop { background-image: -gtk-scaled(url('assets/titlebutton-unfocused-dark.png'),url('assets/titlebutton-unfocused-dark@2.png')); }
   }
-  &:active, &:checked {
-    @include button(active, $darker);
-    icon-shadow: none;
-  }
-  &:backdrop { color: $wm_unfocused_title; }
+
+  &.close:hover { background-image: -gtk-scaled(url('assets/titlebutton-close-hover-dark.png'),url('assets/titlebutton-close-hover-dark@2.png')); }
+  &.close:active { background-image: -gtk-scaled(url('assets/titlebutton-close-active-dark.png'),url('assets/titlebutton-close-active-dark@2.png')); }
+
+  &.maximize:hover { background-image: -gtk-scaled(url('assets/titlebutton-maximize-hover-dark.png'),url('assets/titlebutton-maximize-hover-dark@2.png')); }
+  &.maximize:active { background-image: -gtk-scaled(url('assets/titlebutton-maximize-active-dark.png'),url('assets/titlebutton-maximize-active-dark@2.png')); }
+
+  &.minimize:hover { background-image: -gtk-scaled(url('assets/titlebutton-minimize-hover-dark.png'),url('assets/titlebutton-minimize-hover-dark@2.png')); }
+  &.minimize:active { background-image: -gtk-scaled(url('assets/titlebutton-minimize-active-dark.png'),url('assets/titlebutton-minimize-active-dark@2.png')); }
 }
-
 
 // catch all extend :)
 %selected_items {

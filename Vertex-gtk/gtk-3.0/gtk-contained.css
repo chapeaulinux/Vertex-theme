@@ -2874,47 +2874,13 @@ GtkVolumeButton.button {
     border-radius: 3px;
     box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.4); }
 
-.header-bar .button.titlebutton, .titlebar .button.titlebutton,
-.header-bar.selection-mode .button.titlebutton, .titlebar.selection-mode .button.titlebutton {
-  padding: 4px 3px 4px 3px;
-  border-color: transparent;
-  border-image: none;
-  background-color: transparent;
-  background-image: none;
-  box-shadow: none;
-  text-shadow: none;
-  icon-shadow: none;
-  color: rgba(255, 255, 255, 0);
-  background-position: center;
-  background-repeat: no-repeat; }
-.header-bar.default-decoration .button.titlebutton, .titlebar.default-decoration .button.titlebutton,
-.header-bar.selection-mode.default-decoration .button.titlebutton, .titlebar.selection-mode.default-decoration .button.titlebutton {
+.header-bar.default-decoration .button.titlebutton,
+.titlebar.default-decoration .button.titlebutton {
   padding-top: 0px;
   padding-bottom: 0px; }
-.header-bar .button.titlebutton, .titlebar .button.titlebutton,
-.header-bar.selection-mode .button.titlebutton, .titlebar.selection-mode .button.titlebutton {
-  background-image: -gtk-scaled(url("assets/titlebutton.png"), url("assets/titlebutton@2.png")); }
-  .header-bar .button.titlebutton:backdrop, .titlebar .button.titlebutton:backdrop,
-  .header-bar.selection-mode .button.titlebutton:backdrop, .titlebar.selection-mode .button.titlebutton:backdrop {
-    background-image: -gtk-scaled(url("assets/titlebutton-unfocused.png"), url("assets/titlebutton-unfocused@2.png")); }
-  .header-bar .button.titlebutton:hover, .titlebar .button.titlebutton:hover,
-  .header-bar.selection-mode .button.titlebutton:hover, .titlebar.selection-mode .button.titlebutton:hover {
-    background-image: -gtk-scaled(url("assets/titlebutton-hover.png"), url("assets/titlebutton-hover@2.png"));
-    color: white; }
-  .header-bar .button.titlebutton:active, .titlebar .button.titlebutton:active,
-  .header-bar.selection-mode .button.titlebutton:active, .titlebar.selection-mode .button.titlebutton:active {
-    background-image: -gtk-scaled(url("assets/titlebutton-pressed.png"), url("assets/titlebutton-pressed@2.png"));
-    color: rgba(255, 255, 255, 0.7); }
-
-.header-bar .left GtkMenuButton.button.titlebutton:first-child,
-.header-bar .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child,
-.header-bar.selection-mode .left GtkMenuButton.button.titlebutton:first-child,
-.header-bar.selection-mode .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child,
-.titlebar .left GtkMenuButton.button.titlebutton:first-child,
-.titlebar .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child,
-.titlebar.selection-mode .left GtkMenuButton.button.titlebutton:first-child,
-.titlebar.selection-mode .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child {
-  padding: 4px 5px 4px 5px;
+.header-bar .button.titlebutton,
+.titlebar .button.titlebutton {
+  padding: 4px 3px 4px 3px;
   color: #F3F3F5;
   border-color: transparent;
   border-image: none;
@@ -2925,14 +2891,8 @@ GtkVolumeButton.button {
   icon-shadow: none;
   text-shadow: 0 -1px rgba(0, 0, 0, 0.8);
   icon-shadow: none; }
-  .header-bar .left GtkMenuButton.button.titlebutton:first-child:hover,
-  .header-bar .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:hover,
-  .header-bar.selection-mode .left GtkMenuButton.button.titlebutton:first-child:hover,
-  .header-bar.selection-mode .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:hover,
-  .titlebar .left GtkMenuButton.button.titlebutton:first-child:hover,
-  .titlebar .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:hover,
-  .titlebar.selection-mode .left GtkMenuButton.button.titlebutton:first-child:hover,
-  .titlebar.selection-mode .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:hover {
+  .header-bar .button.titlebutton:hover,
+  .titlebar .button.titlebutton:hover {
     color: #F3F3F5;
     outline-color: rgba(243, 243, 245, 0.3);
     background-image: linear-gradient(to bottom, #5e6064, #393A3B);
@@ -2944,21 +2904,9 @@ GtkVolumeButton.button {
     border-style: solid;
     border-color: transparent;
     icon-shadow: none; }
-  .header-bar .left GtkMenuButton.button.titlebutton:first-child:active, .header-bar .left GtkMenuButton.button.titlebutton:first-child:checked,
-  .header-bar .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:active,
-  .header-bar .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:checked,
-  .header-bar.selection-mode .left GtkMenuButton.button.titlebutton:first-child:active,
-  .header-bar.selection-mode .left GtkMenuButton.button.titlebutton:first-child:checked,
-  .header-bar.selection-mode .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:active,
-  .header-bar.selection-mode .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:checked,
-  .titlebar .left GtkMenuButton.button.titlebutton:first-child:active,
-  .titlebar .left GtkMenuButton.button.titlebutton:first-child:checked,
-  .titlebar .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:active,
-  .titlebar .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:checked,
-  .titlebar.selection-mode .left GtkMenuButton.button.titlebutton:first-child:active,
-  .titlebar.selection-mode .left GtkMenuButton.button.titlebutton:first-child:checked,
-  .titlebar.selection-mode .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:active,
-  .titlebar.selection-mode .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:checked {
+  .header-bar .button.titlebutton:active, .header-bar .button.titlebutton:checked,
+  .titlebar .button.titlebutton:active,
+  .titlebar .button.titlebutton:checked {
     color: #ffffff;
     outline-color: rgba(255, 255, 255, 0.3);
     background-image: linear-gradient(to bottom, #242525, #37383A);
@@ -2971,15 +2919,71 @@ GtkVolumeButton.button {
     border-style: solid;
     border-color: transparent;
     icon-shadow: none; }
-  .header-bar .left GtkMenuButton.button.titlebutton:first-child:backdrop,
-  .header-bar .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:backdrop,
-  .header-bar.selection-mode .left GtkMenuButton.button.titlebutton:first-child:backdrop,
-  .header-bar.selection-mode .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:backdrop,
-  .titlebar .left GtkMenuButton.button.titlebutton:first-child:backdrop,
-  .titlebar .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:backdrop,
-  .titlebar.selection-mode .left GtkMenuButton.button.titlebutton:first-child:backdrop,
-  .titlebar.selection-mode .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:backdrop {
+  .header-bar .button.titlebutton:backdrop,
+  .titlebar .button.titlebutton:backdrop {
     color: rgba(243, 243, 245, 0.6); }
+  .header-bar .button.titlebutton.close, .header-bar .button.titlebutton.maximize, .header-bar .button.titlebutton.minimize,
+  .titlebar .button.titlebutton.close,
+  .titlebar .button.titlebutton.maximize,
+  .titlebar .button.titlebutton.minimize {
+    color: transparent;
+    border-image: none;
+    box-shadow: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: -gtk-scaled(url("assets/titlebutton-dark.png"), url("assets/titlebutton-dark@2.png")); }
+    .header-bar .button.titlebutton.close:backdrop, .header-bar .button.titlebutton.maximize:backdrop, .header-bar .button.titlebutton.minimize:backdrop,
+    .titlebar .button.titlebutton.close:backdrop,
+    .titlebar .button.titlebutton.maximize:backdrop,
+    .titlebar .button.titlebutton.minimize:backdrop {
+      background-image: -gtk-scaled(url("assets/titlebutton-unfocused-dark.png"), url("assets/titlebutton-unfocused-dark@2.png")); }
+  .header-bar .button.titlebutton.close:hover,
+  .titlebar .button.titlebutton.close:hover {
+    background-image: -gtk-scaled(url("assets/titlebutton-close-hover-dark.png"), url("assets/titlebutton-close-hover-dark@2.png")); }
+  .header-bar .button.titlebutton.close:active,
+  .titlebar .button.titlebutton.close:active {
+    background-image: -gtk-scaled(url("assets/titlebutton-close-active-dark.png"), url("assets/titlebutton-close-active-dark@2.png")); }
+  .header-bar .button.titlebutton.maximize:hover,
+  .titlebar .button.titlebutton.maximize:hover {
+    background-image: -gtk-scaled(url("assets/titlebutton-maximize-hover-dark.png"), url("assets/titlebutton-maximize-hover-dark@2.png")); }
+  .header-bar .button.titlebutton.maximize:active,
+  .titlebar .button.titlebutton.maximize:active {
+    background-image: -gtk-scaled(url("assets/titlebutton-maximize-active-dark.png"), url("assets/titlebutton-maximize-active-dark@2.png")); }
+  .header-bar .button.titlebutton.minimize:hover,
+  .titlebar .button.titlebutton.minimize:hover {
+    background-image: -gtk-scaled(url("assets/titlebutton-minimize-hover-dark.png"), url("assets/titlebutton-minimize-hover-dark@2.png")); }
+  .header-bar .button.titlebutton.minimize:active,
+  .titlebar .button.titlebutton.minimize:active {
+    background-image: -gtk-scaled(url("assets/titlebutton-minimize-active-dark.png"), url("assets/titlebutton-minimize-active-dark@2.png")); }
+
+.header-bar.selection-mode .button.titlebutton.close, .header-bar.selection-mode .button.titlebutton.maximize, .header-bar.selection-mode .button.titlebutton.minimize,
+.titlebar.selection-mode .button.titlebutton.close,
+.titlebar.selection-mode .button.titlebutton.maximize,
+.titlebar.selection-mode .button.titlebutton.minimize {
+  background-image: -gtk-scaled(url("assets/titlebutton-dark.png"), url("assets/titlebutton-dark@2.png")); }
+  .header-bar.selection-mode .button.titlebutton.close:backdrop, .header-bar.selection-mode .button.titlebutton.maximize:backdrop, .header-bar.selection-mode .button.titlebutton.minimize:backdrop,
+  .titlebar.selection-mode .button.titlebutton.close:backdrop,
+  .titlebar.selection-mode .button.titlebutton.maximize:backdrop,
+  .titlebar.selection-mode .button.titlebutton.minimize:backdrop {
+    background-image: -gtk-scaled(url("assets/titlebutton-unfocused-dark.png"), url("assets/titlebutton-unfocused-dark@2.png")); }
+.header-bar.selection-mode .button.titlebutton.close:hover,
+.titlebar.selection-mode .button.titlebutton.close:hover {
+  background-image: -gtk-scaled(url("assets/titlebutton-close-hover-dark.png"), url("assets/titlebutton-close-hover-dark@2.png")); }
+.header-bar.selection-mode .button.titlebutton.close:active,
+.titlebar.selection-mode .button.titlebutton.close:active {
+  background-image: -gtk-scaled(url("assets/titlebutton-close-active-dark.png"), url("assets/titlebutton-close-active-dark@2.png")); }
+.header-bar.selection-mode .button.titlebutton.maximize:hover,
+.titlebar.selection-mode .button.titlebutton.maximize:hover {
+  background-image: -gtk-scaled(url("assets/titlebutton-maximize-hover-dark.png"), url("assets/titlebutton-maximize-hover-dark@2.png")); }
+.header-bar.selection-mode .button.titlebutton.maximize:active,
+.titlebar.selection-mode .button.titlebutton.maximize:active {
+  background-image: -gtk-scaled(url("assets/titlebutton-maximize-active-dark.png"), url("assets/titlebutton-maximize-active-dark@2.png")); }
+.header-bar.selection-mode .button.titlebutton.minimize:hover,
+.titlebar.selection-mode .button.titlebutton.minimize:hover {
+  background-image: -gtk-scaled(url("assets/titlebutton-minimize-hover-dark.png"), url("assets/titlebutton-minimize-hover-dark@2.png")); }
+.header-bar.selection-mode .button.titlebutton.minimize:active,
+.titlebar.selection-mode .button.titlebutton.minimize:active {
+  background-image: -gtk-scaled(url("assets/titlebutton-minimize-active-dark.png"), url("assets/titlebutton-minimize-active-dark@2.png")); }
 
 .view:selected, .view:selected:focus, .view:selected:hover, GtkLabel:selected, GtkLabel:selected:focus, GtkLabel:selected:hover, GtkFlowBox .grid-child:selected, .entry:selected, .entry:selected:focus, GtkIconView.cell:selected,
 GtkIconView.cell:selected:focus, .list-row:selected {
