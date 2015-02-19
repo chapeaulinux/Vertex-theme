@@ -1731,7 +1731,7 @@ column-header.button.dnd { // for treeview-like derive widgets
   border-radius: 3px;
   background-color: if($variant=='light', darken($base_color, 2%), mix($bg_color,$base_color, 80%));
 
-  box-shadow: 0 1px 5px $wm_shadow;
+  box-shadow: 0 1px 3px transparentize($wm_shadow, 0.2);
 
   text-shadow: none;
   icon-shadow: none;
@@ -2880,13 +2880,13 @@ GtkVolumeButton.button { padding: 8px; }
   border-radius: 3px 3px 0 0;
   border-width: 0px;
 
-  box-shadow: 0 0 0 1px $window_frame, 0 2px 8px 1px $wm_shadow;
+  box-shadow: 0 0 0 1px $window_frame, 0 3px 5px 1px $wm_shadow;
 
   // this is used for the resize cursor area
   margin: 10px;
 
   &:backdrop {
-    box-shadow: 0 0 0 1px $window_frame, 0 2px 5px 0 $wm_shadow;
+    box-shadow: 0 0 0 1px $window_frame, 0 2px 3px 0 $wm_shadow;
   }
   &.tiled {
     border-radius: 0;
@@ -2898,18 +2898,19 @@ GtkVolumeButton.button { padding: 8px; }
   &.csd {
     &.popup {
       border-radius: 0;
-      @if $variant==light { box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.12); }
-      @else { box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7), 0 0 0 1px $borders_color; }
+      @if $variant==light { box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.12); }
+      @else { box-shadow: 0 1px 3px rgba(0, 0, 0, 0.7), 0 0 0 1px $borders_color; }
     }
     &.tooltip {
       border-radius: 3px;
-      box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4);
     }
   }
 }
 
+//
 // Titlebuttons
-
+//
 .header-bar,
 .titlebar {
 
