@@ -2100,9 +2100,6 @@ column-header .button, column-header .button:hover, column-header .button:active
       color: rgba(171, 171, 173, 0.7); }
 
 .scrollbar {
-  background-clip: padding-box;
-  background-image: none;
-  border-style: solid;
   -GtkRange-trough-border: 0;
   -GtkScrollbar-has-backward-stepper: false;
   -GtkScrollbar-has-forward-stepper: false;
@@ -2112,6 +2109,8 @@ column-header .button, column-header .button:hover, column-header .button:active
   -GtkRange-trough-under-steppers: 1; }
   .scrollbar .button {
     border: none; }
+  .scrollbar.dragging, .scrollbar.hovering {
+    opacity: 0.999; }
   .scrollbar.overlay-indicator:not(.dragging):not(.hovering) {
     -GtkRange-slider-width: 8px; }
     .scrollbar.overlay-indicator:not(.dragging):not(.hovering) .slider {
