@@ -3025,6 +3025,8 @@ GtkVolumeButton.button { padding: 8px; }
 //
 // Overshoot
 //
+// This is used by GtkScrolledWindow, when content is touch-dragged past boundaries.
+// This draws a box on top of the content, the size changes programmatically.
 .overshoot {
   @each $_dir in (top, bottom, left, right) {
     &.#{$_dir} {
@@ -3044,16 +3046,21 @@ GtkVolumeButton.button { padding: 8px; }
 //
 // Undershoot
 //
-.undershoot {
-  @each $_dir, $_gradient_dir in (top, bottom),
-                                 (bottom, top),
-                                 (left, right),
-                                 (right, left) {
-
-    &.#{$_dir} {
-      background-color: transparent;
-      background-image: linear-gradient(to #{$_gradient_dir}, rgba(0, 0, 0, 0.12), transparent 4px, transparent);
-    }
+// Overflow indication, works similarly to the overshoot, the size if fixed tho.
+.undershoot { 
+  &.top {
+    @include undershoot(top);
   }
-  &.sidebar { background-color: transparent; }
+
+  &.bottom {
+    @include undershoot(bottom);
+  }
+
+  &.left {
+    @include undershoot(left);
+  }
+
+  &.right {
+    @include undershoot(right);
+  }
 }
