@@ -1708,7 +1708,7 @@ column-header .button, column-header .button:hover, column-header .button:active
   -GtkRange-trough-under-steppers: 1; }
   .scrollbar .button {
     border: none; }
-  .scrollbar.dragging, .scrollbar.hovering {
+  .scrollbar.dragging, .scrollbar.hovering, .scrollbar.overlay-indicator:not(.dragging):not(.hovering) {
     opacity: 0.999; }
   .scrollbar.overlay-indicator:not(.dragging):not(.hovering) {
     -GtkRange-slider-width: 8px; }
@@ -2617,29 +2617,37 @@ GtkIconView.cell:selected:focus, .list-row:selected {
   font: Monospace; }
 
 .overshoot.top {
-  background: linear-gradient(to top, rgba(64, 128, 251, 0), rgba(64, 128, 251, 0.2));
-  background-repeat: no-repeat; }
+  background-image: -gtk-gradient(radial, center top, 0, center top, 0.6, from(rgba(64, 128, 251, 0.2)), to(rgba(64, 128, 251, 0)));
+  background-size: 100% 60%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: transparent;
+  border: none;
+  box-shadow: none; }
 .overshoot.bottom {
-  background: linear-gradient(to bottom, rgba(64, 128, 251, 0), rgba(64, 128, 251, 0.2));
-  background-repeat: no-repeat; }
+  background-image: -gtk-gradient(radial, center bottom, 0, center bottom, 0.6, from(rgba(64, 128, 251, 0.2)), to(rgba(64, 128, 251, 0)));
+  background-size: 100% 60%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-color: transparent;
+  border: none;
+  box-shadow: none; }
 .overshoot.left {
-  background: linear-gradient(to left, rgba(64, 128, 251, 0), rgba(64, 128, 251, 0.2));
-  background-repeat: no-repeat; }
+  background-image: -gtk-gradient(radial, left center, 0, left center, 0.6, from(rgba(64, 128, 251, 0.2)), to(rgba(64, 128, 251, 0)));
+  background-size: 60% 100%;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-color: transparent;
+  border: none;
+  box-shadow: none; }
 .overshoot.right {
-  background: linear-gradient(to right, rgba(64, 128, 251, 0), rgba(64, 128, 251, 0.2));
-  background-repeat: no-repeat; }
-.overshoot.top, .overshoot.bottom {
-  background-size: 100% 20%; }
-.overshoot.left, .overshoot.right {
-  background-size: 20% 100%; }
-.overshoot.top {
-  background-position: center top; }
-.overshoot.bottom {
-  background-position: center bottom; }
-.overshoot.left {
-  background-position: left center; }
-.overshoot.right {
-  background-position: right center; }
+  background-image: -gtk-gradient(radial, right center, 0, right center, 0.6, from(rgba(64, 128, 251, 0.2)), to(rgba(64, 128, 251, 0)));
+  background-size: 60% 100%;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-color: transparent;
+  border: none;
+  box-shadow: none; }
 
 .undershoot.top {
   background-color: transparent;
