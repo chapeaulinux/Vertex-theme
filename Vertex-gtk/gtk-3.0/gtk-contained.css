@@ -2109,7 +2109,9 @@ column-header .button, column-header .button:hover, column-header .button:active
   -GtkRange-trough-under-steppers: 1; }
   .scrollbar .button {
     border: none; }
-  .scrollbar.dragging, .scrollbar.hovering, .scrollbar.overlay-indicator:not(.dragging):not(.hovering) {
+  .scrollbar.dragging, .scrollbar.hovering {
+    opacity: 0.998; }
+  .scrollbar.overlay-indicator:not(.dragging):not(.hovering) {
     opacity: 0.999; }
   .scrollbar.overlay-indicator:not(.dragging):not(.hovering) {
     -GtkRange-slider-width: 8px; }
