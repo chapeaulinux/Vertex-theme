@@ -2008,9 +2008,10 @@ column-header.button.dnd { // for treeview-like derive widgets
   .button { border: none; }
 
   // Overlay Scrollbars
-  &.dragging,                                                            // if this isn't set the scrollbars don't update their size correctly
-  &.hovering,                                                            //
-  &.overlay-indicator:not(.dragging):not(.hovering) { opacity: 0.999; }  // probably a gtk bug
+  &.dragging,                                                             // if this isn't set, the scrollbars don't update their size correctly
+  &.hovering { opacity: 0.998; }                                          // probably a gtk bug
+  &.overlay-indicator:not(.dragging):not(.hovering) {opacity: 0.999;}     //
+
 
   &.overlay-indicator:not(.dragging):not(.hovering) {
     -GtkRange-slider-width: 8px;
