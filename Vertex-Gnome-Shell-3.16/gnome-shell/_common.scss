@@ -130,7 +130,7 @@ StScrollBar {
   border: 0 solid transparent;
   border-right-width: 1px;
   border-left-width: 5px;
-  border-image: url("slider.svg") 8;
+  border-image: url("misc/slider.svg") 8;
   color: transparent;
 }
 
@@ -190,7 +190,7 @@ StScrollBar {
   color: $fg_color;
   background-color: transparentize($bg_color, 1);
   border: none;
-  border-image: url("modal.svg") 10 10 35 14;
+  border-image: url("misc/modal.svg") 10 10 35 14;
   padding: 0 7px 8px 7px;
 
   > * { padding: 14px; }
@@ -593,7 +593,7 @@ StScrollBar {
   background: none;
   border: none;
   border-radius: 5px;
-	border-image: url("osd.svg") 10 10 9 11;
+	border-image: url("misc/osd.svg") 10 10 9 11;
 
 .osd-monitor-label { font-size: 3em; }
 
@@ -601,7 +601,7 @@ StScrollBar {
     padding: 7px 5px;
     height: 4px;
     background-color: transparent;
-    border-image: url("slider-osd.svg") 8;
+    border-image: url("misc/slider-osd.svg") 8;
     border-radius: 0;
     color: $selected_bg_color;
   }
@@ -612,7 +612,7 @@ StScrollBar {
   background: none;
   border: none;
   border-radius: 5px;
-	border-image: url("osd.svg") 10 10 9 11;
+	border-image: url("misc/osd.svg") 10 10 9 11;
   padding: 12px;
 }
 
@@ -640,13 +640,13 @@ StScrollBar {
     &:outlined {
       padding: 6px;
       border: none;
-      border-image: url("message.svg") 3;
+      border-image: url("misc/message.svg") 3;
     }
 
     &:selected {
       color: $selected_fg_color;
       background: none;
-      border-image: url("message-hover.svg") 3;
+      border-image: url("misc/message-hover.svg") 3;
     }
   }
 
@@ -710,11 +710,11 @@ StScrollBar {
 }
 
 .ws-switcher-active-up {
-  background-image: url("ws-switch-arrow-up.png");
+  background-image: url("misc/ws-switch-arrow-up.png");
 }
 
 .ws-switcher-active-down {
-  background-image: url("ws-switch-arrow-down.png");
+  background-image: url("misc/ws-switch-arrow-down.png");
 }
 
 .ws-switcher-box {
@@ -835,7 +835,7 @@ StScrollBar {
   }
 
   #appMenu {
-    spinner-image: url("process-working.svg");
+    spinner-image: url("misc/process-working.svg");
     spacing: 4px;
 
     .label-shadow { color: transparent; }
@@ -967,16 +967,16 @@ StScrollBar {
 
 //arrow back
 .calendar-change-month-back {
-  background-image: url("calendar-arrow-left.svg");
+  background-image: url("misc/calendar-arrow-left.svg");
 
-  &:rtl { background-image: url("calendar-arrow-right.svg"); }
+  &:rtl { background-image: url("misc/calendar-arrow-right.svg"); }
 }
 
 //arrow forward
 .calendar-change-month-forward {
-  background-image: url("calendar-arrow-right.svg");
+  background-image: url("misc/calendar-arrow-right.svg");
 
-  &:rtl { background-image: url("calendar-arrow-left.svg"); }
+  &:rtl { background-image: url("misc/calendar-arrow-left.svg"); }
 }
 
 .calendar-day-base {
@@ -992,7 +992,7 @@ StScrollBar {
   &:active {
     color: $selected_fg_color;
     background-color: transparent;
-    background-image: url('calendar-not-today.svg');
+    background-image: url('misc/calendar-not-today.svg');
     border-width: transparent; //avoid jumparound due to today
   }
 
@@ -1026,7 +1026,7 @@ StScrollBar {
   //color: lighten($fg_color,10%);
   //background-color: darken($bg_color,5%);
   border: 0px solid transparentize($selected_bg_color, 0.5);
-  background-image: url('calendar-today.svg');
+  background-image: url('misc/calendar-today.svg');
 }
 
 .calendar-day-with-events {
@@ -1066,28 +1066,28 @@ StScrollBar {
   border-radius: 0px;
   color: transparent; 
   background-color: transparent;
-  background-image: url('message-list-close.svg');
+  background-image: url('misc/message-list-close.svg');
 }
 
 .message-list-section-close:hover > StIcon,
 .message-list-section-close:focus > StIcon {
   color: transparent; 
   background-color: transparent;
-  background-image: url('message-list-close-hover.svg');
+  background-image: url('misc/message-list-close-hover.svg');
 }
 
 .message-list-section-close:active > StIcon {
   color: transparent; 
   background-color: transparent;
-  background-image: url('message-list-close-active.svg');
+  background-image: url('misc/message-list-close-active.svg');
 }
 
 .message {
   background-color: transparent;
-  border-image: url("message.svg") 4 4 4 4;
+  border-image: url("misc/message.svg") 4 4 4 4;
   padding: 4px;
 
-  &:hover, &:focus { border-image: url("message-hover.svg") 4 4 4 4; }
+  &:hover, &:focus { border-image: url("misc/message-hover.svg") 4 4 4 4; }
 }
 
 .message-icon-bin {
@@ -1122,10 +1122,10 @@ StScrollBar {
 .ripple-box {
   width: 52px;
   height: 52px;
-  background-image: url("corner-ripple-ltr.svg");
+  background-image: url("misc/corner-ripple-ltr.svg");
   background-size: contain;
 
-  &:rtl { background-image: url("corner-ripple-rtl.svg"); }
+  &:rtl { background-image: url("misc/corner-ripple-rtl.svg"); }
 }
 
 // not really top bar only
@@ -1137,20 +1137,20 @@ StScrollBar {
 //Close buttons
 //
 .window-close, .notification-close {
-  background-image: url("close-window.svg");
+  background-image: url("misc/close-window.svg");
   background-size: 32px;
   height: 32px;
   width: 32px;
 
   &:hover {
-    background-image: url("close-window-hover.svg");
+    background-image: url("misc/close-window-hover.svg");
     background-size: 32px;
     height: 32px;
     width: 32px;
   }
 
   &:active {
-    background-image: url("close-window-active.svg");
+    background-image: url("misc/close-window-active.svg");
     background-size: 32px;
     height: 32px;
     width: 32px;
@@ -1320,7 +1320,7 @@ StScrollBar {
 .search-provider-icon-more {
   width: 16px;
   height: 16px;
-  background-image: url("more-results.svg");
+  background-image: url("misc/more-results.svg");
 }
 
 //
@@ -1555,7 +1555,7 @@ StScrollBar {
 .app-well-app-running-dot { //running apps indicator
   width: 10px; height: 3px;
   background-color: transparent;
-  background-image: url('running-dot.svg');
+  background-image: url('misc/running-dot.svg');
   margin-bottom: 2px;
 }
 
@@ -1621,13 +1621,13 @@ StScrollBar {
   .page-indicator-icon {
     width: 18px;
     height: 18px;
-    background-image: url(page-indicator-inactive.svg);
+    background-image: url(misc/page-indicator-inactive.svg);
   }
 
-  &:hover .page-indicator-icon { background-image: url(page-indicator-hover.svg); }
-  &:active .page-indicator-icon { background-image: url(page-indicator-active.svg); }
+  &:hover .page-indicator-icon { background-image: url(misc/page-indicator-hover.svg); }
+  &:active .page-indicator-icon { background-image: url(misc/page-indicator-active.svg); }
   &:checked .page-indicator-icon,
-  &:checked:active { background-image: url(page-indicator-checked.svg); }
+  &:checked:active { background-image: url(misc/page-indicator-checked.svg); }
 }
 
 .no-frequent-applications-label { @extend %status_text; }
@@ -1646,11 +1646,11 @@ StScrollBar {
   spacing: 11px;
   padding: 18px 9px 18px 18px;
   background-color: transparent;
-	border-image: url("workspace-thumb-bg.svg") 11 2 10 10;
+	border-image: url("misc/workspace-thumb-bg.svg") 11 2 10 10;
 
   &:rtl {
     padding: 18px 18px 18px 9px;
-	  border-image: url("workspace-thumb-bg-rtl.svg") 2 11 10 10;
+	  border-image: url("misc/workspace-thumb-bg-rtl.svg") 2 11 10 10;
   }
 }
 .workspace-thumbnail-indicator {
@@ -1690,7 +1690,7 @@ StScrollBar {
   color: $osd_fg_color;
   background-color: transparent;
   border: 1px solid transparent;
-  border-image: url("notification.svg") 10 10 9 11;
+  border-image: url("misc/notification.svg") 10 10 9 11;
   //box-shadow: 0 1px 4px black;
 
   .notification-icon { padding: 5px; }
@@ -1722,7 +1722,7 @@ StScrollBar {
   color: $osd_fg_color;
   background-color: transparent;
   border: 1px solid transparent;
-  border-image: url("notification.svg") 10 10 9 11;
+  border-image: url("misc/notification.svg") 10 10 9 11;
   //box-shadow: 0 1px 4px black;
   spacing-rows: 4px;
   padding: 8px;
@@ -1762,7 +1762,7 @@ StScrollBar {
   border: none;
   box-shadow: none;
   border-radius: 0px;
-  background-image: url("summary-counter.svg");
+  background-image: url("misc/summary-counter.svg");
 }
 
 .notification-scrollview {
@@ -2133,7 +2133,7 @@ StScrollBar {
 }
 
 #lockDialogGroup {
-  background: #2e3436 url(noise-texture.png);
+  background: #2e3436 url(misc/noise-texture.png);
   background-repeat: repeat;
 }
 
@@ -2153,7 +2153,7 @@ StScrollBar {
   padding: 8px 8px 10px 8px;
   background-color: transparentize(black, 0.3);
   border: 1px solid black;
-	border-image: url("osd.svg") 10 10 9 11;
+	border-image: url("misc/osd.svg") 10 10 9 11;
   border-radius: 2px;
   & > #Toolbar {
     padding: 3px;

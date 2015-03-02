@@ -152,7 +152,7 @@ StScrollBar {
   border: 0 solid transparent;
   border-right-width: 1px;
   border-left-width: 5px;
-  border-image: url("slider.svg") 8;
+  border-image: url("misc/slider.svg") 8;
   color: transparent; }
 
 .check-box StBoxLayout {
@@ -196,7 +196,7 @@ StScrollBar {
   color: #F3F3F5;
   background-color: rgba(53, 54, 56, 0);
   border: none;
-  border-image: url("modal.svg") 10 10 35 14;
+  border-image: url("misc/modal.svg") 10 10 35 14;
   padding: 0 7px 8px 7px; }
   .modal-dialog > * {
     padding: 14px; }
@@ -472,14 +472,14 @@ StScrollBar {
   background: none;
   border: none;
   border-radius: 5px;
-  border-image: url("osd.svg") 10 10 9 11; }
+  border-image: url("misc/osd.svg") 10 10 9 11; }
   .osd-window .osd-monitor-label {
     font-size: 3em; }
   .osd-window .level {
     padding: 7px 5px;
     height: 4px;
     background-color: transparent;
-    border-image: url("slider-osd.svg") 8;
+    border-image: url("misc/slider-osd.svg") 8;
     border-radius: 0;
     color: #4080fb; }
 
@@ -488,7 +488,7 @@ StScrollBar {
   background: none;
   border: none;
   border-radius: 5px;
-  border-image: url("osd.svg") 10 10 9 11;
+  border-image: url("misc/osd.svg") 10 10 9 11;
   padding: 12px; }
 
 .switcher-popup {
@@ -509,11 +509,11 @@ StScrollBar {
     .switcher-list .item-box:outlined {
       padding: 6px;
       border: none;
-      border-image: url("message.svg") 3; }
+      border-image: url("misc/message.svg") 3; }
     .switcher-list .item-box:selected {
       color: #ffffff;
       background: none;
-      border-image: url("message-hover.svg") 3; }
+      border-image: url("misc/message-hover.svg") 3; }
   .switcher-list .thumbnail-box {
     padding: 2px;
     spacing: 4px; }
@@ -556,10 +556,10 @@ StScrollBar {
   border: 1px solid #4080fb; }
 
 .ws-switcher-active-up {
-  background-image: url("ws-switch-arrow-up.png"); }
+  background-image: url("misc/ws-switch-arrow-up.png"); }
 
 .ws-switcher-active-down {
-  background-image: url("ws-switch-arrow-down.png"); }
+  background-image: url("misc/ws-switch-arrow-down.png"); }
 
 .ws-switcher-box {
   height: 96px;
@@ -638,7 +638,7 @@ StScrollBar {
   border: 1px solid rgba(243, 243, 245, 0.4); }
 
 #appMenu {
-  spinner-image: url("process-working.svg");
+  spinner-image: url("misc/process-working.svg");
   spacing: 4px; }
   #appMenu .label-shadow {
     color: transparent; }
@@ -765,14 +765,14 @@ StScrollBar {
     background-color: #29292b; }
 
 .calendar-change-month-back {
-  background-image: url("calendar-arrow-left.svg"); }
+  background-image: url("misc/calendar-arrow-left.svg"); }
   .calendar-change-month-back:rtl {
-    background-image: url("calendar-arrow-right.svg"); }
+    background-image: url("misc/calendar-arrow-right.svg"); }
 
 .calendar-change-month-forward {
-  background-image: url("calendar-arrow-right.svg"); }
+  background-image: url("misc/calendar-arrow-right.svg"); }
   .calendar-change-month-forward:rtl {
-    background-image: url("calendar-arrow-left.svg"); }
+    background-image: url("misc/calendar-arrow-left.svg"); }
 
 .calendar-day-base {
   font-size: 80%;
@@ -787,7 +787,7 @@ StScrollBar {
   .calendar-day-base:active {
     color: #ffffff;
     background-color: transparent;
-    background-image: url("calendar-not-today.svg");
+    background-image: url("misc/calendar-not-today.svg");
     border-width: transparent; }
   .calendar-day-base.calendar-day-heading {
     color: rgba(243, 243, 245, 0.85);
@@ -811,7 +811,7 @@ StScrollBar {
 .calendar-today, .calendar-today:active {
   font-weight: bold;
   border: 0px solid rgba(64, 128, 251, 0.5);
-  background-image: url("calendar-today.svg"); }
+  background-image: url("misc/calendar-today.svg"); }
 
 .calendar-day-with-events {
   color: #4080fb;
@@ -842,25 +842,25 @@ StScrollBar {
   border-radius: 0px;
   color: transparent;
   background-color: transparent;
-  background-image: url("message-list-close.svg"); }
+  background-image: url("misc/message-list-close.svg"); }
 
 .message-list-section-close:hover > StIcon,
 .message-list-section-close:focus > StIcon {
   color: transparent;
   background-color: transparent;
-  background-image: url("message-list-close-hover.svg"); }
+  background-image: url("misc/message-list-close-hover.svg"); }
 
 .message-list-section-close:active > StIcon {
   color: transparent;
   background-color: transparent;
-  background-image: url("message-list-close-active.svg"); }
+  background-image: url("misc/message-list-close-active.svg"); }
 
 .message {
   background-color: transparent;
-  border-image: url("message.svg") 4 4 4 4;
+  border-image: url("misc/message.svg") 4 4 4 4;
   padding: 4px; }
   .message:hover, .message:focus {
-    border-image: url("message-hover.svg") 4 4 4 4; }
+    border-image: url("misc/message-hover.svg") 4 4 4 4; }
 
 .message-icon-bin {
   padding: 8px 0px 8px 8px; }
@@ -885,10 +885,10 @@ StScrollBar {
 .ripple-box {
   width: 52px;
   height: 52px;
-  background-image: url("corner-ripple-ltr.svg");
+  background-image: url("misc/corner-ripple-ltr.svg");
   background-size: contain; }
   .ripple-box:rtl {
-    background-image: url("corner-ripple-rtl.svg"); }
+    background-image: url("misc/corner-ripple-rtl.svg"); }
 
 .popup-menu-arrow {
   width: 16px;
@@ -898,17 +898,17 @@ StScrollBar {
   icon-size: 16px; }
 
 .window-close, .notification-close {
-  background-image: url("close-window.svg");
+  background-image: url("misc/close-window.svg");
   background-size: 32px;
   height: 32px;
   width: 32px; }
   .window-close:hover, .notification-close:hover {
-    background-image: url("close-window-hover.svg");
+    background-image: url("misc/close-window-hover.svg");
     background-size: 32px;
     height: 32px;
     width: 32px; }
   .window-close:active, .notification-close:active {
-    background-image: url("close-window-active.svg");
+    background-image: url("misc/close-window-active.svg");
     background-size: 32px;
     height: 32px;
     width: 32px; }
@@ -1048,7 +1048,7 @@ StScrollBar {
 .search-provider-icon-more {
   width: 16px;
   height: 16px;
-  background-image: url("more-results.svg"); }
+  background-image: url("misc/more-results.svg"); }
 
 #dash {
   font-size: 1em;
@@ -1212,7 +1212,7 @@ StScrollBar {
   width: 10px;
   height: 3px;
   background-color: transparent;
-  background-image: url("running-dot.svg");
+  background-image: url("misc/running-dot.svg");
   margin-bottom: 2px; }
 
 .search-provider-icon,
@@ -1266,13 +1266,13 @@ StScrollBar {
   .page-indicator .page-indicator-icon {
     width: 18px;
     height: 18px;
-    background-image: url(page-indicator-inactive.svg); }
+    background-image: url(misc/page-indicator-inactive.svg); }
   .page-indicator:hover .page-indicator-icon {
-    background-image: url(page-indicator-hover.svg); }
+    background-image: url(misc/page-indicator-hover.svg); }
   .page-indicator:active .page-indicator-icon {
-    background-image: url(page-indicator-active.svg); }
+    background-image: url(misc/page-indicator-active.svg); }
   .page-indicator:checked .page-indicator-icon, .page-indicator:checked:active {
-    background-image: url(page-indicator-checked.svg); }
+    background-image: url(misc/page-indicator-checked.svg); }
 
 .app-well-app > .overview-icon.overview-icon-with-label,
 .grid-search-result .overview-icon.overview-icon-with-label {
@@ -1284,10 +1284,10 @@ StScrollBar {
   spacing: 11px;
   padding: 18px 9px 18px 18px;
   background-color: transparent;
-  border-image: url("workspace-thumb-bg.svg") 11 2 10 10; }
+  border-image: url("misc/workspace-thumb-bg.svg") 11 2 10 10; }
   .workspace-thumbnails:rtl {
     padding: 18px 18px 18px 9px;
-    border-image: url("workspace-thumb-bg-rtl.svg") 2 11 10 10; }
+    border-image: url("misc/workspace-thumb-bg-rtl.svg") 2 11 10 10; }
 
 .workspace-thumbnail-indicator {
   border: 4px solid rgba(64, 128, 251, 0.8);
@@ -1318,7 +1318,7 @@ StScrollBar {
   color: white;
   background-color: transparent;
   border: 1px solid transparent;
-  border-image: url("notification.svg") 10 10 9 11; }
+  border-image: url("misc/notification.svg") 10 10 9 11; }
   .notification-banner .notification-icon,
   .notification-banner:hover .notification-icon,
   .notification-banner:focus .notification-icon {
@@ -1357,7 +1357,7 @@ StScrollBar {
   color: white;
   background-color: transparent;
   border: 1px solid transparent;
-  border-image: url("notification.svg") 10 10 9 11;
+  border-image: url("misc/notification.svg") 10 10 9 11;
   spacing-rows: 4px;
   padding: 8px;
   spacing-columns: 10px; }
@@ -1388,7 +1388,7 @@ StScrollBar {
   border: none;
   box-shadow: none;
   border-radius: 0px;
-  background-image: url("summary-counter.svg"); }
+  background-image: url("misc/summary-counter.svg"); }
 
 .notification-scrollview {
   max-height: 18em;
@@ -1805,7 +1805,7 @@ StScrollBar {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4); }
 
 #lockDialogGroup {
-  background: #2e3436 url(noise-texture.png);
+  background: #2e3436 url(misc/noise-texture.png);
   background-repeat: repeat; }
 
 #screenShieldNotifications StButton#vhandle, #screenShieldNotifications StButton#hhandle {
@@ -1820,7 +1820,7 @@ StScrollBar {
   padding: 8px 8px 10px 8px;
   background-color: rgba(0, 0, 0, 0.7);
   border: 1px solid black;
-  border-image: url("osd.svg") 10 10 9 11;
+  border-image: url("misc/osd.svg") 10 10 9 11;
   border-radius: 2px; }
   #LookingGlassDialog > #Toolbar {
     padding: 3px;
