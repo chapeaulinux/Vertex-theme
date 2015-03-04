@@ -505,13 +505,11 @@ StScrollBar {
       border-image: url("menu/submenu-open.svg") 8 8 2 2;
     }
 
-    &:hover, &:focus, &:active {
+    &:hover, &:active, &:focus {
       color: $selected_fg_color;
-      background: none;
+      background-color: transparent;
       border-image: url("menu/menu-hover.svg") 7 7 1 1;
     }
-
-    //&:active { background-color: darken($selected_bg_color,5%); color: $selected_fg_color; }
 
     &:insensitive {
       color: $insensitive_fg_color;
