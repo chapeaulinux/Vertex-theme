@@ -688,7 +688,9 @@ StScrollBar {
   margin: 0 1.5em; }
 
 .datemenu-calendar-column {
-  spacing: 0.5em;
+  spacing: 0.5em; }
+
+.datemenu-displays-section {
   padding-bottom: 3em; }
 
 .datemenu-today-button,
@@ -1605,15 +1607,18 @@ StScrollBar {
     color: #ffffff; }
 
 .candidate-page-button-box {
-  height: 2em;
-  width: 80px; }
+  height: 2em; }
   .vertical .candidate-page-button-box {
     padding-top: 0.5em; }
   .horizontal .candidate-page-button-box {
     padding-left: 0.5em; }
 
+.candidate-page-button {
+  padding: 4px; }
+
 .candidate-page-button-previous {
-  border-radius: 2px 0px 0px 2px; }
+  border-radius: 2px 0px 0px 2px;
+  border-right-width: 0; }
 
 .candidate-page-button-next {
   border-radius: 0px 2px 2px 0px; }

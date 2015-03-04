@@ -892,10 +892,8 @@ StScrollBar {
   margin: 0 1.5em;
 }
 
-.datemenu-calendar-column {
-  spacing: 0.5em;
-  padding-bottom: 3em;
-}
+.datemenu-calendar-column { spacing: 0.5em; }
+.datemenu-displays-section { padding-bottom: 3em; }
 
 .datemenu-today-button,
 .world-clocks-button,
@@ -1962,12 +1960,15 @@ $legacy_icon_size: 24px;
 
   .candidate-page-button-box {
     height: 2em;
-    width: 80px;
     .vertical & { padding-top: 0.5em; }
     .horizontal & { padding-left: 0.5em; }
   }
 
-  .candidate-page-button-previous { border-radius: 2px 0px 0px 2px; }
+  .candidate-page-button {
+    padding: 4px;
+  }
+
+  .candidate-page-button-previous { border-radius: 2px 0px 0px 2px; border-right-width: 0; }
   .candidate-page-button-next { border-radius: 0px 2px 2px 0px;  }
   .candidate-page-button-icon { icon-size: 1em; }
 
