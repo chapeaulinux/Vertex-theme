@@ -410,7 +410,7 @@ StScrollBar {
       box-shadow: none;
       font-weight: normal;
       border-image: url("menu/submenu-open.svg") 8 8 2 2; }
-    .popup-menu .popup-menu-item:hover {
+    .popup-menu .popup-menu-item:hover, .popup-menu .popup-menu-item:focus, .popup-menu .popup-menu-item:active {
       color: #ffffff;
       background: none;
       border-image: url("menu/menu-hover.svg") 7 7 1 1; }
@@ -1486,6 +1486,31 @@ StScrollBar {
   padding: 7px;
   border-radius: 5px;
   color: pink; }
+
+.legacy-tray {
+  background-color: #353638;
+  border: 1px solid #171819;
+  border-bottom-width: 0;
+  background-gradient-start: #4f5053;
+  background-gradient-end: #343436;
+  background-gradient-direction: vertical;
+  box-shadow: inset 0px 1px rgba(255, 255, 255, 0.3); }
+  .legacy-tray:ltr {
+    border-radius: 0 2px 0 0;
+    border-left-width: 0; }
+  .legacy-tray:rtl {
+    border-radius: 2px 0 0 0;
+    border-right-width: 0; }
+
+.legacy-tray-handle StIcon {
+  icon-size: 24px; }
+
+.legacy-tray-icon-box {
+  padding: 6px;
+  spacing: 12px; }
+  .legacy-tray-icon-box StButton {
+    width: 24px;
+    height: 24px; }
 
 .magnifier-zoom-region {
   border: 2px solid #4080fb; }
