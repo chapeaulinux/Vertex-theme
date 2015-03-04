@@ -38,8 +38,6 @@ scrollbar-slider-horizontal-hover
 scrollbar-slider-horizontal-active
 scrollbar-slider-overlay
 scrollbar-slider-overlay-horizontal
-scale-slider-down-backdrop
-scale-slider-up-backdrop
 scrollbar-trough
 scrollbar-trough-horizontal
 slider
@@ -108,8 +106,6 @@ scrollbar-slider-horizontal-hover-dark
 scrollbar-slider-horizontal-active-dark
 scrollbar-slider-overlay-dark
 scrollbar-slider-overlay-horizontal-dark
-scale-slider-down-backdrop-dark
-scale-slider-up-backdrop-dark
 scrollbar-trough-dark
 scrollbar-trough-horizontal-dark
 slider-dark
