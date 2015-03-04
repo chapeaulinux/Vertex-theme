@@ -1400,6 +1400,7 @@ GtkComboBox {
   .header-bar.default-decoration {
     padding-top: 3px;
     padding-bottom: 3px;
+    background-color: #f7f7f7;
     background-image: linear-gradient(to bottom, #f7f7f7, #F5F5F7);
     border-bottom: none; }
 
@@ -2687,6 +2688,7 @@ GtkVolumeButton.button {
   .window-frame.tiled {
     border-radius: 0; }
   .window-frame.ssd {
+    border-radius: 2.5px 2.5px 0 0;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3); }
   .window-frame.csd.popup {
     border-radius: 0;

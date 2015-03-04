@@ -1213,6 +1213,7 @@ GtkComboBox.combobox-entry .button:only-child,
   &.default-decoration {
     padding-top: 3px;	    // less padding for ssd
     padding-bottom: 3px;  //
+    background-color: $metacity_bg_a;
     background-image: linear-gradient(to bottom,
 	                              $metacity_bg_a,
 	                              $metacity_bg_b);
@@ -2958,6 +2959,7 @@ GtkVolumeButton.button { padding: 8px; }
   }
   // server-side decorations as used by mutter
   &.ssd {
+    border-radius: 2.5px 2.5px 0 0;
     box-shadow: 0 0 0 1px $window_frame; //just doing borders, wm draws actual shadows
   }
   &.csd {
