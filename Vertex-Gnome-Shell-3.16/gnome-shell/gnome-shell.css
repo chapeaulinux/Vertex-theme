@@ -411,10 +411,14 @@ StScrollBar {
       box-shadow: none;
       font-weight: normal;
       border-image: url("menu/submenu-open.svg") 8 8 2 2; }
-    .popup-menu .popup-menu-item:hover, .popup-menu .popup-menu-item:active, .popup-menu .popup-menu-item:focus {
+    .popup-menu .popup-menu-item:hover, .popup-menu .popup-menu-item:active, .popup-menu .popup-menu-item:focus:hover {
       color: #ffffff;
       background-color: transparent;
       border-image: url("menu/menu-hover.svg") 7 7 1 1; }
+    .popup-menu .popup-menu-item:focus {
+      color: #ffffff;
+      background-color: transparent;
+      border-image: url("menu/menu-focus.svg") 7 7 1 1; }
     .popup-menu .popup-menu-item:insensitive {
       color: #949496;
       background: none; }
