@@ -118,15 +118,16 @@ StEntry {
     warning-color: #f57900;
     padding: 0 4px; }
 
+StScrollView.vfade {
+  -st-vfade-offset: 68px; }
+StScrollView.hfade {
+  -st-hfade-offset: 68px; }
+
 StScrollBar {
   padding: 8px; }
-  StScrollBar.vfade {
-    -st-vfade-offset: 68px; }
-  StScrollBar.hfade {
-    -st-hfade-offset: 68px; }
   StScrollView StScrollBar {
-    min-width: 5px;
-    min-height: 5px; }
+    min-width: 14px;
+    min-height: 14px; }
   StScrollBar StBin#trough {
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 8px; }
@@ -1740,9 +1741,10 @@ StScrollBar {
     color: #ffffff; }
   .login-dialog-user-list-item .login-dialog-timed-login-indicator {
     height: 2px;
-    background-color: transparent; }
+    margin: 2px 0 0 0;
+    background-color: white; }
   .login-dialog-user-list-item:focus .login-dialog-timed-login-indicator {
-    background-color: rgba(52, 52, 54, 0.7); }
+    background-color: #ffffff; }
 
 .login-dialog-username,
 .user-widget-label {
