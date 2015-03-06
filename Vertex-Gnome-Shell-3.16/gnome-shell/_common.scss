@@ -810,7 +810,7 @@ StScrollBar {
       background-color: transparent;
       box-shadow: none;
       color: white;
-      border-image: url("panel/panel-button-border.svg") 2 2 2 2;
+      border-image: url("panel/panel-button-border-active.svg") 2 2 2 2;
 
       & > .system-status-icon { icon-shadow: none; }
     }
