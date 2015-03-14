@@ -3136,12 +3136,20 @@ NemoWindow .sidebar .frame {
 NemoWindow GtkSeparator.separator.horizontal, NemoWindow .sidebar GtkSeparator.horizontal.view.separator, .sidebar NemoWindow GtkSeparator.horizontal.view.separator {
   color: #b9b9b9; }
 
-.open-document-selector-listbox-row {
-  padding: 6px 6px 6px 12px; }
-  .open-document-selector-listbox-row .path-label {
-    font-size: smaller;
-    color: rgba(60, 60, 62, 0.7); }
-  .open-document-selector-listbox-row:selected .path-label {
+.open-document-selector-treeview {
+  padding: 3px 6px 3px 6px; }
+  .open-document-selector-treeview:prelight {
+    background-color: rgba(0, 0, 0, 0.05); }
+
+/* Only normal state is handle */
+.open-document-selector-name-label {
+  color: #3c3c3e; }
+
+/* Only normal state is handle */
+.open-document-selector-path-label {
+  color: #9d9d9e;
+  font-size: smaller; }
+  .open-document-selector-path-label:selected {
     color: rgba(255, 255, 255, 0.9); }
 
 .gedit-document-panel {
@@ -3215,8 +3223,8 @@ GeditViewFrame .gedit-search-slider {
   border-width: 0 1px 1px 1px;
   border-style: solid; }
 
-GeditFileBrowserWidget .toolbar {
-  border-bottom: 1px solid #b9b9b9; }
+GeditFileBrowserWidget {
+  background-color: #ffffff; }
 
 .gedit-search-entry-occurrences-tag {
   color: rgba(60, 60, 62, 0.6);
