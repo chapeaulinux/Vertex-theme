@@ -3092,6 +3092,14 @@ TerminalWindow .scrollbar.slider.vertical {
   .nautilus-desktop.nautilus-canvas-item:active, .nemo-desktop.nemo-canvas-item:active, .nautilus-desktop.nautilus-canvas-item:prelight, .nemo-desktop.nemo-canvas-item:prelight, .nautilus-desktop.nautilus-canvas-item:selected, .nemo-desktop.nemo-canvas-item:selected {
     text-shadow: none; }
 
+.nautilus-canvas-item.dim-label, GtkLabel.nautilus-canvas-item.separator, .sidebar GtkLabel.nautilus-canvas-item.view.separator, .header-bar .nautilus-canvas-item.subtitle,
+.nautilus-list-dim-label {
+  color: #949496; }
+  .nautilus-canvas-item.dim-label:selected, GtkLabel.nautilus-canvas-item.separator:selected, .header-bar .nautilus-canvas-item.subtitle:selected, .nautilus-canvas-item.dim-label:selected:focus, GtkLabel.nautilus-canvas-item.separator:selected:focus, .header-bar .nautilus-canvas-item.subtitle:selected:focus,
+  .nautilus-list-dim-label:selected,
+  .nautilus-list-dim-label:selected:focus {
+    color: #d8e5fe; }
+
 NautilusNotebook.notebook {
   background-color: #2B2B2C; }
 

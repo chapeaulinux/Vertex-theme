@@ -70,6 +70,13 @@ TerminalWindow {
   &:active, &:prelight, &:selected { text-shadow: none; }
 }
 
+.nautilus-canvas-item.dim-label,
+.nautilus-list-dim-label {
+  color: mix($fg_color, $bg_color, 50%);
+
+  &:selected, &:selected:focus { color: mix($selected_fg_color, $selected_bg_color, 80%); }
+}
+
 NautilusNotebook.notebook {
   background-color: $base_color;
 }
