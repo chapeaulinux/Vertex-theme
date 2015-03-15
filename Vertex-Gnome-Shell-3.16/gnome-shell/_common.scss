@@ -625,8 +625,8 @@ StScrollBar {
 // Alt Tab Switcher
 //
 .switcher-popup {
-    padding: 8px;
-    spacing: 16px;
+  padding: 8px;
+  spacing: 16px;
 }
 
 .switcher-list {
@@ -1882,13 +1882,17 @@ $legacy_icon_size: 24px;
   &:rtl { border-radius: 2px 0 0 0; border-right-width: 0; }
 }
 
-.legacy-tray-handle {
+.legacy-tray-handle,
+.legacy-tray-icon {
+  padding: 6px;
   & StIcon { icon-size: $legacy_icon_size; }
+  &:hover, &:focus { background-color: transparentize($fg_color,0.9); }
 }
 
 .legacy-tray-icon-box {
-  padding: 6px;
   spacing: 12px;
+  &:ltr { padding-left: 12px; }
+  &:rtl { padding-right: 12px; }
   & StButton { width: $legacy_icon_size; height: $legacy_icon_size }
 }
 
@@ -1903,16 +1907,16 @@ $legacy_icon_size: 24px;
 // On-Screen Keyboard
 //
 #keyboard {
-    background-color: transparentize(black, 0.2);
+  background-color: transparentize(black, 0.2);
 }
 
   .keyboard-layout {
-      spacing: 10px;
-      padding: 10px;
+    spacing: 10px;
+    padding: 10px;
   }
 
   .keyboard-row {
-      spacing: 15px;
+    spacing: 15px;
   }
 
   .keyboard-key {
@@ -1935,15 +1939,15 @@ $legacy_icon_size: 24px;
   }
 
   .keyboard-subkeys { //long press on a key popup
-      color: white;
-      padding: 5px;
-      -arrow-border-radius: 2px;
-      -arrow-background-color: transparentize(black, 0.2);
-      -arrow-border-width: 0px;
-      -arrow-border-color: transparent;
-      -arrow-base: 20px;
-      -arrow-rise: 10px;
-      -boxpointer-gap: 5px;
+    color: white;
+    padding: 5px;
+    -arrow-border-radius: 2px;
+    -arrow-background-color: transparentize(black, 0.2);
+    -arrow-border-width: 0px;
+    -arrow-border-color: transparent;
+    -arrow-base: 20px;
+    -arrow-rise: 10px;
+    -boxpointer-gap: 5px;
   }
 
 //
@@ -1985,9 +1989,11 @@ $legacy_icon_size: 24px;
 .framed-user-icon {
   background-size: contain;
   border: 0px solid transparent;
+  color: $osd_fg_color;
   border-radius: 2px;
   &:hover {
     border-color: transparent;
+    color: lighten($osd_fg_color,30%);
   }
 }
 
@@ -2075,41 +2081,41 @@ $legacy_icon_size: 24px;
     }
 
   .login-dialog-prompt-layout {
-      padding-top: 24px;
-      padding-bottom: 12px;
-      spacing: 8px;
-      width: 23em;
+    padding-top: 24px;
+    padding-bottom: 12px;
+    spacing: 8px;
+    width: 23em;
   }
 
   .login-dialog-prompt-label {
-      color: darken($osd_fg_color, 20%);
-      font-size: 110%;
-      padding-top: 1em;
+    color: darken($osd_fg_color, 20%);
+    font-size: 110%;
+    padding-top: 1em;
   }
 
   .login-dialog-session-list-button StIcon {
-      icon-size: 1.25em;
+    icon-size: 1.25em;
   }
 
   .login-dialog-session-list-button {
-      color: darken($osd_fg_color,30%);
-      &:hover,&:focus { color: $osd_fg_color; }
-      &:active { color: darken($osd_fg_color, 50%); }
+    color: darken($osd_fg_color,30%);
+    &:hover,&:focus { color: $osd_fg_color; }
+    &:active { color: darken($osd_fg_color, 50%); }
   }
 
 //
 // Screen Shield
 //
 .screen-shield-arrows {
-    padding-bottom: 3em;
+  padding-bottom: 3em;
 }
 
 .screen-shield-arrows Gjs_Arrow {
-    color: white;
-    width: 80px;
-    height: 48px;
-    -arrow-thickness: 12px;
-    -arrow-shadow: 0 1px 1px rgba(0,0,0,0.4);
+  color: white;
+  width: 80px;
+  height: 48px;
+  -arrow-thickness: 12px;
+  -arrow-shadow: 0 1px 1px rgba(0,0,0,0.4);
 }
 
 .screen-shield-clock {
@@ -2227,41 +2233,41 @@ $legacy_icon_size: 24px;
   }
 
   .lg-completions-text {
-      font-size: .9em;
-      font-style: italic;
+    font-size: .9em;
+    font-style: italic;
   }
 
   .lg-obj-inspector-title {
-      spacing: 4px;
+    spacing: 4px;
   }
 
   .lg-obj-inspector-button {
-      border: 1px solid gray;
-      padding: 4px;
-      border-radius: 4px;
-      &:hover { border: 1px solid #ffffff; }
+    border: 1px solid gray;
+    padding: 4px;
+    border-radius: 4px;
+    &:hover { border: 1px solid #ffffff; }
   }
 
   #lookingGlassExtensions { padding: 4px; }
 
   .lg-extensions-list {
-      padding: 4px;
-      spacing: 6px;
+    padding: 4px;
+    spacing: 6px;
   }
 
   .lg-extension {
-      border: 1px solid $borders_color;
-      border-radius: 2px;
-      background-color: $bg_color;
-      padding: 4px;
+    border: 1px solid $borders_color;
+    border-radius: 2px;
+    background-color: $bg_color;
+    padding: 4px;
   }
 
   .lg-extension-name {
-      font-weight: bold;
+    font-weight: bold;
   }
 
   .lg-extension-meta {
-      spacing: 6px;
+    spacing: 6px;
   }
 
   #LookingGlassPropertyInspector {
