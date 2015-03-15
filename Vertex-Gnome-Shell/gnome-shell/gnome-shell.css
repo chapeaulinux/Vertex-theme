@@ -107,19 +107,19 @@ StScrollBar StButton#vhandle:active {
 .check-box StBin {
     width: 16px;
     height: 16px;
-    background-image: url("checkbox/checkbox-unchecked.svg");
+    background-image: url("checkbox-unchecked.svg");
 }
 
 .check-box:focus StBin {
-    background-image: url("checkbox/checkbox-unchecked-focused.svg");
+    background-image: url("checkbox-unchecked-focused.svg");
 }
 
 .check-box:checked StBin {
-    background-image: url("checkbox/checkbox-checked.svg");
+    background-image: url("checkbox-checked.svg");
 }
 
 .check-box:focus:checked StBin {
-    background-image: url("checkbox/checkbox-checked-focused.svg");
+    background-image: url("checkbox-checked-focused.svg");
 }
 
 /* Slider */
@@ -136,7 +136,7 @@ StScrollBar StButton#vhandle:active {
     border: 0 solid transparent;
     border-right-width: 1px;
     border-left-width: 5px;
-    border-image: url("misc/slider.svg") 8;
+    border-image: url("slider.svg") 8;
     color: transparent;
 }
 
@@ -167,7 +167,7 @@ StScrollBar StButton#vhandle:active {
 
 .popup-menu {
     min-width: 200px;
-    border-image: url("menu/menu.svg") 10 10 35 14;
+    border-image: url("menu.svg") 10 10 35 14;
 }
 
 .popup-menu-arrow {
@@ -177,7 +177,7 @@ StScrollBar StButton#vhandle:active {
 
 .popup-submenu-menu-item:open {
     background-color: rgba(0,0,0,0.0);
-    border-image: url("menu/submenu-open.svg") 8 8 2 2;
+    border-image: url("submenu-open.svg") 8 8 2 2;
 }
 
 .popup-sub-menu {
@@ -185,7 +185,7 @@ StScrollBar StButton#vhandle:active {
     background-gradient-end: rgba(0,0,0,0.0);
     background-gradient-direction: vertical;
 	  box-shadow: none;
-    border-image: url("menu/submenu.svg") 8 8 2 2;
+    border-image: url("submenu.svg") 8 8 2 2;
 }
 
 .popup-sub-menu:scrolled .popup-menu-item:ltr {
@@ -230,7 +230,7 @@ StScrollBar StButton#vhandle:active {
 
 .popup-menu-item:active {
     background-color: rgba(0,0,0,0.0);
-    border-image: url("menu/menu-hover.svg") 7 7 1 1;
+    border-image: url("menu-hover.svg") 7 7 1 1;
 }
 
 .popup-menu-item:insensitive {
@@ -246,7 +246,7 @@ StScrollBar StButton#vhandle:active {
     -gradient-end: rgba(0,0,0,0.0);
     -margin-horizontal: 24px;
     height: 2px;
-	  border-image: url("menu/menu-separator.svg") 1 1 1 1;
+	  border-image: url("menu-separator.svg") 1 1 1 1;
     padding: 8px 0px;
 }
 
@@ -279,12 +279,12 @@ StScrollBar StButton#vhandle:active {
 
 .toggle-switch-us,
 .toggle-switch-intl {
-    background-image: url("switch/switch-off.svg");
+    background-image: url("switch-off.svg");
     background-size: contain;
 }
 .toggle-switch-us:checked,
 .toggle-switch-intl:checked {
-    background-image: url("switch/switch-on.svg");
+    background-image: url("switch-on.svg");
     background-size: contain;
 }
 
@@ -363,7 +363,7 @@ StScrollBar StButton#vhandle:active {
 	background: none;
 	background-gradient-direction: none;
 	border: 1px solid;
-    border-image: url('button/button-border.svg') 4;
+    border-image: url('button-border.svg') 4;
     min-height: 20px;
     padding: 6px 16px;
     transition-duration: 100;
@@ -381,7 +381,7 @@ StScrollBar StButton#vhandle:active {
 .modal-dialog-button:hover {
 	background: none;
 	border: 1px solid;
-    border-image: url('button/button-border-hover.svg') 4;
+    border-image: url('button-border-hover.svg') 4;
 }
 
 .notification-button:focus,
@@ -391,7 +391,7 @@ StScrollBar StButton#vhandle:active {
 .app-view-control:focus {
 	background: none;
 	border: 2px solid;
-    border-image: url('button/button-border-focused.svg') 4;
+    border-image: url('button-border-focused.svg') 4;
 }
 
 .notification-button:hover:focus,
@@ -401,7 +401,7 @@ StScrollBar StButton#vhandle:active {
 .app-view-control:hover:focus {
 	background: none;
 	border: 2px solid;
-    border-image: url('button/button-border-focused-hover.svg') 4;
+    border-image: url('button-border-focused-hover.svg') 4;
 }
 
 .app-view-control:first-child:ltr:focus,
@@ -426,7 +426,7 @@ StScrollBar StButton#vhandle:active {
 .modal-dialog-button:active:hover {
 	background: none;
 	border: 1px solid;
-    border-image: url('button/button-border-active.svg') 4;
+    border-image: url('button-border-active.svg') 4;
 }
 
 .candidate-page-button:active:focus,
@@ -445,7 +445,7 @@ StScrollBar StButton#vhandle:active {
     color: #9f9f9f;
 	background: none;
 	border: none;
-    border-image: url('button/button-border-insensitive.svg') 4;
+    border-image: url('button-border-insensitive.svg') 4;
 }
 
 .app-view-control {
@@ -460,36 +460,36 @@ StScrollBar StButton#vhandle:active {
 
 .app-view-control:first-child:ltr,
 .app-view-control:last-child:rtl {
-    border-image: url('button/app-control-left.svg') 4;
+    border-image: url('app-control-left.svg') 4;
 }
 
 .app-view-control:last-child:ltr,
 .app-view-control:first-child:rtl {
-    border-image: url('button/app-control-right.svg') 4;
+    border-image: url('app-control-right.svg') 4;
 }
 
 .app-view-control:first-child:ltr:checked,
 .app-view-control:last-child:rtl:checked,
 .app-view-control:first-child:ltr:checked:hover,
 .app-view-control:last-child:rtl:checked:hover {
-    border-image: url('button/app-control-left-active.svg') 4;
+    border-image: url('app-control-left-active.svg') 4;
 }
 
 .app-view-control:last-child:ltr:checked,
 .app-view-control:first-child:rtl:checked,
 .app-view-control:last-child:ltr:checked:hover,
 .app-view-control:first-child:rtl:checked:hover {
-    border-image: url('button/app-control-right-active.svg') 4;
+    border-image: url('app-control-right-active.svg') 4;
 }
 
 .app-view-control:first-child:ltr:hover,
 .app-view-control:last-child:rtl:hover {
-    border-image: url('button/app-control-left-hover.svg') 4;
+    border-image: url('app-control-left-hover.svg') 4;
 }
 
 .app-view-control:last-child:ltr:hover,
 .app-view-control:first-child:rtl:hover {
-    border-image: url('button/app-control-right-hover.svg') 4;
+    border-image: url('app-control-right-hover.svg') 4;
 }
 
 
@@ -544,7 +544,7 @@ StScrollBar StButton#vhandle:active {
     box-shadow: none;
 	background: none;
 	background-gradient-direction: none;
-    border-image: url("entry/entry-border.svg") 4;
+    border-image: url("entry-border.svg") 4;
 
 }
 
@@ -559,7 +559,7 @@ StScrollBar StButton#vhandle:active {
     box-shadow: none;
 	background: none;
 	background-gradient-direction: none;
-    border-image: url("entry/entry-border-focused.svg") 4;
+    border-image: url("entry-border-focused.svg") 4;
 }
 
 .login-dialog StEntry:focus,
@@ -605,22 +605,19 @@ StScrollBar StButton#vhandle:active {
     box-shadow: none;
 	background: none;
 	background-gradient-direction: none;
-    border-image: url("entry/entry-border-insensitive.svg") 4;
+    border-image: url("entry-border-insensitive.svg") 4;
 }
 
 /* Panel */
 
-#panel {
+#panel,
+#panel.unlock-screen,
+#panel.login-screen {
     background-color: rgba(0,0,0,0.0);
-	  border-image: url('panel/panel.svg') 1 1 1 1;
+	  border-image: url('panel.svg') 1 1 1 1;
     font-weight: bold;
     height: 2.1em;
     min-height: 25px;
-}
-
-#panel.unlock-screen,
-#panel.login-screen {
-    background-color: transparent;
 }
 
 #panelLeft, #panelCenter {
@@ -643,22 +640,18 @@ StScrollBar StButton#vhandle:active {
     padding-right: 4px;
 }
 
-.panel-corner {
+.panel-corner,
+.panel-corner.lock-screen,
+.panel-corner.unlock-screen,
+.panel-corner.login-screen {
     -panel-corner-radius: 0px;
     -panel-corner-background-color: rgba(0,0,0,0.0);
     -panel-corner-border-width: 0px;
     -panel-corner-border-color: rgba(0,0,0,0);
 }
 
-.panel-corner.lock-screen,
-.panel-corner.unlock-screen,
-.panel-corner.login-screen {
-    -panel-corner-background-color: transparent;
-    -panel-corner-border-color: transparent;
-}
-
 #appMenu {
-    spinner-image: url("misc/process-working.svg");
+    spinner-image: url("process-working.svg");
     spacing: 4px;
 }
 
@@ -695,7 +688,7 @@ StScrollBar StButton#vhandle:active {
 #panel.unlock-screen .panel-button,
 #panel.lock-screen .panel-button,
 #panel.login-screen .panel-button {
-    color: #e6e6e6;
+    color: white;
 }
 
 #panel.unlock-screen .panel-button:hover,
@@ -711,7 +704,7 @@ StScrollBar StButton#vhandle:active {
 }
 
 .panel-button:hover {
-    border-image: url("panel/panel-button-border-hover.svg") 2 2 2 2;
+    border-image: url("panel-button-border-hover.svg") 2 2 2 2;
     background-image: none;
     color: white;
     text-shadow: none;
@@ -720,7 +713,7 @@ StScrollBar StButton#vhandle:active {
 .panel-button:active,
 .panel-button:overview,
 .panel-button:focus {
-    border-image: url("panel/panel-button-border-active.svg") 2 2 2 2;
+    border-image: url("panel-button-border-active.svg") 2 2 2 2;
     background-image: none;
     color: white;
     text-shadow: none;
@@ -818,12 +811,12 @@ StScrollBar StButton#vhandle:active {
     spacing: 11px;
     padding: 18px 9px 18px 18px;
     background-color: transparent;
-	  border-image: url("misc/workspace-thumb-bg.svg") 11 2 10 10;
+	  border-image: url("workspace-thumb-bg.svg") 11 2 10 10;
 }
 
 .workspace-thumbnails:rtl {
     padding: 18px 18px 18px 9px;
-	  border-image: url("misc/workspace-thumb-bg-rtl.svg") 2 11 10 10;
+	  border-image: url("workspace-thumb-bg-rtl.svg") 2 11 10 10;
 }
 
 .workspace-thumbnail-indicator {
@@ -846,7 +839,7 @@ StScrollBar StButton#vhandle:active {
 }
 
 .window-close, .notification-close {
-    background-image: url("misc/close-window.svg");
+    background-image: url("close-window.svg");
     background-size: 32px;
     height: 32px;
     width: 32px;
@@ -854,14 +847,14 @@ StScrollBar StButton#vhandle:active {
 
 .window-close:active, .notification-close:active,
 .window-close:active:hover, .notification-close:active:hover {
-    background-image: url("misc/close-window-active.svg");
+    background-image: url("close-window-active.svg");
     background-size: 32px;
     height: 32px;
     width: 32px;
 }
 
 .window-close:hover, .notification-close:hover {
-    background-image: url("misc/close-window-hover.svg");
+    background-image: url("close-window-hover.svg");
     background-size: 32px;
     height: 32px;
     width: 32px;
@@ -938,28 +931,28 @@ StScrollBar StButton#vhandle:active {
 /* Dash */
 
 #dash {
-    border-image: url('dash/dash.svg') 6 11 10 10;
+    border-image: url('dash.svg') 6 11 10 10;
     padding: 9px 7px 9px 0px;
 }
 
 .right #dash,
 #dash:rtl {
-    border-image: url('dash/dash-right.svg') 11 6 10 10;
+    border-image: url('dash-right.svg') 11 6 10 10;
     padding: 9px 0px 9px 7px;
 }
 
 .bottom #dash {
-    border-image: url('dash/dash-bottom.svg') 10 10 11 6;
+    border-image: url('dash-bottom.svg') 10 10 11 6;
     padding: 7px 9px 0px 9px;
 }
 
 .top #dash {
-    border-image: url('dash/dash-top.svg') 10 10 6 11;
+    border-image: url('dash-top.svg') 10 10 6 11;
     padding: 0px 9px 7px 9px;
 }
 
 .placeholder {
-    background-image: url("misc/dash-placeholder.svg");
+    background-image: url("dash-placeholder.svg");
     background-size: contain;
     height: 24px;
 }
@@ -1015,7 +1008,7 @@ StScrollBar StButton#vhandle:active {
     height: 0px;
     background-gradient-direction: none;
     border: 1px solid transparent;
-	  border-image: url("misc/search-separator.svg") 1 1 1 1;
+	  border-image: url("search-separator.svg") 1 1 1 1;
 }
 
 .search-section-content {
@@ -1089,20 +1082,20 @@ StScrollBar StButton#vhandle:active {
 .page-indicator .page-indicator-icon {
     width: 18px;
     height: 18px;
-    background-image: url(misc/page-indicator-inactive.svg);
+    background-image: url(page-indicator-inactive.svg);
 }
 
 .page-indicator:hover .page-indicator-icon {
-    background-image: url(misc/page-indicator-hover.svg);
+    background-image: url(page-indicator-hover.svg);
 }
 
 .page-indicator:active .page-indicator-icon {
-    background-image: url(misc/page-indicator-active.svg);
+    background-image: url(page-indicator-active.svg);
 }
 
 .page-indicator:checked .page-indicator-icon,
 .page-indicator:checked:active .page-indicator-icon {
-    background-image: url(misc/page-indicator-checked.svg);
+    background-image: url(page-indicator-checked.svg);
 }
 
 .no-frequent-applications-label {
@@ -1131,28 +1124,28 @@ StScrollBar StButton#vhandle:active {
 .left .dash-item-container > .app-well-app.running > .overview-icon {
     background-image: none;
 	box-shadow: none;
-    border-image: url("dash/button-running.svg") 6;
+    border-image: url("button-running.svg") 6;
     padding: 10px 11px 10px 13px;
 }
 
 .bottom .dash-item-container > .app-well-app.running > .overview-icon {
-    border-image: url("dash/bottom_button-running.svg") 6;
+    border-image: url("bottom_button-running.svg") 6;
     padding: 11px 13px 13px 13px;
 }
 
 .right .dash-item-container > .app-well-app.running > .overview-icon {
-    border-image: url("dash/right_button-running.svg") 6;
+    border-image: url("right_button-running.svg") 6;
     padding: 10px 13px 10px 11px;
 }
 
 .top .dash-item-container > .app-well-app.running > .overview-icon {
-    border-image: url("dash/top_button-running.svg") 6;
+    border-image: url("top_button-running.svg") 6;
     padding: 13px 13px 11px 13px;
 }
 
 .dash-item-container > .app-well-app.running:active:hover > .overview-icon,
 .left .dash-item-container > .app-well-app.running:active:hover > .overview-icon {
-    border-image: url("dash/button-running-active.svg") 6;
+    border-image: url("button-running-active.svg") 6;
     background-image: none;
 	  background-color: transparent;
     box-shadow: none;
@@ -1163,40 +1156,40 @@ StScrollBar StButton#vhandle:active {
 }
 
 .bottom .dash-item-container > .app-well-app.running:active:hover > .overview-icon {
-    border-image: url("dash/bottom_button-running-active.svg") 6;
+    border-image: url("bottom_button-running-active.svg") 6;
     background-gradient-direction: horizontal;
     padding: 11px 13px 13px 13px;
 }
 
 .right .dash-item-container > .app-well-app.running:active:hover > .overview-icon {
-    border-image: url("dash/right_button-running-active.svg") 6;
+    border-image: url("right_button-running-active.svg") 6;
     padding: 10px 13px 10px 11px;
 }
 
 .top .dash-item-container > .app-well-app.running:active:hover > .overview-icon {
-    border-image: url("dash/top_button-running-active.svg") 6;
+    border-image: url("top_button-running-active.svg") 6;
     background-gradient-direction: horizontal;
     padding: 13px 13px 11px 13px;
 }
 
 .dash-item-container > .app-well-app.running:hover > .overview-icon,
 .left .dash-item-container > .app-well-app.running:hover > .overview-icon {
-    border-image: url("dash/button-running-hover.svg") 6;
+    border-image: url("button-running-hover.svg") 6;
     padding: 10px 11px 10px 13px;
 }
 
 .bottom .dash-item-container > .app-well-app.running:hover > .overview-icon {
-    border-image: url("dash/bottom_button-running-hover.svg") 6;
+    border-image: url("bottom_button-running-hover.svg") 6;
     padding: 11px 13px 13px 13px;
 }
 
 .right .dash-item-container > .app-well-app.running:hover > .overview-icon {
-    border-image: url("dash/right_button-running-hover.svg") 6;
+    border-image: url("right_button-running-hover.svg") 6;
     padding: 10px 13px 10px 11px;
 }
 
 .top .dash-item-container > .app-well-app.running:hover > .overview-icon {
-    border-image: url("dash/top_button-running-hover.svg") 6;
+    border-image: url("top_button-running-hover.svg") 6;
     padding: 13px 13px 11px 13px;
 }
 
@@ -1221,22 +1214,22 @@ StScrollBar StButton#vhandle:active {
 .left .dash-item-container > .app-well-app:hover > .overview-icon {
     background-image: none;
 	box-shadow: none;
-    border-image: url("dash/button-hover.svg") 6;
+    border-image: url("button-hover.svg") 6;
     padding: 10px 11px 10px 13px;
 }
 
 .bottom .dash-item-container > .app-well-app:hover > .overview-icon {
-    border-image: url("dash/bottom_button-hover.svg") 6;
+    border-image: url("bottom_button-hover.svg") 6;
     padding: 11px 13px 13px 13px;
 }
 
 .right .dash-item-container > .app-well-app:hover > .overview-icon {
-    border-image: url("dash/right_button-hover.svg") 6;
+    border-image: url("right_button-hover.svg") 6;
     padding: 10px 13px 10px 11px;
 }
 
 .top .dash-item-container > .app-well-app:hover > .overview-icon {
-    border-image: url("dash/top_button-hover.svg") 6;
+    border-image: url("top_button-hover.svg") 6;
     padding: 13px 13px 11px 13px;
 }
 
@@ -1248,24 +1241,24 @@ StScrollBar StButton#vhandle:active {
     background-gradient-start: rgba(255, 255, 255, .0);
     background-gradient-end: rgba(255, 255, 255, .0);
     background-gradient-direction: vertical;
-    border-image: url("dash/button-active.svg") 6;
+    border-image: url("button-active.svg") 6;
     padding: 10px 11px 10px 13px;
 }
 
 .bottom .dash-item-container > .app-well-app:active > .overview-icon {
     background-gradient-direction: horizontal;
-    border-image: url("dash/bottom_button-active.svg") 6;
+    border-image: url("bottom_button-active.svg") 6;
     padding: 11px 13px 13px 13px;
 }
 
 .right .dash-item-container > .app-well-app:active > .overview-icon {
-    border-image: url("dash/right_button-active.svg") 6;
+    border-image: url("right_button-active.svg") 6;
     padding: 10px 13px 10px 11px;
 }
 
 .top .dash-item-container > .app-well-app:active > .overview-icon {
     background-gradient-direction: horizontal;
-    border-image: url("dash/top_button-active.svg") 6;
+    border-image: url("top_button-active.svg") 6;
     padding: 13px 13px 11px 13px;
 }
 
@@ -1287,7 +1280,7 @@ StScrollBar StButton#vhandle:active {
 .search-provider-icon-more {
     width: 16px;
     height: 16px;
-    background-image: url("misc/more-results.svg");
+    background-image: url("more-results.svg");
 }
 
 .app-well-app > .overview-icon.overview-icon-with-label,
@@ -1321,7 +1314,7 @@ StScrollBar StButton#vhandle:active {
     -arrow-border-width: 1px;
     -arrow-base: 0px;
     -arrow-rise: 0px;
-    border-image: url("menu/menu.svg") 10 10 35 14;
+    border-image: url("menu.svg") 10 10 35 14;
 }
 
 .app-folder-popup-bin {
@@ -1331,19 +1324,19 @@ StScrollBar StButton#vhandle:active {
 .app-well-app.running > .overview-icon {
     text-shadow: black 0px 2px 2px;
     background-image: none;
-	  border-image: url("app-folder/app-folder-active.svg") 6 6 5 7;
+	  border-image: url("app-folder-active.svg") 6 6 5 7;
 }
 
 .app-well-app.app-folder > .overview-icon {
     background-color: transparent;
     padding: 7px;
-    border-image: url("app-folder/app-folder.svg") 6 6 5 7;
+    border-image: url("app-folder.svg") 6 6 5 7;
 }
 
 .app-well-app.app-folder:hover > .overview-icon {
     background-color: transparent;
     padding: 7px;
-    border-image: url("app-folder/app-folder-hover.svg") 6 6 5 7;
+    border-image: url("app-folder-hover.svg") 6 6 5 7;
 }
 
 .app-well-app.app-folder:active > .overview-icon, .app-well-app.app-folder:checked > .overview-icon {
@@ -1351,13 +1344,13 @@ StScrollBar StButton#vhandle:active {
     padding: 7px;
     background-gradient-direction: none;
     box-shadow: none;
-    border-image: url("app-folder/app-folder-active.svg") 6 6 5 7;
+    border-image: url("app-folder-active.svg") 6 6 5 7;
 }
 
 .app-well-app.app-folder:focus > .overview-icon {
     background-color: transparent;
     padding: 7px;
-    border-image: url("app-folder/app-folder-focus.svg") 6 6 5 7;
+    border-image: url("app-folder-focus.svg") 6 6 5 7;
 }
 
 .app-well-app:hover > .overview-icon,
@@ -1571,13 +1564,14 @@ StScrollBar StButton#vhandle:active {
     -stipple-color: rgba(0,0,0,0.5);
     width: 0.3em;
 }
-/*
+
 #calendarPopup .calendar {
     padding: 10px;
-}*/
+    padding-bottom: 17px;
+}
 
 .calendar {
-    padding: .4em 1.75em 0.75em 1.75em;
+    padding: .4em 1.75em 2.5em 1.75em;
     /*padding: .4em 1.75em 1.8em 1.75em;*/  /*3.14*/
     /*spacing-rows: 2px;
     spacing-columns: 2px;*/
@@ -1596,12 +1590,12 @@ StScrollBar StButton#vhandle:active {
 .calendar-change-month-back {
     width: 16px;
     height: 16px;
-    background-image: url("misc/calendar-arrow-left.svg");
+    background-image: url("calendar-arrow-left.svg");
     border-radius: 2px;
 }
 
 .calendar-change-month-back:rtl {
-    background-image: url("misc/calendar-arrow-right.svg");
+    background-image: url("calendar-arrow-right.svg");
 }
 
 .calendar-change-month-back:hover,
@@ -1615,12 +1609,12 @@ StScrollBar StButton#vhandle:active {
 .calendar-change-month-forward {
     width: 16px;
     height: 16px;
-    background-image: url("misc/calendar-arrow-right.svg");
+    background-image: url("calendar-arrow-right.svg");
     border-radius: 2px;
 }
 
 .calendar-change-month-forward:rtl {
-    background-image: url("misc/calendar-arrow-left.svg");
+    background-image: url("calendar-arrow-left.svg");
 }
 
 .calendar-change-month-forward:hover,
@@ -1667,7 +1661,7 @@ StScrollBar StButton#vhandle:active {
 .calendar-day-base:active {
     color: #ffffff;
     background-color: transparent;
-    background-image: url("misc/calendar-not-today.svg");
+    background-image: url("calendar-not-today.svg");
     border-width: transparent;
 }
 
@@ -1699,7 +1693,7 @@ StScrollBar StButton#vhandle:active {
 .calendar-today, .calendar-today:active {
     font-weight: bold;
     border: 0px solid rgba(64, 128, 251, 0.5);
-    background-image: url("misc/calendar-today.svg");
+    background-image: url("calendar-today.svg");
 }
 
 .calendar-day-with-events {
@@ -1781,7 +1775,7 @@ StScrollBar StButton#vhandle:active {
 
 /* Message Tray */
 #message-tray {
-    background: #454649 url("misc/message-tray-background.png");
+    background: #454649 url("message-tray-background.png");
     background-repeat: repeat;
     height: 72px;
 }
@@ -1817,7 +1811,7 @@ StScrollBar StButton#vhandle:active {
     spacing-rows: 4px;
     spacing-columns: 10px;
 
-    border-image: url("misc/notification.svg") 10 10 11 1;
+    border-image: url("notification.svg") 10 10 11 1;
 	  border-bottom-width: 3px;
 }
 
@@ -1853,7 +1847,7 @@ StScrollBar StButton#vhandle:active {
     -arrow-rise: 0px;
     color: white;
     -boxpointer-gap: 0px;
-    border-image: url("menu/menu.svg") 10 10 35 14;
+    border-image: url("menu.svg") 10 10 35 14;
 }
 
 .summary-boxpointer .notification {
@@ -1970,7 +1964,7 @@ StScrollBar StButton#vhandle:active {
 
 	  background: none;
 	  border: 1px solid;
-    border-image: url('button/button-border-hover.svg') 4;
+    border-image: url('button-border-hover.svg') 4;
     color: #fff;
 }
 
@@ -1979,7 +1973,7 @@ StScrollBar StButton#vhandle:active {
 
 	  background: none;
 	  border: 1px solid;
-    border-image: url('button/button-border-active.svg') 4;
+    border-image: url('button-border-active.svg') 4;
     color: #fff;
 }
 
@@ -2071,17 +2065,17 @@ StScrollBar StButton#vhandle:active {
 .summary-source-button:focus .summary-source,
 .summary-source-button:selected .summary-source {
 	  border: 1px solid;
-    border-image: url('button/button-border.svg') 4;
+    border-image: url('button-border.svg') 4;
 }
 
 .summary-source-button:hover .summary-source {
 	  border: 1px solid;
-    border-image: url('button/button-border-hover.svg') 4;
+    border-image: url('button-border-hover.svg') 4;
 }
 
 .summary-source-button:active .summary-source {
 	  border: 1px solid;
-    border-image: url('button/button-border-active.svg') 4;
+    border-image: url('button-border-active.svg') 4;
 }
 
 .summary-source {
@@ -2092,7 +2086,7 @@ StScrollBar StButton#vhandle:active {
 }
 
 .summary-source-counter {
-    background-image: url("misc/summary-counter.svg");
+    background-image: url("summary-counter.svg");
     background-size: 2.4em;
     font-size: 1.1em;
     font-weight: bold;
@@ -2113,7 +2107,7 @@ StScrollBar StButton#vhandle:active {
   padding: 7px 5px;
   height: 4px;
   background-color: transparent;
-  border-image: url("misc/slider-osd.svg") 8;
+  border-image: url("slider-osd.svg") 8;
   border-radius: 0;
   color: #4080fb;
 }
@@ -2127,7 +2121,7 @@ StScrollBar StButton#vhandle:active {
 .osd-window {
     background: none;
     border: none;
-	  border-image: url("misc/osd.svg") 10 10 9 11;
+	  border-image: url("osd.svg") 10 10 9 11;
     border-radius: 2px;
     padding: 20px;
 }
@@ -2135,7 +2129,7 @@ StScrollBar StButton#vhandle:active {
 .switcher-list {
     background: none;
     border: none;
-    border-image: url("menu/menu.svg") 10 10 35 14;
+    border-image: url("menu.svg") 10 10 35 14;
     border-radius: 5px;
     padding: 20px;
 }
@@ -2172,7 +2166,7 @@ StScrollBar StButton#vhandle:active {
 .switcher-list .item-box:outlined,
 .switcher-list .item-box:selected {
     padding: 6px;
-	  border-image: url("entry/entry-border.svg") 3;
+	  border-image: url("entry-border.svg") 3;
 }
 
 .switcher-list .thumbnail-box {
@@ -2192,12 +2186,12 @@ StScrollBar StButton#vhandle:active {
 .ripple-box {
     width: 52px;
     height: 52px;
-    background-image: url("misc/corner-ripple-ltr.svg");
+    background-image: url("corner-ripple-ltr.svg");
     background-size: contain;
 }
 
 .ripple-box:rtl {
-    background-image: url("misc/corner-ripple-rtl.svg");
+    background-image: url("corner-ripple-rtl.svg");
 }
 
 .switcher-arrow {
@@ -2216,7 +2210,7 @@ StScrollBar StButton#vhandle:active {
 }
 
 .workspace-switcher-container {
-    border-image: url("menu/menu.svg") 10 10 35 14;
+    border-image: url("menu.svg") 10 10 35 14;
     border-radius: 3px;
     padding: 20px;
     padding-bottom: 24px;
@@ -2234,7 +2228,7 @@ StScrollBar StButton#vhandle:active {
     height: 30px;
     background: rgba(0,0,0,0.33);
     border: 1px solid #4080fb;
-    background-image: url("misc/ws-switch-arrow-up.png");
+    background-image: url("ws-switch-arrow-up.png");
     border-radius: 2px;
 }
 
@@ -2242,13 +2236,13 @@ StScrollBar StButton#vhandle:active {
     height: 30px;
     border: 1px solid #4080fb;
     background: rgba(0,0,0,0.33);
-    background-image: url("misc/ws-switch-arrow-down.png");
+    background-image: url("ws-switch-arrow-down.png");
     border-radius: 2px;
 }
 
 .ws-switcher-box {
     height: 96px;
-	border-image: url("entry/entry-border.svg") 3;
+	border-image: url("entry-border.svg") 3;
     border-radius: 2px;
 }
 
@@ -2287,7 +2281,7 @@ StScrollBar StButton#vhandle:active {
 .modal-dialog {
     border-radius: 3px;
     background-color: rgba(0.0, 0.0, 0.0, 0.0);
-    border-image: url("misc/modal.svg") 10 10 35 14;
+    border-image: url("modal.svg") 10 10 35 14;
     padding-right: 5px;
     padding-left: 5px;
     padding-bottom: 6px;
@@ -2443,11 +2437,11 @@ StScrollBar StButton#vhandle:active {
 	background-gradient-direction: none;
 	border: 1px solid;
     min-height: 20px;
-    border-image: url('button/shutdown-button-border.svg') 4;
+    border-image: url('shutdown-button-border.svg') 4;
 }
 
 .end-session-dialog .modal-dialog-button:last-child:hover {
-    border-image: url('button/shutdown-button-border-hover.svg') 4;
+    border-image: url('shutdown-button-border-hover.svg') 4;
 }
 
 .end-session-dialog .modal-dialog-button:last-child:focus {
@@ -2460,7 +2454,7 @@ StScrollBar StButton#vhandle:active {
 
 .end-session-dialog .modal-dialog-button:last-child:active,
 .end-session-dialog .modal-dialog-button:last-child:pressed {
-    border-image: url('button/shutdown-button-border-active.svg') 4;
+    border-image: url('shutdown-button-border-active.svg') 4;
 }
 
 .end-session-dialog .modal-dialog-button:last-child:focus:active,
@@ -2668,7 +2662,7 @@ StScrollBar StButton#vhandle:active {
 	background: none;
 	background-gradient-direction: none;
 	border: 1px solid;
-    border-image: url('button/button-border.svg') 4;
+    border-image: url('button-border.svg') 4;
     font-size: 1.6em;
     font-weight: bold;
     color: white;
@@ -2685,14 +2679,14 @@ StScrollBar StButton#vhandle:active {
 	background: none;
 	background-gradient-direction: none;
 	border: 1px solid;
-    border-image: url('button/button-border-hover.svg') 4;
+    border-image: url('button-border-hover.svg') 4;
 }
 
 .keyboard-key:active {
 	background: none;
 	background-gradient-direction: none;
 	border: 1px solid;
-    border-image: url('button/button-border-active.svg') 4;
+    border-image: url('button-border-active.svg') 4;
 }
 
 .keyboard-subkeys {
@@ -2772,14 +2766,14 @@ StScrollBar StButton#vhandle:active {
     font-size: 10pt;
     font-weight: bold;
     text-align: center;
-    color: #666666;
+    color: white;
     padding-bottom: 1em;
 }
 
 .login-dialog-title {
     font-size: 14pt;
     font-weight: bold;
-    color: #666666;
+    color: white;
     padding-bottom: 2em;
 }
 
@@ -2805,9 +2799,9 @@ StScrollBar StButton#vhandle:active {
 
 .login-dialog-user-list-item {
     border-radius: 5px;
-    padding: .2em;
-    color: #bfbfbf;
-    text-shadow: black 0px 2px 2px;
+    padding: 8px;
+    color: white;
+    text-shadow: rgba(0,0,0,0.2) 0px -1px;
 }
 
 .login-dialog-user-list-item:ltr {
@@ -2819,16 +2813,24 @@ StScrollBar StButton#vhandle:active {
 }
 
 .login-dialog-user-list-item:hover {
-    background-color: rgba(255,255,255,0.1);
+    border-image: url('button-border-hover.svg') 4;
 }
 
 .login-dialog-user-list:expanded .login-dialog-user-list-item:focus {
-    background-color: rgba(255,255,255,0.33);
+    border-image: url('button-border-focused.svg') 4;
+}
+
+.login-dialog-user-list:expanded .login-dialog-user-list-item:focus:hover {
+    border-image: url('button-border-focused-hover.svg') 4;
+}
+
+.login-dialog-user-list:expanded .login-dialog-user-list-item:active:focus:hover,
+.login-dialog-user-list:expanded .login-dialog-user-list-item:active {
+    border-image: url('button-border-active.svg') 4;
 }
 
 .login-dialog-user-list:expanded .login-dialog-user-list-item:logged-in {
-    background-image: url("misc/logged-in-indicator.svg");
-    background-size: contain;
+    border-image: url('button-border-focused.svg') 4;
 }
 
 .login-dialog-user-list-item-text-box {
@@ -2847,7 +2849,7 @@ StScrollBar StButton#vhandle:active {
 .login-dialog-not-listed-label {
     font-size: 10.5pt;
     font-weight: bold;
-    color: #666666;
+    color: rgba(255,255,255, 0.7);
     padding-top: 1em;
 }
 
@@ -2870,7 +2872,7 @@ StScrollBar StButton#vhandle:active {
     font-weight: bold;
     text-align: left;
     padding-left: 15px;
-    text-shadow: rgba(0, 0, 0, 0.5) 0px 2px 1px 0px;
+    text-shadow: rgba(0, 0, 0, 0.2) 0px -1px;
 }
 
 .login-dialog-prompt-layout {
@@ -2909,41 +2911,30 @@ StScrollBar StButton#vhandle:active {
 }
 
 .login-dialog .modal-dialog-button {
-    border-radius: 5px;
-    padding: 3px 18px;
+    border-radius: 2px;
+    padding: 5px 22px;
 }
 
 .login-dialog .modal-dialog-button:focus {
-    padding: 2px 17px;
+    /*padding: 2px 17px;*/
 }
 
+.login-dialog .modal-dialog-button:default:focus,
 .login-dialog .modal-dialog-button:default {
-    background-gradient-start: #6793c4;
-    background-gradient-end: #335d8f;
-    background-gradient-direction: vertical;
-    border-color: #16335d;
-}
-
-.login-dialog .modal-dialog-button:default:focus {
-    border: 2px solid #377fe7;
+    border-image: url('login-button-border.svg') 4;
 }
 
 .login-dialog .modal-dialog-button:default:hover {
-    background-gradient-start: #74a0d0;
-    background-gradient-end: #436d9f;
+    border-image: url('login-button-hover.svg') 4;
 }
 
 .login-dialog .modal-dialog-button:default:active,
 .login-dialog .modal-dialog-button:default:pressed {
-    background-gradient-start: #436d9f;
-    background-gradient-end: #74a0d0;
+    border-image: url('login-button-active.svg') 4;
 }
 
 .login-dialog .modal-dialog-button:default:insensitive {
-    border-color: #666666;
-    color: #9f9f9f;
-    background-gradient-direction: none;
-    background-color: rgba(102, 102, 102, 0.15);
+    color: rgba(255,255,255,0.3);
 }
 
 .login-dialog-message {
@@ -2974,9 +2965,8 @@ StScrollBar StButton#vhandle:active {
 
 /* Screen shield */
 
-#panel.lock-screen,
-#screenShieldNotifications {
-    background-color: rgba(0,0,0,0.3);
+#screenShieldNotifications .notification {
+    border-image: url("notification-screenshield.svg") 10 10 9 11;
 }
 
 .screen-shield-background {
@@ -2985,7 +2975,7 @@ StScrollBar StButton#vhandle:active {
 }
 
 #lockDialogGroup {
-    background: #2e3436 url(misc/noise-texture.png);
+    background: #2e3436 url(noise-texture.png);
     background-repeat: repeat;
 }
 
