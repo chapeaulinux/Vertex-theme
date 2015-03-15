@@ -145,8 +145,9 @@ GeditWindow {
   }
 }
 
-.open-document-selector-treeview {
+.open-document-selector-treeview.view {
     padding: 3px 6px 3px 6px;
+    border-color: $base_color;  // disable borders, making them transparent doesn't work for some reason
 
     &:prelight { background-color: if($variant=='light', transparentize(black, 0.95), transparentize(white, 0.95)); }
 }

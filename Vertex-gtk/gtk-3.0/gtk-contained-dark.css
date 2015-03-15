@@ -3132,9 +3132,10 @@ NemoWindow .sidebar .frame {
 NemoWindow GtkSeparator.separator.horizontal, NemoWindow .sidebar GtkSeparator.horizontal.view.separator, .sidebar NemoWindow GtkSeparator.horizontal.view.separator {
   color: #171819; }
 
-.open-document-selector-treeview {
-  padding: 3px 6px 3px 6px; }
-  .open-document-selector-treeview:prelight {
+.open-document-selector-treeview.view {
+  padding: 3px 6px 3px 6px;
+  border-color: #2B2B2C; }
+  .open-document-selector-treeview.view:prelight {
     background-color: rgba(255, 255, 255, 0.05); }
 
 /* Only normal state is handle */

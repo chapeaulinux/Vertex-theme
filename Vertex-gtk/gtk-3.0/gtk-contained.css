@@ -3550,9 +3550,10 @@ GeditWindow .pane-separator,
 GeditWindow .pane-separator:hover {
   border-color: rgba(53, 54, 56, 0.3); }
 
-.open-document-selector-treeview {
-  padding: 3px 6px 3px 6px; }
-  .open-document-selector-treeview:prelight {
+.open-document-selector-treeview.view {
+  padding: 3px 6px 3px 6px;
+  border-color: #ffffff; }
+  .open-document-selector-treeview.view:prelight {
     background-color: rgba(0, 0, 0, 0.05); }
 
 /* Only normal state is handle */
