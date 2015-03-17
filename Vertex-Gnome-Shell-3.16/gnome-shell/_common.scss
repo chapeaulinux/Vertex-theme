@@ -507,26 +507,16 @@ StScrollBar {
       border-image: url("menu/submenu-open.svg") 8 8 2 2;
     }
 
-    &:hover, &:active, &:focus:hover {
+    &:active, &.selected {
       color: $selected_fg_color;
       background-color: transparent;
       border-image: url("menu/menu-hover.svg") 7 7 1 1;
-    }
-    &:focus {
-      color: $selected_fg_color;
-      background-color: transparent;
-      border-image: url("menu/menu-focus.svg") 7 7 1 1;
     }
 
     &:insensitive {
       color: $insensitive_fg_color;
       background: none;
     }
-  }
-
-  .active {
-    background-color: transparent;
-    border-image: url("menu/menu-hover.svg") 6 6 2 2;
   }
 
   .popup-inactive-menu-item { //all icons and other graphical elements
@@ -996,7 +986,7 @@ StScrollBar {
     color: $selected_fg_color;
     background-color: transparent;
     background-image: url('misc/calendar-not-today.svg');
-    border-width: transparent; //avoid jumparound due to today
+    border-width: 0; //avoid jumparound due to today
   }
 
   &.calendar-day-heading {  //day of week heading

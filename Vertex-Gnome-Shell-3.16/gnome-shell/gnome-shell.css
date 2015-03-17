@@ -411,20 +411,13 @@ StScrollBar {
       box-shadow: none;
       font-weight: normal;
       border-image: url("menu/submenu-open.svg") 8 8 2 2; }
-    .popup-menu .popup-menu-item:hover, .popup-menu .popup-menu-item:active, .popup-menu .popup-menu-item:focus:hover {
+    .popup-menu .popup-menu-item:active, .popup-menu .popup-menu-item.selected {
       color: #ffffff;
       background-color: transparent;
       border-image: url("menu/menu-hover.svg") 7 7 1 1; }
-    .popup-menu .popup-menu-item:focus {
-      color: #ffffff;
-      background-color: transparent;
-      border-image: url("menu/menu-focus.svg") 7 7 1 1; }
     .popup-menu .popup-menu-item:insensitive {
       color: #949496;
       background: none; }
-  .popup-menu .active {
-    background-color: transparent;
-    border-image: url("menu/menu-hover.svg") 6 6 2 2; }
   .popup-menu .popup-inactive-menu-item {
     color: #F3F3F5; }
     .popup-menu .popup-inactive-menu-item:insensitive {
@@ -795,7 +788,7 @@ StScrollBar {
     color: #ffffff;
     background-color: transparent;
     background-image: url("misc/calendar-not-today.svg");
-    border-width: transparent; }
+    border-width: 0; }
   .calendar-day-base.calendar-day-heading {
     color: rgba(243, 243, 245, 0.85);
     margin-top: 1em;
