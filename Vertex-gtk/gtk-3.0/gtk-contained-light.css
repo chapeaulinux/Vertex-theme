@@ -3224,7 +3224,15 @@ GeditStatusMenuButton:prelight.button.flat {
 GeditStatusMenuButton:checked.button.flat {
   border-color: #5d5d5f; }
 
-GeditViewFrame .gedit-search-slider {
+GeditFileBrowserWidget {
+  background-color: #ffffff; }
+
+.gedit-search-entry-occurrences-tag, .gb-search-entry-occurrences-tag {
+  color: rgba(60, 60, 62, 0.6);
+  margin: 2px;
+  padding: 2px; }
+
+GeditViewFrame .gedit-search-slider, GbEditorFrame .gb-search-slider {
   padding: 6px;
   background-color: #fbfbfc;
   border-color: #c6c6c6;
@@ -3232,13 +3240,95 @@ GeditViewFrame .gedit-search-slider {
   border-width: 0 1px 1px 1px;
   border-style: solid; }
 
-GeditFileBrowserWidget {
-  background-color: #ffffff; }
-
-.gedit-search-entry-occurrences-tag {
-  color: rgba(60, 60, 62, 0.6);
-  margin: 2px;
+GbEditorFrame .gb-search-slider {
   padding: 2px; }
+
+GdTaggedEntry {
+  color: #3c3c3e; }
+
+.preferences.sidebar GtkViewport {
+  border: none; }
+.preferences.sidebar GtkListBox {
+  background-color: #F5F5F7; }
+.preferences.sidebar GtkListBoxRow {
+  padding: 10px; }
+
+GtkBox.gb-command-bar-box {
+  border: none;
+  background-image: linear-gradient(to bottom, #2e3436, #555753 10%);
+  box-shadow: inset 0px 3px 6px #2e3436; }
+  GtkBox.gb-command-bar-box GtkLabel {
+    color: #eeeeec; }
+
+GtkEntry.gb-command-bar-entry {
+  font-family: Monospace;
+  background-image: none;
+  padding: 6px 6px 6px 6px;
+  color: #eeeeec; }
+
+.linked > .tab-header-first:first-child,
+.linked > .tab-header-first,
+.linked > .tab-header-first:first-child:hover,
+.linked > .tab-header-first:hover,
+.linked .linked > .tab-control-first,
+.linked .linked > .tab-control-first:hover,
+.linked .linked > .tab-control-last,
+.linked .linked > .tab-control-last:hover {
+  border: none;
+  border-radius: 0;
+  border: solid #b9b9b9;
+  border-width: 0 1px 1px 0;
+  box-shadow: inset 1px 1px white; }
+  .linked > .tab-header-first:first-child:active, .linked > .tab-header-first:first-child:checked,
+  .linked > .tab-header-first:active,
+  .linked > .tab-header-first:checked,
+  .linked > .tab-header-first:first-child:hover:active,
+  .linked > .tab-header-first:first-child:hover:checked,
+  .linked > .tab-header-first:hover:active,
+  .linked > .tab-header-first:hover:checked,
+  .linked .linked > .tab-control-first:active,
+  .linked .linked > .tab-control-first:checked,
+  .linked .linked > .tab-control-first:hover:active,
+  .linked .linked > .tab-control-first:hover:checked,
+  .linked .linked > .tab-control-last:active,
+  .linked .linked > .tab-control-last:checked,
+  .linked .linked > .tab-control-last:hover:active,
+  .linked .linked > .tab-control-last:hover:checked {
+    border: none;
+    border-radius: 0;
+    border: solid #5d5d5f;
+    border-width: 0 1px 1px 0;
+    box-shadow: inset 1px 1px #5d5d5f, inset 0 1px 2px rgba(0, 0, 0, 0.2); }
+.linked .linked > .tab-control-last,
+.linked .linked > .tab-control-last:hover,
+.linked .linked > .tab-control-last:checked,
+.linked .linked > .tab-control-last:active,
+.linked .linked > .tab-control-last:checked:hover,
+.linked .linked > .tab-control-last:active:hover {
+  border-right-width: 0; }
+
+#project-title {
+  border-left: none;
+  border-right: none;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px; }
+
+GbCreditsWidget GtkEventBox {
+  background-color: #000000; }
+GbCreditsWidget GtkLabel {
+  color: #eeeeef; }
+
+GbSourceStyleSchemeWidget GtkSourceView {
+  font-family: Monospace; }
+
+GtkScrolledWindow.gb-linked-scroller {
+  border-top: none; }
+
+GbSearchDisplayGroup GtkListBox .list-row,
+GbDocumentStack .button {
+  transition: none; }
 
 EphyWindow .floating-bar {
   background-image: none;

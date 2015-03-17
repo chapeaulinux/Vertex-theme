@@ -248,14 +248,7 @@ GeditStatusMenuButton:checked.button.flat {
   border-color: darken($button_active_gradient_color_a, 5%);
 }
 
-GeditViewFrame .gedit-search-slider {
-  padding: 6px;
-  background-color: lighten($bg_color, 2%);
-  border-color: lighten($borders_color, 5%);
-  border-radius: 0 0 3px 3px;
-  border-width: 0 1px 1px 1px;
-  border-style: solid;
-}
+GeditViewFrame .gedit-search-slider { @extend %search_slider }
 
 GeditFileBrowserWidget {
   background-color: $base_color;
@@ -265,6 +258,113 @@ GeditFileBrowserWidget {
   color: transparentize($fg_color, 0.4);
   margin: 2px;
   padding: 2px;
+}
+
+%search_slider {
+  padding: 6px;
+  background-color: lighten($bg_color, 2%);
+  border-color: lighten($borders_color, 5%);
+  border-radius: 0 0 3px 3px;
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
+}
+
+//
+// Gnome Builder
+//
+
+//Search entry that slides down from top of editor
+GbEditorFrame .gb-search-slider { @extend %search_slider; padding: 2px; }
+
+.gb-search-entry-occurrences-tag { @extend .gedit-search-entry-occurrences-tag }
+
+GdTaggedEntry { color: $fg_color; }
+
+// Preferences sidebar style
+.preferences.sidebar {
+
+  GtkViewport { border: none; }
+  GtkListBox { background-color: $bg_color; }
+  GtkListBoxRow { padding: 10px; }
+}
+
+// Command Bar styling
+GtkBox.gb-command-bar-box {
+  border: none;
+  background-image: linear-gradient(to bottom, #2e3436, #555753 10%);
+  box-shadow: inset 0px 3px 6px #2e3436;
+
+  GtkLabel { color: #eeeeec; }
+}
+
+GtkEntry.gb-command-bar-entry {
+  font-family: Monospace;
+  background-image: none;
+  padding: 6px 6px 6px 6px;
+  color: #eeeeec;
+}
+
+// Tab header styling
+.linked {
+  > .tab-header-first:first-child,
+  > .tab-header-first,
+  > .tab-header-first:first-child:hover,
+  > .tab-header-first:hover,
+  .linked > .tab-control-first,
+  .linked > .tab-control-first:hover,
+  .linked > .tab-control-last,
+  .linked > .tab-control-last:hover {
+    border: none;                         // reset border styling
+    border-radius: 0;
+    border: solid $borders_color;
+    border-width: 0 1px 1px 0;
+    box-shadow: inset 1px 1px $highlight_shadow;
+
+    &:active, &:checked {
+      border: none;
+      border-radius: 0;
+      border: solid darken($button_active_gradient_color_a, 5%);
+      border-width: 0 1px 1px 0;
+      box-shadow: inset 1px 1px darken($button_active_gradient_color_a, 5%),
+                  inset 0 1px 2px transparentize(black, 0.8);
+    }
+  }
+
+  .linked > .tab-control-last,
+  .linked > .tab-control-last:hover,
+  .linked > .tab-control-last:checked,
+  .linked > .tab-control-last:active,
+  .linked > .tab-control-last:checked:hover,
+  .linked > .tab-control-last:active:hover { border-right-width: 0; }
+}
+
+#project-title {
+  border-left: none;
+  border-right: none;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+GbCreditsWidget {
+  GtkEventBox { background-color: #000000; }
+  GtkLabel { color: #eeeeef; }
+}
+
+GbSourceStyleSchemeWidget GtkSourceView {
+  font-family: Monospace;
+}
+
+GtkScrolledWindow.gb-linked-scroller {
+  border-top: none;
+}
+
+// Disable various animatinos that are enabled by default and really annoying
+// to the overall flow of Builder.
+GbSearchDisplayGroup GtkListBox .list-row,
+GbDocumentStack .button {
+  transition: none;
 }
 
 //
