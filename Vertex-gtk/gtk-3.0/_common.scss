@@ -37,6 +37,8 @@
 
   -GtkStatusbar-shadow-type: none;
 
+  background-clip: padding-box;
+
   // We use the outline properties to signal the focus properties
   // to the adwaita engine: using real CSS properties is faster,
   // and we don't use any outlines for now.
@@ -1790,6 +1792,7 @@ column-header.button.dnd { // for treeview-like derive widgets
 // Popovers
 //
 .popover {
+  background-clip: initial;
   padding: 2px;
   border: 1px solid $borders-color;
   border-radius: 3px;
