@@ -1236,6 +1236,8 @@ GtkComboBox.combobox-entry .button:only-child,
                                     $wm_bg_a,
                                     $wm_bg_b);
   box-shadow: inset 0 1px $wm_highlight;
+
+ .solid-csd & { box-shadow: none; }
 }
 
 // Extends for widgets in dark Headerbars and toolbars
@@ -2986,6 +2988,13 @@ GtkVolumeButton.button { padding: 8px; }
       border-radius: 3px;
       box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4);
     }
+  }
+  &.solid-csd {
+    border-radius: 0;
+    margin: 1px 3px 3px 3px;
+    background-color: $wm_bg_a;
+    border: solid 1px if($darker=='false', $borders_color, nth($_borders_color, 2));
+    box-shadow: inset 0 1px $wm_highlight;
   }
 }
 
