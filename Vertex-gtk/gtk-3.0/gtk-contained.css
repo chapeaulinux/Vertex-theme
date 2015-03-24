@@ -3690,6 +3690,12 @@ GdTaggedEntry {
 .preferences.sidebar GtkListBoxRow {
   padding: 10px; }
 
+GbPreferencesPageLanguage GtkSearchEntry {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0; }
+GbPreferencesPageLanguage GtkScrolledWindow {
+  border-top-width: 0; }
+
 GtkBox.gb-command-bar-box {
   border: none;
   background-image: linear-gradient(to bottom, #2e3436, #555753 10%);
@@ -3697,65 +3703,13 @@ GtkBox.gb-command-bar-box {
   GtkBox.gb-command-bar-box GtkLabel {
     color: #eeeeec; }
 
-GtkEntry.gb-command-bar-entry {
+GtkEntry.gb-command-bar-entry.entry.flat,
+GtkEntry.gb-command-bar-entry.entry.flat:focus {
   font-family: Monospace;
   background-image: none;
+  background-color: transparent;
   padding: 6px 6px 6px 6px;
   color: #eeeeec; }
-
-.linked > .tab-header-first:first-child,
-.linked > .tab-header-first,
-.linked > .tab-header-first:first-child:hover,
-.linked > .tab-header-first:hover,
-.linked .linked > .tab-control-first,
-.linked .linked > .tab-control-first:hover,
-.linked .linked > .tab-control-last,
-.linked .linked > .tab-control-last:hover {
-  border: none;
-  border-radius: 0;
-  border: solid #b9b9b9;
-  border-width: 0 1px 1px 0;
-  box-shadow: inset 1px 1px white; }
-  .linked > .tab-header-first:first-child:active, .linked > .tab-header-first:first-child:checked,
-  .linked > .tab-header-first:active,
-  .linked > .tab-header-first:checked,
-  .linked > .tab-header-first:first-child:hover:active,
-  .linked > .tab-header-first:first-child:hover:checked,
-  .linked > .tab-header-first:hover:active,
-  .linked > .tab-header-first:hover:checked,
-  .linked .linked > .tab-control-first:active,
-  .linked .linked > .tab-control-first:checked,
-  .linked .linked > .tab-control-first:hover:active,
-  .linked .linked > .tab-control-first:hover:checked,
-  .linked .linked > .tab-control-last:active,
-  .linked .linked > .tab-control-last:checked,
-  .linked .linked > .tab-control-last:hover:active,
-  .linked .linked > .tab-control-last:hover:checked {
-    border: none;
-    border-radius: 0;
-    border: solid #5d5d5f;
-    border-width: 0 1px 1px 0;
-    box-shadow: inset 1px 1px #5d5d5f, inset 0 1px 2px rgba(0, 0, 0, 0.2); }
-.linked .linked > .tab-control-last,
-.linked .linked > .tab-control-last:hover,
-.linked .linked > .tab-control-last:checked,
-.linked .linked > .tab-control-last:active,
-.linked .linked > .tab-control-last:checked:hover,
-.linked .linked > .tab-control-last:active:hover {
-  border-right-width: 0; }
-
-#project-title {
-  border-left: none;
-  border-right: none;
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px; }
-
-GbCreditsWidget GtkEventBox {
-  background-color: #000000; }
-GbCreditsWidget GtkLabel {
-  color: #eeeeef; }
 
 GbSourceStyleSchemeWidget GtkSourceView {
   font-family: Monospace; }
@@ -3763,9 +3717,18 @@ GbSourceStyleSchemeWidget GtkSourceView {
 GtkScrolledWindow.gb-linked-scroller {
   border-top: none; }
 
-GbSearchDisplayGroup GtkListBox .list-row,
-GbDocumentStack .button {
+GbSearchDisplayGroup GtkListBox .list-row, GbDocumentStack .button {
   transition: none; }
+
+GbViewStack GtkBox.header.notebook,
+GbEditorWorkspace > GtkPaned > GtkBox > GtkBox.header.notebook {
+  border-bottom: 1px solid #b9b9b9; }
+
+GbViewStack.focused GtkBox.header.notebook {
+  background-image: linear-gradient(to bottom, #ebebec, #e2e2e4);
+  box-shadow: inset 0 1px white; }
+  GbViewStack.focused GtkBox.header.notebook .button.dim-label, GbViewStack.focused GtkBox.header.notebook GtkLabel.button.separator, GbViewStack.focused GtkBox.header.notebook .header-bar .button.subtitle, .header-bar GbViewStack.focused GtkBox.header.notebook .button.subtitle {
+    opacity: 1; }
 
 EphyWindow .floating-bar {
   background-image: none;

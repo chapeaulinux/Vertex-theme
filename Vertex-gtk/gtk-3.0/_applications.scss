@@ -283,6 +283,16 @@ GdTaggedEntry { color: $fg_color; }
   GtkListBoxRow { padding: 10px; }
 }
 
+// Preference page language style
+GbPreferencesPageLanguage  {
+
+  GtkSearchEntry {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  GtkScrolledWindow { border-top-width: 0; }
+}
+
 // Command Bar styling
 GtkBox.gb-command-bar-box {
   border: none;
@@ -292,74 +302,41 @@ GtkBox.gb-command-bar-box {
   GtkLabel { color: #eeeeec; }
 }
 
-GtkEntry.gb-command-bar-entry {
+GtkEntry.gb-command-bar-entry.entry.flat,
+GtkEntry.gb-command-bar-entry.entry.flat:focus {
   font-family: Monospace;
   background-image: none;
+  background-color: transparent;
   padding: 6px 6px 6px 6px;
   color: #eeeeec;
 }
 
-// Tab header styling
-.linked {
-  > .tab-header-first:first-child,
-  > .tab-header-first,
-  > .tab-header-first:first-child:hover,
-  > .tab-header-first:hover,
-  .linked > .tab-control-first,
-  .linked > .tab-control-first:hover,
-  .linked > .tab-control-last,
-  .linked > .tab-control-last:hover {
-    border: none;                         // reset border styling
-    border-radius: 0;
-    border: solid $borders_color;
-    border-width: 0 1px 1px 0;
-    box-shadow: inset 1px 1px $highlight_shadow;
-
-    &:active, &:checked {
-      border: none;
-      border-radius: 0;
-      border: solid darken($button_active_gradient_color_a, 5%);
-      border-width: 0 1px 1px 0;
-      box-shadow: inset 1px 1px darken($button_active_gradient_color_a, 5%),
-                  inset 0 1px 2px transparentize(black, 0.8);
-    }
-  }
-
-  .linked > .tab-control-last,
-  .linked > .tab-control-last:hover,
-  .linked > .tab-control-last:checked,
-  .linked > .tab-control-last:active,
-  .linked > .tab-control-last:checked:hover,
-  .linked > .tab-control-last:active:hover { border-right-width: 0; }
-}
-
-#project-title {
-  border-left: none;
-  border-right: none;
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-
-GbCreditsWidget {
-  GtkEventBox { background-color: #000000; }
-  GtkLabel { color: #eeeeef; }
-}
-
 GbSourceStyleSchemeWidget GtkSourceView {
-  font-family: Monospace;
+    font-family: Monospace;
 }
 
 GtkScrolledWindow.gb-linked-scroller {
-  border-top: none;
+    border-top: none;
 }
 
 // Disable various animatinos that are enabled by default and really annoying
 // to the overall flow of Builder.
-GbSearchDisplayGroup GtkListBox .list-row,
-GbDocumentStack .button {
-  transition: none;
+GbSearchDisplayGroup GtkListBox .list-row, GbDocumentStack .button {
+    transition: none;
+}
+
+GbViewStack GtkBox.header.notebook,
+GbEditorWorkspace > GtkPaned > GtkBox > GtkBox.header.notebook {
+    border-bottom: 1px solid $borders_color;
+}
+
+GbViewStack.focused GtkBox.header.notebook {
+  background-image: linear-gradient(to bottom,
+                                    mix($button_gradient_color_a, $button_gradient_color_b, 50%),
+                        					  $button_gradient_color_b);
+  box-shadow: inset 0 1px $highlight_shadow;
+
+ .button.dim-label { opacity: 1; }
 }
 
 //
@@ -380,7 +357,7 @@ EphyWindow .floating-bar { // Epiphany overrides the floating-bar style, so rese
   border-color: $borders_color;
   border-width: 1px 0 0;
   border-radius: 0;
-  
+
   &:active, &:checked { border-color: darken($button_active_gradient_color_a, 5%); }
 }
 
@@ -498,8 +475,8 @@ PanelApplet,
 .gnome-panel-menu-bar {
   color: nth($_fg_color, 2);
   text-shadow: 0 -1px nth($_light_text_icon_shadow, 2);
-  background-image: linear-gradient(to bottom, 
-                                    nth($_wm_bg_a, 2), 
+  background-image: linear-gradient(to bottom,
+                                    nth($_wm_bg_a, 2),
                                     nth($_wm_bg_b, 2));
   box-shadow: inset 0 2px nth($_wm_highlight, 2),
               inset 0 1px black,
@@ -536,7 +513,7 @@ PanelApplet .button:focus {
   &:checked:hover {
     @include button(active, $dark:'true', $border:'false');
 
-    border-image: none; 
+    border-image: none;
     border-width: 3px;
     border-radius: 5.5px;
     icon-shadow: none;
@@ -550,7 +527,7 @@ PanelApplet .button:focus {
 }
 
 %panelbutton {
-  border-image: none; 
+  border-image: none;
   border-width: 3px;
   border-radius: 5px;
   icon-shadow: none;
@@ -763,7 +740,7 @@ MarlinViewWindow *:selected:focus {
   text-shadow: 0 1px $light_text_icon_shadow;
   icon-shadow: none;
 }
- 
+
 .search-item {
   border-width: 0;
   border-radius: 0;
