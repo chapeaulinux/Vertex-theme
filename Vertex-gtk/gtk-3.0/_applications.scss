@@ -296,8 +296,9 @@ GbPreferencesPageLanguage  {
 // Command Bar styling
 GtkBox.gb-command-bar-box {
   border: none;
-  background-image: linear-gradient(to bottom, #2e3436, #555753 10%);
-  box-shadow: inset 0px 3px 6px #2e3436;
+  border-top: 1px solid nth($_borders_color, 2);
+  background-image: linear-gradient(to bottom, nth($_base_color, 2));
+  box-shadow: inset 0px 2px 3px -1px transparentize(black, 0.7);
 
   GtkLabel { color: #eeeeec; }
 }
