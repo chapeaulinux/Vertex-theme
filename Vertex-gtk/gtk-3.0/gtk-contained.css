@@ -3243,7 +3243,7 @@ GtkVolumeButton.button {
   background-image: -gtk-scaled(url("assets/titlebutton-minimize-active-dark.png"), url("assets/titlebutton-minimize-active-dark@2.png")); }
 
 .view:selected, .view:selected:focus, .view:selected:hover, GtkLabel:selected, GtkLabel:selected:focus, GtkLabel:selected:hover, GtkFlowBox .grid-child:selected, .entry:selected, .entry:selected:focus, GtkIconView.cell:selected,
-GtkIconView.cell:selected:focus, .list-row:selected {
+GtkIconView.cell:selected:focus, .list-row:selected, GtkEntry.gb-command-bar-entry.entry.flat:selected, GtkEntry.gb-command-bar-entry.entry.flat:selected:focus {
   background-color: #4080fb;
   color: #ffffff;
   outline-color: rgba(255, 255, 255, 0.3); }
@@ -3702,7 +3702,7 @@ GtkBox.gb-command-bar-box {
   background-image: linear-gradient(to bottom, #2B2B2C);
   box-shadow: inset 0px 2px 3px -1px rgba(0, 0, 0, 0.3); }
   GtkBox.gb-command-bar-box GtkLabel {
-    color: #eeeeec; }
+    color: #F3F3F5; }
 
 GtkEntry.gb-command-bar-entry.entry.flat,
 GtkEntry.gb-command-bar-entry.entry.flat:focus {
@@ -3710,7 +3710,7 @@ GtkEntry.gb-command-bar-entry.entry.flat:focus {
   background-image: none;
   background-color: transparent;
   padding: 6px 6px 6px 6px;
-  color: #eeeeec; }
+  color: #F3F3F5; }
 
 GbSourceStyleSchemeWidget GtkSourceView {
   font-family: Monospace; }

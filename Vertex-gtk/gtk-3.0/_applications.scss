@@ -300,7 +300,7 @@ GtkBox.gb-command-bar-box {
   background-image: linear-gradient(to bottom, nth($_base_color, 2));
   box-shadow: inset 0px 2px 3px -1px transparentize(black, 0.7);
 
-  GtkLabel { color: #eeeeec; }
+  GtkLabel { color: nth($_fg_color, 2); }
 }
 
 GtkEntry.gb-command-bar-entry.entry.flat,
@@ -309,7 +309,12 @@ GtkEntry.gb-command-bar-entry.entry.flat:focus {
   background-image: none;
   background-color: transparent;
   padding: 6px 6px 6px 6px;
-  color: #eeeeec;
+  color: nth($_fg_color, 2);
+
+  &:selected,
+  &:selected:focus {
+    @extend %selected_items;
+  }
 }
 
 GbSourceStyleSchemeWidget GtkSourceView {
